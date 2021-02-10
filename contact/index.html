@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--doctype declaration and language setting-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title-->
+    <title>Patron Tequila</title>
+    <!--font style sheets-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&display=swap" rel="stylesheet">
+    <!--link to css style sheet-->
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+
+<body>
+    <section class="s10">
+        <div class="contact-content">
+
+            <!--patron contact content-->
+
+            <h1 class="animate__animated animate__fadeInRight" id="contact-title">Contact
+
+            </h1>
+            <img src="images/patronagave1.png" class="contact-img" alt="Patron Agave">
+
+        </div>
+        <!--navigation links-->
+        <nav class="nav nav">
+            <ul class="nav-links">
+                <li class="#">Journey</li>
+                <li class="#">Patron Range</li>
+                <li class="#">Cocktails</li>
+                <li class="#">Contact</li>
+
+            </ul>
+        </nav>
+        <!--contact form-->
+        <form id="contact-form" action="/action_page.php" method="post">
+
+
+            <!--sections of form input and labels-->
+            <div>
+                <label for="name">Name</label>
+                <input id="name" placeholder="Name" type="text" name="name">
+            </div>
+            <div>
+                <label for="email">Email Address</label>
+                <input id="email" placeholder="Email" type="email">
+
+            </div>
+
+            <div>
+                <div class="message-area">
+                    <label for="message-text" id="message">Message</label>
+                    <textarea id="message-text" placeholder="Type your message here...." name="message" required></textarea>
+                </div>
+
+                <button name="send" type="submit" id="contact-Send" data-submit="...Sending">Send</button>
+            </div>
+        </form>
+
+
+        <div class="modal-bg">
+            <div class="modal">
+                <h5>Message Sent</h5>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="grey-footer">
+            <div class="legal disclaimer">
+
+            </div>
+        </div>
+
+    </section>
+    <!--GSAP scripts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <!--link to main java script -->
+    <script src="main.js"></script>
+    <!--footer-->
+    <footer>
+        <div class="back-top"></div>
+
+        <h6 class="legal disclaimer">THE PERFECT WAY TO ENJOY PATRÓN IS RESPONSIBLY. ©2021. PATRÓN, ITS TRADE DRESS AND THE BEE LOGO ARE TRADEMARKS. HANDCRAFTED IN MEXICO. FOR MORE INFORMATION ON ALCOHOL RESPONSIBILITY VISIT RESPONSIBLE DRINKING.ORG AND RESPONSIBILITY.ORG.
+            <br> &copy; All rights Reserved.
+        </h6>
+
+    </footer>
+</body>
+
+
+</html>

@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Cormorant Upright', serif;
+    color: #c0af5d;
+    font-weight: 500;
+    font-size: 3em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cormorant Upright', serif;
+    color: #817f78;
+    font-weight: 200;
+}
+
+P {
+    font-family: 'Cormorant Upright', serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+/*****JOURNEY SECTION 1*****/
+
+.journey {
+    background-color: #ffffff;
+    width: 100%vw;
+    display: flex;
+    width: 30%;
+    margin-left: 25%;
+    margin-top: 20%;
+}
+
+.journey-content {
+    text-align: center;
+}
+
+.journey h1 {
+    font-size: 4.5em;
+    margin: 0;
+}
+
+.journey,
+h5,
+p {
+    font-size: 12px;
+    animation: animate__fadeInTopLeft;
+    /*add shadow*/
+    animation: pulse 2s ease infinite alternate;
+}
+
+.journey h6 {
+    font-size: 14px;
+    color: #5a5953;
+    margin: 0;
+}
+
+.journey-content p {
+    font-style: italic;
+}
+
+.journey-image {
+    position: absolute;
+    width: 40%;
+    top: 20%;
+    right: 5%;
+    z-index: 1;
+}
+
+.nav .nav-links {
+    position: fixed;
+    left: 1%;
+    top: 40%;
+    color: #817f78;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.journey-img1 {
+    position: absolute;
+    width: 10%;
+    height: 15%;
+    left: 35%;
+    bottom: 22%;
+}
+
+.discover h1 {
+    display: hidden;
+}
+
+
+/*****JOURNEY SECTION 2****/
+
+.journey2 {
+    background-color: #ffffff;
+    width: 100%vw;
+    display: flex;
+    width: 24%;
+    margin-left: 63%;
+    margin-top: 82%;
+}
+
+.journey2-content {
+    text-align: center;
+}
+
+.journey2 h1 {
+    font-size: 4.5em;
+    margin: 0;
+    animation: backInOut;
+    animation-duration: 2s;
+}
+
+.journey2,
+h5,
+p {
+    font-size: 12px;
+    animation: animate__fadeInTopLeft;
+    /*add shadow*/
+    animation: pulse 2s ease infinite alternate;
+}
+
+.journey2 h6 {
+    font-size: 14px;
+    color: #5a5953;
+    margin: 0;
+}
+
+.journey2-content p {
+    font-style: italic;
+}
+
+.journey2-image {
+    position: absolute;
+    width: 45%;
+    top: 184%;
+    left: 15%;
+    z-index: 1;
+}

@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Cormorant Upright', serif;
+    color: #c0af5d;
+    font-weight: 500;
+    font-size: 3em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cormorant Upright', serif;
+    color: #817f78;
+    font-weight: 200;
+}
+
+P {
+    font-family: 'Cormorant Upright', serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+/*****COCKTAIL SECTION 1*****/
+
+.cocktails {
+    display: flex;
+    position: relative;
+    background-color: #ffffff;
+    width: 100%vw;
+}
+
+.cocktail-content {
+    position: absolute;
+    text-align: center;
+    margin-left: 58%;
+    margin-top: 10%;
+}
+
+.cocktail h1 {
+    font-size: 4.5em;
+    margin: 0;
+}
+
+.cocktail,
+h5 {
+    font-size: 14px;
+    animation: animate__fadeInTopLeft;
+    /*add shadow*/
+    animation: pulse 2s ease infinite alternate;
+}
+
+.cocktail-images {
+    display: flex;
+}
+
+.cocktail-1 {
+    width: 30%;
+    margin: 8% 15%;
+    z-index: 1;
+}
+
+.cocktail-2 {
+    position: absolute;
+    width: 30%;
+    top: 40%;
+    left: 37%;
+    z-index: 1;
+    -webkit-filter: grayscale(0) !important;
+    filter: grayscale(0) !important;
+}
+
+.cocktail-2 img:hover {
+    -webkit-filter: grayscale(100%) !important;
+    filter: grayscale(100%) !important;
+}
+
+.cocktail-3 {
+    position: absolute;
+    width: 28%;
+    top: 58%;
+    left: 58%;
+    z-index: 1;
+}
+
+.cocktail-4 {
+    position: absolute;
+    width: 37%;
+    top: 93%;
+    left: 41%;
+    z-index: 1;
+}
+
+.cocktail-5 {
+    position: absolute;
+    width: 24%;
+    top: 144%;
+    left: 32%;
+    z-index: 1;
+}
+
+.cocktail-6 {
+    position: absolute;
+    width: 36%;
+    top: 160%;
+    left: 7%;
+    z-index: 1;
+}
+
+.cocktail-7 {
+    position: absolute;
+    width: 16%;
+    top: 230%;
+    left: 11%;
+    z-index: 1;
+}
+
+.cocktail-8 {
+    position: absolute;
+    width: 37%;
+    top: 232%;
+    left: 24%;
+    z-index: 1;
+}
+
+.cocktail-9 {
+    position: absolute;
+    width: 27%;
+    left: 52%;
+    top: 268%;
+    z-index201;
+}
+
+.cocktail-10 {
+    position: absolute;
+    width: 31%;
+    top: 314%;
+    left: 65%;
+    z-index: 1;
+}
+
+.cocktail-11 {
+    position: absolute;
+    width: 36%;
+    top: 350%;
+    left: 46%;
+    z-index: 1;
+}
+
+.cocktail-12 {
+    position: absolute;
+    width: 36%;
+    top: 390%;
+    left: 29%;
+    z-index: 1;
+}
+
+.cocktail-13 {
+    position: absolute;
+    width: 31%;
+    top: 440%;
+    left: 7%;
+    z-index: 1;
+}
+
+.nav .nav-links {
+    position: fixed;
+    left: 1%;
+    top: 40%;
+    color: #817f78;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.cocktail-img1 {
+    position: fixed;
+    width: 26%;
+    height: 40%;
+    right: 0;
+    bottom: 0%;
+}
+
+.hornet {
+    width: 15%;
+    position: absolute;
+    top: 35%;
+    left: 78%;
+    transform: rotate(30deg);
+}
+
+.hornet2 {
+    width: 25%;
+    position: absolute;
+    top: 70%;
+    left: 20%;
+}
+
+.hornet3 {
+    width: 25%;
+    position: absolute;
+    top: 201%;
+    left: 47%;
+    transform: rotate( 31deg);
+}
+
+.hornet4 {
+    width: 15%;
+    position: absolute;
+    top: 134%;
+    left: 71%;
+}
+
+.hornet5 {
+    width: 24%;
+    position: absolute;
+    top: 452%;
+    left: 38%;
+    transform: rotate( 344deg);
+}
+
+.hornet6 {
+    width: 29%;
+    position: absolute;
+    top: 321%;
+    left: 20%;
+    transform: rotate( 39deg);
+}
+
+.cocktail-text1,
+.cocktail-text2,
+.cocktail-text3 {
+    font-size: 12px;
+    color: #817f78;
+}
+
+.cocktail-text1 {
+    position: absolute;
+    top: 43%;
+    left: 48%;
+}
+
+.cocktail-text2 {
+    position: absolute;
+    top: 93%;
+    left: 28%;
+}
+
+.cocktail-text3 {
+    position: absolute;
+    top: 205%;
+    left: 50%;
+    margin-right: 15%;
+}
+
+.cocktail-text4 {
+    position: absolute;
+    top: 293%;
+    left: 10%;
+}
+
+.cocktail-text5 {
+    position: absolute;
+    top: 451%;
+    left: 36%;
+    width: 32%;
+    margin-right: 15%;
+}

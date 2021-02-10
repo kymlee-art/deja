@@ -1,0 +1,13 @@
+{
+	"workbench.colorCustomizations": {
+		"activityBar.background": "#4C1D37",
+		"titleBar.activeBackground": "#6A294D",
+		"titleBar.activeForeground": "#FCF8FB"
+	},
+	"liveServer.settings.port": 5503,
+	"cSpell.words": [
+		"gsap",
+		"jimador",
+		"preconnect"
+	]
+}

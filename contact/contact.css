@@ -1,0 +1,317 @@
+                    /* Resets - removes all default padding etc which will cause you style grief*/
+                    
+                    html,
+                    body,
+                    div,
+                    span,
+                    applet,
+                    object,
+                    iframe,
+                    h1,
+                    h2,
+                    h3,
+                    h4,
+                    h5,
+                    h6,
+                    p,
+                    blockquote,
+                    pre,
+                    a,
+                    abbr,
+                    acronym,
+                    address,
+                    big,
+                    cite,
+                    code,
+                    del,
+                    dfn,
+                    em,
+                    img,
+                    ins,
+                    kbd,
+                    q,
+                    s,
+                    samp,
+                    small,
+                    strike,
+                    strong,
+                    sub,
+                    sup,
+                    tt,
+                    var,
+                    b,
+                    u,
+                    i,
+                    center,
+                    dl,
+                    dt,
+                    dd,
+                    ol,
+                    ul,
+                    li,
+                    fieldset,
+                    form,
+                    label,
+                    legend,
+                    table,
+                    caption,
+                    tbody,
+                    tfoot,
+                    thead,
+                    tr,
+                    th,
+                    td,
+                    article,
+                    aside,
+                    canvas,
+                    details,
+                    embed,
+                    figure,
+                    figcaption,
+                    footer,
+                    header,
+                    hgroup,
+                    menu,
+                    nav,
+                    output,
+                    ruby,
+                    section,
+                    summary,
+                    time,
+                    mark,
+                    audio,
+                    video {
+                        margin: 0;
+                        padding: 0;
+                        border: 0;
+                        font-size: 100%;
+                        font: inherit;
+                        vertical-align: baseline;
+                    }
+                    
+                    *,
+                    *:before,
+                    *:after {
+                        box-sizing: border-box;
+                    }
+                    /*body settings*/
+                    
+                    body {
+                        font-family: sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        overflow-x: hidden;
+                    }
+                    /*main heading specifications*/
+                    
+                    h1 {
+                        font-family: 'Cormorant Upright', serif;
+                        color: #c0af5d;
+                        font-weight: 500;
+                        font-size: 3em;
+                    }
+                    
+                    h2,
+                    h3,
+                    h4,
+                    h5,
+                    h6 {
+                        font-family: 'Cormorant Upright', serif;
+                        font-weight: 200;
+                    }
+                    
+                    h2 {
+                        font-size: 2.5em;
+                    }
+                    
+                    h3 {
+                        font-size: 2em;
+                    }
+                    
+                    h4 {
+                        font-size: 1.5em;
+                    }
+                    
+                    h5 {
+                        font-size: 1em;
+                    }
+                    
+                    h6 {
+                        font-size: .5em;
+                    }
+                    
+                    P {
+                        font-family: 'Cormorant Upright', serif;
+                    }
+                    
+                    ul li {
+                        list-style: none;
+                    }
+                    
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        transition: 0.2s ease-out;
+                    }
+                    /*hover colour when cursor hovers*/
+                    
+                    a:hover {
+                        color: #3edfd7;
+                    }
+                    /******
+Patron Contact Content******/
+                    
+                    .s10 {
+                        height: 40%;
+                    }
+                    
+                    .contact-content {
+                        /*set view height to 50%*/
+                        display: flex;
+                        height: 500px;
+                    }
+                    /*heading specs*/
+                    
+                    .contact-title,
+                    h1 {
+                        right: 35%;
+                        top: 22%;
+                        position: absolute;
+                    }
+                    /*contact page image settings*/
+                    
+                    .contact-img {
+                        position: absolute;
+                        width: 46%;
+                        left: 4%;
+                        top: 14%;
+                    }
+                    /*navigation position font specs and size*/
+                    
+                    .nav .nav-links {
+                        position: fixed;
+                        left: 25px;
+                        line-height: 18px;
+                        top: 40%;
+                        color: #817f78;
+                        font-size: 10px;
+                        font-weight: 400;
+                        text-align: left;
+                    }
+                    /*Contact Form */
+                    
+                    #contact-form {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        float: right;
+                        margin: -22% 36.1%;
+                        color: #817f78;
+                    }
+                    /*contact form input areas set*/
+                    
+                    #contact-form input[type='text'],
+                    #contact-form input[type='email'],
+                    #contact-form input[type='text'],
+                    #contact-form textarea,
+                    #contact-form button[type='send'] {
+                        font-size: 10px;
+                        margin: 4px;
+                        border-radius: 6px;
+                        border: none;
+                        background: #f7f6f39f;
+                        height: 29px;
+                        padding: 5px;
+                        transition: border-color 0.3s ease-in-out;
+                        box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
+                        width: 134px;
+                    }
+                    /*labels for contact input*/
+                    
+                    #contact-form label {
+                        position: absolute;
+                        font-size: 0px;
+                    }
+                    /*contact input focus*/
+                    
+                    #contact-form input[type='text']:focus,
+                    #contact-form input[type='email']:focus,
+                    #contact-form textarea:focus {
+                        outline: none;
+                        color: #4b515d;
+                        border: 1px solid #B8B6B6;
+                        box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.01), 0px 0px 4px rgba(0, 0, 0, 0.2);
+                    }
+                    /*text area to input on form */
+                    
+                    #contact-form textarea {
+                        position: absolute;
+                        height: 67px;
+                        right: 15.4%;
+                        top: 40.5%;
+                        width: 203px;
+                        padding: 5px;
+                        border-radius: 10px;
+                        max-width: 100%;
+                        resize: none;
+                        background: #f7f6f385;
+                    }
+                    /*contact 'Send button and styling*/
+                    
+                    #contact-form button[type='submit'] {
+                        cursor: pointer;
+                        /*cursor pointer to show when hovering over button*/
+                        width: 50%;
+                        border: none;
+                        margin: 20% 195%;
+                        background: #ebe9e4ad;
+                        border-radius: 5px;
+                        /*round corners*/
+                        color: rgb(23, 194, 185);
+                        font-weight: 500;
+                        padding: 5px;
+                        /*Box shadow setting*/
+                        -webkit-box-shadow: 0 8px 6px -6px rgb(88, 81, 81);
+                        -moz-box-shadow: 0 8px 6px -6px rgb(102, 94, 94);
+                        box-shadow: 0 8px 6px -6px rgb(100, 96, 96);
+                    }
+                    /*submit button*/
+                    
+                    #contact-form button[type='submit']:hover {
+                        background: rgb(23, 194, 185);
+                        color: #4b515d;
+                        /*box shadow settings*/
+                        box-shadow: 0 8px 6px -6px black;
+                        transition: background-color 0.3s ease-in-out;
+                    }
+                    /*contact button box shadow*/
+                    
+                    #contact-form button[type='submit']:active {
+                        box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+                    }
+                    
+                    .modal-bg {
+                        display: flex;
+                        float: right;
+                        margin: -17% 0%;
+                        padding: 10px;
+                        justify-content: center;
+                        background-color: #817f7849;
+                        color: #43cec7;
+                        font-weight: 600;
+                        box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+                        height: 50px;
+                        width: 186px;
+                        display: none;
+                    }
+                    
+                    footer {
+                        margin: -1% 0 0 0;
+                        height: 192px;
+                        background: #b3b7c0;
+                    }
+                    
+                    footer h6 {
+                        text-align: center;
+                        padding: 10%;
+                    }

@@ -1,0 +1,17 @@
+{
+	"workbench.colorCustomizations": {
+		"activityBar.background": "#352C23",
+		"titleBar.activeBackground": "#4A3E31",
+		"titleBar.activeForeground": "#FCFBFA"
+	},
+	"liveServer.settings.port": 5505,
+	"cSpell.words": [
+		"Anejo",
+		"BURDEOS",
+		"GSAP",
+		"Lalique",
+		"REPOSADO",
+		"preconnect",
+		"sidequote"
+	]
+}
