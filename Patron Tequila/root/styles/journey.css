@@ -4,43 +4,50 @@
     background-color: #ffffff;
     width: 100vw;
     /*set view width to 100%*/
+}
+
+.journey-container {
     display: grid;
-    grid-template-columns: 10% 40% 40% 20%;
-    grid-template-rows: 20% 30% 30% 20%;
-    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1 fr;
+}
+
+.journey-title {
+    grid-column: 2;
+    grid-row: 1;
     text-align: center;
+    font-size: 3.5em;
+    width: 150%;
+    margin-top: 35%;
 }
 
-.journey-title h2 {
-    grid-area: 2/2;
-}
-
-.journey,
-h5 {
-    grid-area: 3/2;
-    font-size: 12px;
+.journey-text {
+    justify-content: center;
+    text-align: center;
+    grid-row: 2;
+    grid-column: 2;
+    margin-top: 50%;
+    margin-left: 15%;
     color: #5a5953;
+    width: 120%;
 }
 
 .journey p {
-    grid-column: 2;
-    grid-row: 3;
-    font-size: 14px;
-    align-items: center;
-    margin: 10% 10%;
-    width: 60%;
-    color: #5a5953;
-}
-
-.journey-content p {
-    grid-area: 3/2;
-    font-style: italic;
+    text-align: center;
+    grid-area: 2/2;
+    width: 150%;
+    margin-top: 90%;
+    color: #817f78;
 }
 
 .journey-image {
-    grid-area: 2/3;
-    width: 80%;
-    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    margin: -15% 20%;
+    grid-row: 2;
+    grid-column: 3/span4;
 }
 
 .nav .nav-links {
@@ -53,10 +60,12 @@ h5 {
 }
 
 .journey-img1 {
+    display: flex;
+    justify-content: center;
     grid-area: 3/2;
     align-self: center;
     margin-left: 42%;
-    width: 10%;
+    width: 60%;
 }
 
 .discover h1 {
@@ -66,52 +75,67 @@ h5 {
 
 /*****JOURNEY SECTION 2****/
 
-.journey2 {
+.section-journey2 {
     background-color: #ffffff;
-    width: 100%vw;
-    height: 100vh;
-    text-align: center;
+    width: 100vw;
+    /*set view width to 100%*/
 }
 
-.journey2-content {
+.journey2-container {
     display: grid;
-    grid-template-columns: 10% 40% 40% 20%;
-    grid-template-rows: 20% 30% 30% 20%;
-    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1 fr;
 }
 
-.journey2,
-h1 {
-    grid-area: 3/2;
+#Perfection {
+    grid-area: 1/3;
     font-size: 4.5em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35%;
     animation: backInOut;
     animation-duration: 2s;
 }
 
-.journey2,
-h5,
-p {
-    grid-area: 3/3;
+.journey2-text {
+    grid-area: 2/4;
+    width: 80%;
+    margin: 50% 60%;
     font-size: 12px;
     animation: animate__fadeInTopLeft;
     /*add shadow*/
     animation: pulse 2s ease infinite alternate;
 }
 
-.journey2 h6 {
-    grid-area: 3/3;
-    font-size: 14px;
+.journey2-para,
+p {
+    grid-row: 2;
+    grid-column: 4/span 5;
+    text-align: center;
+    font-size: 12px;
     color: #5a5953;
-    margin: 0;
+    width: 40%;
+    margin: 40% 30%
 }
 
-.journey2-content p {
+.journey2 p {
     font-style: italic;
+    grid-column: 2/span3;
+    grid-row: 2;
+    width: 25%;
+    margin-top: 20%;
+    font-size: 12px;
+    color: #5a5953;
 }
 
 .journey2-image {
-    grid-area: 3/2;
+    display: flex;
+    justify-content: center;
+    grid-column: 2/span 4;
+    margin-left: 20%;
+    margin-top: 10%;
+    width: 50%;
+    grid-row: 2;
     align-items: center;
-    width: 38%;
     z-index: 1;
 }
