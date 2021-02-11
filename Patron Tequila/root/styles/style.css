@@ -182,10 +182,15 @@ HERO
     height: fit-content;
 }
 
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
 .hero-container {
     display: grid;
-    grid-template-columns: 10% 10% auto 10%;
-    grid-template-rows: 10% 5% auto 10%;
+    grid-template-columns: 50px auto 50px;
+    grid-template-rows: 100px 50px auto 50px;
     grid-template-areas: "header header header" "subheader subheader subheader" "sidebar main main" "footer footer footer";
     width: 100vw;
     height: 100vh;
@@ -196,31 +201,29 @@ HERO
 
 .hero h1 {
     grid-row: header;
+    grid-column: header;
     text-align: center;
-    /*align text to centre of page*/
-    /*set margin*/
-    animation: fadeIn;
-    /* set animation to fade done  */
-    animation-duration: 4s;
-    /* set a duration & delay */
-}
-
-#hero-title {
     font-size: 3.5em;
 }
 
 
 /* hero paragraph settings*/
 
-.hero p {
+.hero h3 {
     grid-area: subheader;
+    justify-content: center;
     text-align: center;
     font-style: italic;
+    font-size: 16px;
 }
 
 #celebrate,
 h2 {
+    grid-area: footer;
     color: #c0af5d;
+    font-size: 2em;
+    text-align: center;
+    margin-left: 5%;
     animation: fadeInUp;
     animation-duration: 3s;
     animation-delay: 1.5s;
@@ -264,11 +267,14 @@ h2 {
 
 /*prompt is the user over 18 overlay to make text and buttons visible*/
 
+.modal-into {
+    display: flex;
+    grid-area: main;
+}
+
 .modal-bg {
     /*set position to relative*/
     position: fixed;
-    top: 57%;
-    left: 50%;
     padding: 25px;
     background: rgba(80, 81, 85, 0.671);
     width: 250px;
@@ -279,7 +285,7 @@ h2 {
     z-index: 1010;
     /*set to display over other elements*/
     transform: translate(-50%, -50%);
-    visibility: hidden;
+    /*  visibility: hidden;*/
     transition: visibility 0s opacity 0.5s;
 }
 
