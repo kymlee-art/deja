@@ -84,7 +84,7 @@
 .journey2-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1 fr;
+    grid-template-rows: 150px 250px 250px 50px;
 }
 
 #Perfection {
@@ -92,7 +92,7 @@
     font-size: 4.5em;
     justify-content: center;
     align-items: center;
-    margin-top: 35%;
+    margin-top: 25%;
     animation: backInOut;
     animation-duration: 2s;
 }
@@ -138,4 +138,13 @@ p {
     grid-row: 2;
     align-items: center;
     z-index: 1;
+}
+
+.journey2-image1 {
+    display: flex;
+    justify-content: center;
+    grid-row: 3;
+    grid-column: 4/span5;
+    width: 40%;
+    margin: -10% 30%;
 }
