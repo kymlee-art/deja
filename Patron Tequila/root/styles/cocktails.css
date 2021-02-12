@@ -26,7 +26,7 @@
         grid-row: 3;
         align-self: end;
         font-size: 14px;
-        color: #413f3c;
+        color: #c0af5d;
         width: 70%;
         animation: animate__fadeInTopLeft;
         animation: pulse 2s ease infinite alternate;
@@ -126,17 +126,15 @@
     
     .cocktail-11 {
         grid-area: 19/3;
+        margin-left: 20%;
     }
     
     .cocktail-12 {
-        grid-area: 20/5;
-        width: 295%;
-    }
-    
-    .cocktail-13 {
-        grid-area: 23/4;
+        grid-area: 21/5;
         align-self: center;
-        width: 245%;
+        margin-left: 38%;
+        width: 150;
+        width: 337%;
     }
     
     .cocktail-img1 {
@@ -157,40 +155,62 @@
     
     .hornet2 {
         width: 25%;
-        position: absolute;
         top: 70%;
         left: 20%;
     }
     
     .hornet3 {
         width: 25%;
-        position: absolute;
         top: 201%;
         left: 47%;
         transform: rotate( 31deg);
     }
     
     .hornet4 {
-        width: 15%;
-        position: absolute;
-        top: 134%;
-        left: 71%;
+        width: 126%;
+        grid-area: 2/6;
     }
     
     .hornet5 {
-        width: 24%;
-        position: absolute;
-        top: 452%;
-        left: 38%;
-        transform: rotate( 344deg);
+        grid-area: 6/6;
+        width: 178%;
+        transform: rotate( 31deg);
     }
     
     .hornet6 {
-        width: 29%;
-        position: absolute;
-        top: 321%;
-        left: 20%;
-        transform: rotate( 39deg);
+        grid-area: 24/-4;
+        width: 207%;
+        transform: rotate( 30deg);
+    }
+    
+    .hornet7 {
+        grid-area: 12/2;
+        width: 178%;
+        align-self: center;
+        transform: rotate( 31deg);
+    }
+    
+    .hornet8 {
+        grid-area: 4/6;
+        width: 178%;
+        /* position: absolute; */
+        /* top: 452%; */
+        /* left: 38%; */
+        transform: rotate( 31deg);
+    }
+    
+    .hornet9 {
+        grid-area: 17/6;
+        width: 178%;
+        align-self: center;
+        transform: rotate( 31deg);
+    }
+    
+    .hornet10 {
+        grid-area: 22/2;
+        width: 178%;
+        align-self: center;
+        transform: rotate( 31deg);
     }
     
     .cocktail-text1,
@@ -202,13 +222,14 @@
     
     .cocktail-text2 {
         grid-area: 13/3;
-        align-self: center;
-        width: 187%;
+        /* align-self: baseline; */
+        width: 248%;
         font-size: 16px;
     }
     
     .cocktail-text3 {
         grid-area: 8/5;
+        font-size: 16px;
         width: 200%;
         align-self: center;
     }
@@ -216,10 +237,44 @@
     .cocktail-text4 {
         grid-area: 18/5;
         font-size: 16px;
+        width: 249%;
     }
     
     .cocktail-text5 {
-        grid-area: 24/2;
+        grid-area: 22/4;
         width: 186%;
         font-size: 16px;
+    }
+    
+    .agave01 {
+        grid-area: 4/6;
+        width: 95%;
+        /* align-self: center; */
+    }
+    
+    .agave02 {
+        grid-area: 9/5;
+        align-self: center;
+        margin-left: 43%;
+        width: 107%;
+    }
+    
+    .agave03 {
+        grid-area: 13/4;
+        width: 96%;
+        margin-left: -30%;
+    }
+    
+    .agave04 {
+        grid-area: 23/4;
+        align-self: center;
+        width: 111%;
+        margin-left: 40%;
+    }
+    
+    .agave05 {
+        grid-area: 17/5;
+        align-self: flex-end;
+        margin-left: 57%;
+        width: 107%;
     }
