@@ -23,7 +23,7 @@
 
 .journey-text {
     text-align: center;
-    align-self: baseline;
+    align-self: auto;
     grid-row: 3;
     grid-column: 3;
     margin-left: 29%;
@@ -101,9 +101,11 @@
 
 .journey2-text {
     grid-area: 2/6;
-    width: 110%;
+    width: 120%;
     font-size: 14px;
     margin: 6% 20%;
+    color: #c0af5d;
+    text-align: center;
     animation: animate__fadeInTopLeft;
     animation: pulse 2s ease infinite alternate;
 }
@@ -112,7 +114,8 @@
     color: #c0af5d;
     font-size: 14px;
     grid-area: 2/2;
-    margin-left: 69%;
+    margin-left: 60%;
+    width: 100%;
 }
 
 .journey2-para {
@@ -131,6 +134,7 @@
     margin-left: 32%;
     font-size: 12px;
     color: #5a5953;
+    align-self: center;
 }
 
 .journey2-image {
