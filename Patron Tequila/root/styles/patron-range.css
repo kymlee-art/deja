@@ -3,66 +3,68 @@ Patron Range 1******/
 
 .section-range1 {
     width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 
 .range1-container {
     display: grid;
-    grid-template-columns: 100px 150px 150px 150px 150px 150px;
-    grid-template-rows: 100px 150px 150px 150px 100px;
+    grid-template-columns: minmax(100px, 200px) minmax(100px, 200px) minmax(150px, 650px) minmax(100px, 200px);
+    grid-template-rows: minmax(20px, 40px) minmax(20px, 40px) minmax(150px, 450px) minmax(20px, 50px);
+    gap: 5px 5px;
+    grid-template-areas: "title title title title" "subtitle subtitle subtitle subtitle" "image image image side" "text1 text2 text3 .";
+    justify-items: centre;
+    align-items: centre;
+    margin: 20%;
 }
 
 #Range1-title {
     text-align: center;
     color: #c0af5d;
     font-size: 28px;
-    grid-column: 3/span 3;
-    grid-row: 1;
-    /* align-self: end; */
-    margin-left: 15%;
-    margin-top: 27%;
-    font-size: 42px;
+    font-size: 4em;
+    grid-area: title;
+    font-size: 4em;
 }
 
 .range1-text,
 h2,
 p {
     text-align: center;
-    font-size: 12px;
     line-height: 18px;
     color: #c0af5d;
     font-weight: 700;
+    margin-left: 12%;
     z-index: 2;
 }
 
 .range1-subtitle,
 p {
-    grid-area: 2/4;
+    /* grid-area: 2/4; */
+    grid-area: subtitle;
     align-self: center;
-    margin-left: -25%;
-    width: 184px;
 }
 
 
 /*heading specs*/
 
-.range1-text,
-h2 {
+.range1-text {
+    grid-area: side;
     align-self: center;
-    width: 61%;
     font-size: 14px;
     z-index: 1;
-    grid-area: 3/7;
-    margin-left: -26%;
+    /* grid-area: 3/7; */
 }
 
 
 /*  paragraph settings*/
 
 .patron-set1 {
-    grid-column: 2/span4;
-    grid-row: 2;
+    /* grid-column: 2/span4;
+    grid-row: 2; */
+    grid-area: image;
     margin-left: 9%;
-    width: 67%;
+    width: 100%;
 }
 
 .anejo,
@@ -78,60 +80,78 @@ h2 {
 }
 
 .anejo {
-    grid-area: 5/3;
-    margin: -15% 19%;
+    /* grid-area: 5/3; */
+    grid-area: text1;
+    text-align: center;
 }
 
 .silver {
-    grid-area: 5/4;
-    margin: 13% 32%;
+    /* grid-area: 5/4; */
+    grid-area: text2;
+    text-align: center;
 }
 
 .reposado {
-    grid-area: 5/6;
-    margin: -10% -47%;
-    margin-left: -49%;
+    /* grid-area: 5/6; */
+    grid-area: text3;
+    text-align: center;
 }
 
 .bg-agave1 {
-    grid-area: 5/7;
+    grid-area: side;
+    /* grid-area: 5/7; */
     align-self: self-end;
-    width: 119%;
+    width: 102%;
     margin-left: -50%;
     z-index: 3;
 }
 
 .bg-agave2 {
-    grid-area: 4/2;
-    width: 141%;
+    grid-area: image;
+    /* grid-area: 4/2; */
+    width: 26%;
+    align-self: end;
 }
 
 
 /***** Patron Range2******/
 
-.range2-container {
-    display: grid;
-    grid-template-columns: 100px 150px 150px 150px 150px 150px;
-    grid-template-rows: 100px 150px 150px 150px 100px;
+.section-range2 {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 
 .patron-range2 {
-    height: 100%vh;
     text-align: center;
+}
+
+.range2-container {
+    /* display: grid;
+    grid-template-columns: 100px 150px 150px 150px 150px 150px;
+    grid-template-rows: 100px 150px 150px 150px 100px; */
+    display: grid;
+    grid-template-columns: minmax(100px, 100px) minmax(150px, 650px) minmax(100px, 200px);
+    grid-template-rows: minmax(20px, 60px) minmax(20px, 60px) minmax(150px, 450px) minmax(20px, 60px);
+    gap: 5px 5px;
+    grid-template-areas: "title title title" "subtitle subtitle subtitle" "side image side1" "text1 text2 text3";
+    justify-items: centre;
+    align-items: centre;
+    margin: 1%;
 }
 
 .range2-title {
     grid-row: 1;
-    grid-column: 3/span4;
+    grid-column: title;
     align-self: end;
-    margin-left: -10%;
     color: #c0af5d;
     font-size: 42px;
 }
 
 .patron-range2 p {
-    grid-column: 3/span5;
-    width: 39%;
+    grid-column: subtitle;
+    width: 34%;
+    margin-left: 32%;
 }
 
 .range2-sidequote {
@@ -139,32 +159,30 @@ h2 {
     color: #c0af5d;
     font-weight: 00;
     z-index: 2;
-    grid-area: 3/7;
-    margin-left: -6%;
+    width: 63%;
+    margin-left: 10%;
+    align-self: center;
+    grid-area: side1;
 }
 
 .gran-patron {
     grid-row: 2;
-    grid-column: 3/span5;
-    /* width: 456%; */
-    width: 74%;
-    margin-left: -1%;
-    margin-top: 5%;
+    grid-column: image;
+    width: 116%;
     z-index: 4;
 }
 
 .r2-agave1 {
-    grid-area: 4/6;
-    margin-left: 50%;
-    z-index: 4;
+    grid-area: text3;
+    align-self: end;
+    width: -webkit-fill-available;
     z-index: 4;
 }
 
 .r2-agave2 {
-    grid-area: 4/2;
-    width: 128%;
-    /* align-self: flex-start; */
-    margin-left: 58%;
+    grid-area: text2;
+    width: 23%;
+    align-self: end;
     z-index: 5;
 }
 
@@ -174,23 +192,21 @@ h2 {
     font-size: 9px;
     color: #817f78;
     width: 80px;
+    align-self: center;
 }
 
 .platinum {
-    grid-area: 3/3;
-    align-self: center;
+    grid-area: text1;
 }
 
 .Burdeos {
-    grid-area: 5/5;
-    margin-left: -23%;
+    grid-area: text2;
 }
 
 .Piedra {
-    grid-area: 4/6;
-    align-self: center;
-    margin-left: 32%;
-    width: 56px;
+    grid-area: text3;
+    /* width: 56px; */
+    z-index: 3;
 }
 
 

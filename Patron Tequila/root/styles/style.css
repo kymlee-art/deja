@@ -220,8 +220,7 @@ h2 {
     color: #c0af5d;
     font-size: 2em;
     text-align: center;
-    margin: -4% -17;
-    margin-left: 21%;
+    /* margin: -4% -17; */
     align-self: center;
     animation: fadeInUp;
     animation-duration: 3s;
@@ -239,10 +238,8 @@ h2 {
     grid-area: image;
     display: flex;
     justify-content: center;
-    margin: -3% 23%;
     align-self: center;
-    max-width: 100%;
-    margin-left: 24%;
+    width: 114%;
 }
 
 .hornet1 {
