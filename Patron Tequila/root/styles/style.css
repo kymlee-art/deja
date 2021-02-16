@@ -2,7 +2,8 @@
 @import "cocktails.css";
 @import "patron-range.css";
 @import "contact.css";
-@import "media-queries.css"
+@import "media-queries.css";
+
 /* Resets - removes all default padding etc which will cause you style grief*/
 
 html,
@@ -189,7 +190,7 @@ HERO
 .hero-container {
     display: grid;
     grid-template-columns: 0.5fr 3fr 0.5fr;
-    grid-template-rows: 0.5fr 0.3fr 3fr 0.1fr;
+    grid-template-rows: 0.3fr 0.3fr 3fr 0.1fr;
     gap: 5px 0px;
     grid-template-areas: ". title ." ". sub-header ." ". image ." ". footer .";
 }
@@ -218,7 +219,7 @@ HERO
 h2 {
     grid-area: footer;
     color: #c0af5d;
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
     /* margin: -4% -17; */
     align-self: center;
@@ -239,7 +240,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-self: center;
-    width: 114%;
+    width: 92%;
 }
 
 .hornet1 {

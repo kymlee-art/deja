@@ -5,68 +5,56 @@
     width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 10%;
+    margin: 20% 10%;
     /*set view width to 100%*/
 }
 
-.journey-container {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(max-content 2fr));
-    grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 5px 0px;
-    grid-template-areas: ". . . . ." ".  title image1 . ." ".  sub-title image1 . ." ".  paragraph image1 . ." ".  image2 . . ." ". . . . ."; */
+.grid-journey {
     display: grid;
-    grid-template-columns: minmax(50px, 250px) minmax(50px, 350px) minmax(50px, 350px);
-    grid-template-rows: minmax(20px, 60px) minmax(20px, 60px) minmax(50px, 300px) minmax(20px, 300px);
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 0.3fr 0.2fr .5fr 1fr .1fr;
     gap: 5px 5px;
-    grid-template-areas: "title . . " "subtitle . . " "text image image" "image1 . . ";
-    align-items: center;
+    grid-template-areas: "title image" "subtitle image" "text image" "image2 image" " . .";
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.journey-title {
+.journey-header {
     text-align: center;
-    font-size: 4em;
+    font-size: 2em;
     grid-area: title;
-    align-self: end;
+    align-self: flex-start;
+    z-index: 2;
 }
 
 .journey-text {
     align-self: center;
-    /* margin-left: 27%; */
     text-align: center;
     grid-area: subtitle;
-    /* padding: 0px 0px 0px 50px; */
     color: #5a5953;
-    width: 97%;
     font-style: bold;
-    /* max-block-size: fit-content; */
     font-size: 14px;
+    z-index: 2;
 }
 
-.journey p {
+.journey-p {
+    align-self: center;
     text-align: center;
     grid-area: text;
-    font-size: 12px;
-    padding: 5px 5px;
-    padding: 0% -2px;
-    color: #817f78;
+    color: #5a5953;
+    font-style: bold;
+    font-size: 14px;
     z-index: 2;
-    align-self: baseline;
 }
 
-.journey-image {
-    display: flex;
-    justify-content: center;
-    max-width: 154%;
+.journey2-image--primary {
     grid-area: image;
 }
 
 .journey-img1 {
-    grid-area: text;
-    max-width: 84%;
-    padding: 0px 0px 0px 45px;
+    grid-area: image2;
+    z-index: 2;
 }
 
 .discover h1 {

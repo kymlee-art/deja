@@ -46,7 +46,27 @@ h5 {
 .cocktail-11,
 .cocktail-12,
 .cocktail-13 {
+    transition: .2s ease-out;
+    filter: grayscale(1);
     z-index: 2;
+}
+
+.cocktail-1,
+.cocktail-2,
+.cocktail-3,
+.cocktail-4,
+.cocktail-5,
+.cocktail-6,
+.cocktail-7,
+.cocktail-8,
+.cocktail-9,
+.cocktail-10,
+.cocktail-11,
+.cocktail-12,
+.cocktail-13 {
+    l:hover {
+        filter: grayscale(0);
+    }
 }
 
 .cocktail-img1 {
