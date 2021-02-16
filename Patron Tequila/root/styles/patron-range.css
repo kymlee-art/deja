@@ -82,7 +82,7 @@ p {
 }
 
 .anejo {
-    */ display: flex;
+    display: flex;
     align-self: flex-end;
     grid-area: image;
     text-align: center;
@@ -153,7 +153,7 @@ p {
     grid-column: title;
     align-self: end;
     color: #c0af5d;
-    font-size: 42px;
+    font-size: 4em;
 }
 
 .patron-range2 p {
@@ -163,12 +163,24 @@ p {
 }
 
 .range2-sidequote {
-    font-size: 13px;
+    font-size: 15px;
     color: #c0af5d;
-    font-weight: 00;
+    font-weight: 700;
+    font-style: bold;
     z-index: 2;
     width: 63%;
-    margin-left: 10%;
+    align-self: auto;
+    padding: 61px 0px 0px 55px;
+    grid-area: side1;
+}
+
+.sidequote-text {
+    font-size: 13px;
+    color: #c0af5d;
+    font-weight: 700;
+    z-index: 2;
+    width: 84%;
+    padding: 17px 7px 0px 35px;
     align-self: center;
     grid-area: side1;
 }
@@ -204,21 +216,36 @@ p {
 }
 
 .platinum {
-    grid-area: text1;
+    grid-area: text2;
+    text-align: center;
+    padding: 9px 33px -1px 131px;
+    padding: 28px 0px 0px 145px;
+    width: 40%;
 }
 
 .Burdeos {
     grid-area: text2;
+    text-align: center;
+    padding: 0px 1px 10px 342px;
+    width: 73%;
 }
 
 .Piedra {
-    grid-area: text3;
-    /* width: 56px; */
+    grid-area: text2;
+    width: 56px;
+    padding: 0px 0px 0px 501px;
+    width: 22%;
+    width: auto;
     z-index: 3;
 }
 
 
 /***** Patron Range3******/
+
+.section-range3 {
+    display: flex;
+    justify-content: center;
+}
 
 .patron-range3 {
     height: 100%vh;
@@ -227,8 +254,13 @@ p {
 
 .range3-container {
     display: grid;
-    grid-template-columns: 100px 150px 150px 150px 150px 150px;
-    grid-template-rows: 100px 150px 150px 150px 100px;
+    grid-template-columns: minmax(50px, 150px) minmax(50px, 650px) minmax(50px, 150px);
+    grid-template-rows: minmax(20px, 60px) minmax(20px, 60px) minmax(50px, 550px) minmax(20px, 200px);
+    gap: 5px 5px;
+    grid-template-areas: "title title ." "subtitle subtitle ." "text1 image side" ". . .";
+    justify-items: centre;
+    align-items: centre;
+    margin: 10% 20%;
 }
 
 .range3-title,
@@ -239,145 +271,174 @@ p {
 }
 
 .range3-title {
-    grid-area: 2/3;
-    width: 173%;
-    align-self: center;
+    grid-area: title;
+    text-align: initial;
+    padding-top: 216px;
     font-size: 42px;
-    margin-left: -14%;
 }
 
 .range3-sidequote {
-    grid-area: 3/6;
-    align-self: center;
+    grid-area: side;
+    align-self: auto;
     font-size: 14px;
-    width: 127px;
+    width: 210%;
     line-height: 16px;
     font-weight: 700;
-    margin-left: 82%;
     color: #c0af5d;
+    padding: 46px 0px 0px 202px;
     z-index: 2;
 }
 
 .range3-subtitle {
-    grid-area: 3/3;
+    grid-area: subtitle;
     align-self: center;
+    padding: 0px 0px 0px -21px;
+    padding: 0px 0px p;
     font-size: 16px;
-    width: 220px;
+    font-style: bold;
+    font-style: bold;
+    padding: 210px 0px 0px 32px;
+    width: 79%;
 }
 
 .xocafe {
-    grid-area: 4/4;
-    font-size: 12px;
+    grid-area: text1;
+    font-size: 13px;
     color: #817f78;
     font-weight: 700;
-    width: 74%;
-    align-self: center;
-    margin-left: 6%;
+    width: 159%;
+    /* align-self: end; */
+    padding-left: 117px;
+    padding-top: 101px;
+    /* margin-left: 6%; */
     z-index: 2;
 }
 
 .range3-agave1 {
-    grid-area: 5/4;
-    align-self: center;
-    width: 130%;
-    margin-left: 36%;
-    margin-top: -24%;
+    grid-area: side;
+    /* align-self: end; */
+    align-self: ;
+    width: 203%;
+    /* padding-top: 69px; */
+    padding-bottom: -3px;
+    padding: 340px 0px 0px 50px;
 }
 
 .range3-agave2 {
-    grid-area: 4/6;
-    width: 173%;
-    margin-left: -8%;
-    margin-top: 30%;
+    grid-area: image;
+    align-self: end;
+    width: 109%;
+    padding-left: 20%;
 }
 
 .patron-xocafe {
-    grid-row: 1/span3;
-    grid-column: 4/span6;
-    width: 92%;
-    margin-top: 10%;
+    grid-area: image;
+    align-self: center;
+    width: 250%;
+    padding-right: 40px;
+    padding-bottom: 20%;
 }
 
 .hornetlogo {
-    grid-area: 3/3;
-    font-size: 16px;
-    width: 220px;
+    grid-area: text1;
+    width: 231px;
+    align-self: flex-start;
+    transform: rotate( 35deg);
+    padding-top: 10px;
 }
 
 
 /***** Patron Range4******/
 
+.section-range4 {
+    display: flex;
+    justify-content: center;
+}
+
 .patron-range4 {
-    text-align: center;
-    height: 100%vh;
     text-align: center;
 }
 
 .range4-container {
     display: grid;
-    grid-template-columns: 100px 150px 150px 150px 150px 150px;
-    grid-template-rows: 100px 150px 150px 150px 100px;
-    grid-auto-rows: 100px;
+    grid-template-columns: minmax(50px, 150px) minmax(50px, 700px) minmax(50px, 150px);
+    grid-template-rows: minmax(20px, 60px) minmax(20px, 60px) minmax(50px, 550px) minmax(20px, 200px);
+    gap: 5px 5px;
+    grid-template-areas: "title title ." "subtitle subtitle ." "text1 image side" ". . .";
+    justify-items: centre;
+    align-items: centre;
+    margin: 10% 16%;
 }
 
 .range4-title {
-    grid-area: 2/3;
-    font-size: 42px;
+    grid-area: title;
+    font-size: 3.5em;
     color: #c0af5d;
-    width: 174%;
-    margin-left: -35%;
     z-index: 2;
 }
 
 .patron-range4 p {
-    grid-area: 2/3;
-    align-self: end;
+    grid-area: subtitle;
+    align-self: center;
+    font-size: 1em;
+    font-style: bold;
     width: 100%;
 }
 
 .range4-sidequote {
-    grid-area: 2/7;
+    grid-area: side;
     align-self: center;
-    font-size: 12px;
-    width: 112px;
-    line-height: 16px;
+    font-size: 15px;
+    width: 123px;
+    /* line-height: 16px; */
     color: #c0af5d;
     font-weight: 700;
+    align-self: initial;
+    padding-top: 95px;
+    font-style: bold;
+    font-style: bold;
     z-index: 2;
 }
 
 .sidequote2 {
-    grid-area: 3/7;
+    grid-area: side;
     font-size: 12px;
     align-self: center;
     color: #817f78;
+    width: 89%;
 }
 
-.limited {
-    grid-area: 3/3;
-    font-size: 12px;
-    width: 191px;
-    color: #817f78;
-    align-self: center;
-    margin-left: -20%;
+.text1 {
+    grid-area: text1;
+    font-size: 15px;
+    width: 147px;
+    color: #c0af5d;
+    padding-top: 82px;
+    font-style: bold;
     z-index: 2;
 }
 
+.text2 {
+    grid-area: text1;
+    font-size: 12px;
+    padding-top: 131px;
+}
+
 .range4-agave1 {
-    grid-area: 4/6;
+    grid-area: side;
+    width: 110%;
+    align-self: end;
 }
 
 .range4-agave2 {
-    grid-area: 4/4;
-    width: 125%;
+    grid-area: image;
+    padding-top: 239px;
+    width: 49%;
 }
 
 .patron-limited {
-    grid-column: 4/span4;
-    grid-row: 2;
-    width: 80;
-    width: 97%;
-    margin-left: 4%;
+    grid-area: image;
+    width: 150%;
 }
 
 .hornetlogo2 {
