@@ -25,6 +25,7 @@ Patron Range 1******/
     font-size: 4em;
     grid-area: title;
     font-size: 4em;
+    align-self: baseline;
 }
 
 .range1-text,
@@ -40,9 +41,9 @@ p {
 
 .range1-subtitle,
 p {
-    /* grid-area: 2/4; */
     grid-area: subtitle;
-    align-self: center;
+    padding: 53px;
+    font-size: 1.2em;
 }
 
 
@@ -51,9 +52,10 @@ p {
 .range1-text {
     grid-area: side;
     align-self: center;
-    font-size: 14px;
+    font-size: 13px;
+    width: -webkit-fill-available;
+    padding: 0px 0px 0px 27px;
     z-index: 1;
-    /* grid-area: 3/7; */
 }
 
 
@@ -80,21 +82,27 @@ p {
 }
 
 .anejo {
-    /* grid-area: 5/3; */
-    grid-area: text1;
+    */ display: flex;
+    align-self: flex-end;
+    grid-area: image;
     text-align: center;
+    margin: 3% 23%;
+    padding: 0px -29px 17px 24px;
+    padding: -3px;
 }
 
 .silver {
-    /* grid-area: 5/4; */
     grid-area: text2;
     text-align: center;
+    padding: 0px 0px 66px 112px;
+    width: 137%;
 }
 
 .reposado {
-    /* grid-area: 5/6; */
     grid-area: text3;
+    padding: 0px 0px 118px 108px;
     text-align: center;
+    width: auto;
 }
 
 .bg-agave1 {
