@@ -3,44 +3,72 @@ Patron Contact Content******/
 
 .section-contact {
     height: 50vh;
-    margin: 0;
-    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    margin: 0
 }
 
-.contact-content {
-    /*set view height to 50%*/
+.grid-contact {
     display: grid;
-    grid-template-columns: 100px 300px 250px 250px 100px;
-    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: 1fr .5fr 0.5fr;
+    grid-template-rows: 0.3fr 0.5fr 0.6fr 0.5fr 0.4fr;
+    gap: 5px 10px;
+    grid-template-areas: "image title title" "image name message" "image email message" "image . button";
+    max-height: 100vh;
+    max-width: 80vw;
+}
+
+.contact-title {
+    grid-area: title;
+    font-size: 2vw;
+}
+
+.contact-image--main {
+    grid-area: image;
+}
+
+.contact-name {
+    grid-area: name;
+}
+
+.contact-email {
+    grid-area: email;
+}
+
+.message-area {
+    grid-area: message;
+}
+
+.send-btn {
+    grid-area: button;
 }
 
 
 /*heading specs*/
 
+
+/* 
 #contact-title,
 h1 {
-    grid-area: 1/3;
     font-size: 4.5em;
-    padding: 44px 0 0;
-}
+} */
 
 
 /*contact page image settings*/
 
 .contact-img {
-    grid-column: 2;
-    grid-row: 1/span2;
-    width: 113%;
+    grid-area: image;
+    width: 100%;
+    /* width: 113%;
     align-self: self-end;
-    margin-left: -10%;
+    margin-left: -10%; */
 }
 
 
 /*Contact Form */
 
 #contact-form {
-    grid-area: 2/3;
-    align-self: end;
+    /* align-self: end; */
     display: flex;
     flex-wrap: wrap;
     height: 74px;
@@ -74,7 +102,6 @@ h1 {
 /*labels for contact input*/
 
 #contact-form label {
-    position: absolute;
     font-size: 0px;
 }
 
@@ -109,7 +136,7 @@ h1 {
 #contact-form button[type='submit'] {
     cursor: pointer;
     /*cursor pointer to show when hovering over button*/
-    width: 34%;
+    width: 200%;
     border: none;
     background: #ebe9e4ad;
     border-radius: 5px;
@@ -157,14 +184,20 @@ h1 {
 }
 
 footer {
+    margin: 0;
     height: 102px;
     background: #77777a;
+    display: flex;
+    justify-content: center;
 }
+
+.grey-footer {}
 
 footer h6 {
     text-align: center;
     color: #B8B6B6;
-    padding: 40px 0 0 0;
-    width: 60%;
-    margin-left: 35%;
+    padding: 38px 0px 0px 332px;
+    width: 65%;
+    font-size: 10px;
+    /* margin-left: 35%; */
 }

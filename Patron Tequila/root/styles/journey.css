@@ -12,7 +12,7 @@
 .grid-journey {
     display: grid;
     grid-template-columns: .6fr 1fr;
-    grid-template-rows: 0.3fr 0.2fr 1fr;
+    grid-template-rows: 0.3fr 0.2fr 0.1fr;
     gap: 5px 20px;
     grid-template-areas: "title image" "text image" "image2 image";
     justify-content: center;
@@ -58,6 +58,8 @@ p {
 
 .journey-image--secondary {
     grid-area: image2;
+    display: flex;
+    justify-content: center;
     z-index: 2;
 }
 
@@ -168,6 +170,9 @@ p {
 
 .journey2-image--secondary {
     grid-area: image1;
+    margin-right: 26%;
+    place-self: flex-start;
+    margin-top: -11%;
 }
 
 .journey2-image {
@@ -175,6 +180,6 @@ p {
 }
 
 .journey2-image1 {
-    max-width: 67%;
+    max-width: 32%;
     place-self: center;
 }

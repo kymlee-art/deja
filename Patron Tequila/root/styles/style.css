@@ -240,7 +240,8 @@ h2 {
     display: flex;
     justify-content: center;
     align-self: center;
-    width: 92%;
+    margin-left: 7%;
+    width: 82%;
 }
 
 .hornet1 {

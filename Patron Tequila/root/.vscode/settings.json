@@ -11,6 +11,7 @@
 		"Años",
 		"Burdeos",
 		"Jimadors",
+		"Lalique",
 		"PI",
 		"PIÑA",
 		"Reposado",
@@ -20,10 +21,13 @@
 		"gsap",
 		"hornetlogo",
 		"jimador",
+		"minmax",
 		"os",
 		"pi",
 		"piñas",
 		"preconnect",
-		"sidequote"
+		"sidequote",
+		"sidetext",
+		"xocafe"
 	]
 }
