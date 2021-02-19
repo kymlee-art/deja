@@ -12,7 +12,7 @@
     grid-template-columns: repeat(5, 0.1fr);
     grid-template-rows: repeat(20, 0.1fr);
     gap: 5px 5px;
-    grid-template-areas: "image image1 . . ." "image image1 title title title" "image image1 subtitle subtitle subtitle" "image image2 . agave ." ". . . . ." " . . img3 . . " "img4 . text1 text1 text1" " . . . agave ." "title2 img5 . . . " ". . . img6 ." "text3 text3 text3 text3 img7" ". agave . . . " ". . . img8 ." ". img9 . . ." " . . . agave ." "img10 . text4 text4 text4" ". img11 . . . " ". text5 text5 text5 img12" ". . . img13 ." ". img13 . . .";
+    grid-template-areas: "image image1 . . ." "image image1 title title title" "image image1 subtitle subtitle subtitle" "image image1 . agave ." ". . . . ." " . . img3 . . " "img4 . text1 text1 text1" " . . . agave ." "title2 img5 . . . " ". . . img6 ." "text3 text3 text3 text3 img7" ". agave . . . " ". . . img8 ." ". img9 . . ." " . . . agave ." "img10 . text4 text4 text4" ". img11 . . . " ". text5 text5 text5 img12" ". . . img13 ." ". img13 . . .";
     justify-content: center;
     align-items: center;
     max-width: 80vw;
