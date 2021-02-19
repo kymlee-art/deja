@@ -93,8 +93,8 @@ p {
     display: grid;
     grid-template-columns: 0.5fr .8fr 0.5fr;
     grid-template-rows: 0.3fr 0.2fr 0.5fr 0.5fr;
-    gap: 5px 20px;
-    grid-template-areas: "title image ." "text image side" "text image side" ". image image1";
+    gap: 5px 5px;
+    grid-template-areas: "title title ." "text image side" "text image side" ". image image1";
     align-items: center;
     max-height: 100vh;
     /* max-width: calc(100% - 20%); */
@@ -112,12 +112,15 @@ p {
 .journey2-main-text {
     font-size: 14px;
     color: #5a5953;
+    padding-left: 56px;
 }
 
 .journey2-text2 {
     font-size: 14px;
     font-weight: 500;
     color: #5a5953;
+    padding-left: 10px;
+    width: 80%;
 }
 
 .journey2-title,
@@ -127,9 +130,10 @@ p {
 }
 
 .journey2-subtitle {
-    font-size: 19px;
+    font-size: 1.5vw;
     font-style: bold;
     padding-left: 60px;
+    color: #c0af5d;
     font-weight: 700;
 }
 
@@ -145,6 +149,7 @@ p {
 
 .journey2-content {
     grid-area: text;
+    width: 70%;
 }
 
 .journey2-side {
@@ -158,6 +163,7 @@ p {
     text-align: center;
     font-size: 16px;
     font-style: bold;
+    width: 80%;
     color: #c0af5d;
 }
 

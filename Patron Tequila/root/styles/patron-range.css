@@ -369,8 +369,19 @@ Patron Range 1******/
 }
 
 .range4-image--logo {
+    display: flex;
+    justify-content: center;
     grid-area: text1;
     z-index: 1;
+}
+
+
+/*agave images*/
+
+
+/* 
+.range4-images--agave {
+    display: inline-flex;
 }
 
 .range4-image--image1 {
@@ -383,21 +394,12 @@ Patron Range 1******/
     z-index: 3;
 }
 
-
-/*    
-    .range4-agave1 {
-        grid-area: side;
-
-    
-    z-index: 3;
-} */
-
-
-/* 
 .range4-agave2 {
-    grid-area: image;
+    grid-area: agave2;
     width: 49%;
-} */
+}
+
+*/
 
 
 /* .patron-limited {
@@ -406,6 +408,7 @@ Patron Range 1******/
 } */
 
 .hornetlogo2 {
+    display: flex;
     width: 34%;
     z-index: -1;
 }
