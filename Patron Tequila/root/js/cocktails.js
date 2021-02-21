@@ -9,5 +9,5 @@ const aboutTl = gsap.timeline({
     }
 })
 
-aboutTl.to('.cocktail3', { x: 900, y: 400, duration: 5, ease: "back.out(1.7)" })
-aboutTl.to('.cocktail-4', { x: -900, y: 400, duration: 5, ease: "back.out(1.7)" }, "-=1.5")
+aboutTl.to('.cocktail-3', { x: 100, duration: 5, ease: "back.out(1.7)" })
+aboutTl.to('.cocktail-4', { x: -200, duration: 5, ease: "back.out(1.7)" }, "-=1.5")
