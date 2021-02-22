@@ -5,17 +5,16 @@ Patron Contact Content******/
     height: 50vh;
     display: flex;
     justify-content: center;
-    margin: 0
+    margin: auto;
 }
 
 .grid-contact {
     display: grid;
-    grid-template-columns: 1fr .5fr 0.5fr;
-    grid-template-rows: 0.3fr 0.5fr 0.6fr 0.5fr 0.4fr;
+    grid-template-columns: 1.5fr .5fr 0.5fr;
+    grid-template-rows: 0.3fr 0.5fr 0.6fr 0.5fr;
     gap: 5px 10px;
     grid-template-areas: "image title title" "image name message" "image email message" "image . button";
     max-height: 100vh;
-    max-width: 80vw;
 }
 
 .contact-title {
@@ -25,6 +24,7 @@ Patron Contact Content******/
 
 .contact-image--main {
     grid-area: image;
+    width: 100%;
 }
 
 .contact-name {
@@ -58,10 +58,7 @@ h1 {
 
 .contact-img {
     grid-area: image;
-    width: 100%;
-    /* width: 113%;
-    align-self: self-end;
-    margin-left: -10%; */
+    /* width: 100%; */
 }
 
 

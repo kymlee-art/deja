@@ -178,7 +178,9 @@ HERO
 
 .section-hero {
     background-color: #ffffff;
-    width: 100%vw;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
     /*set view width to 100%*/
 }
 
@@ -190,9 +192,12 @@ HERO
 .hero-container {
     display: grid;
     grid-template-columns: 0.5fr 3fr 0.5fr;
-    grid-template-rows: 0.3fr 0.3fr 3fr 0.1fr;
+    grid-template-rows: 0.3fr 0.3fr 10fr 1.1fr;
     gap: 5px 0px;
     grid-template-areas: ". title ." ". sub-header ." ". image ." ". footer .";
+    justify-content: center;
+    align-content: center;
+    margin-top: 5%;
 }
 
 
@@ -202,7 +207,7 @@ HERO
     grid-area: title;
     text-align: center;
     align-self: center;
-    font-size: 3.5em;
+    font-size: 3.5vw;
 }
 
 
@@ -212,14 +217,14 @@ HERO
     grid-area: sub-header;
     text-align: center;
     font-style: italic;
-    font-size: 16px;
+    font-size: 1vw;
 }
 
 #celebrate,
 h2 {
     grid-area: footer;
     color: #c0af5d;
-    font-size: 3em;
+    font-size: 3vw;
     text-align: center;
     /* margin: -4% -17; */
     align-self: center;
@@ -236,12 +241,12 @@ h2 {
 /*hero image positioning*/
 
 .hero-image {
-    grid-area: image;
+    grid-area: image / image / image / image;
     display: flex;
     justify-content: center;
     align-self: center;
-    margin-left: 7%;
-    width: 82%;
+    margin: auto;
+    width: 65%;
 }
 
 .hornet1 {
@@ -261,9 +266,9 @@ h2 {
     position: fixed;
     top: 40%;
     color: #817f78;
-    font-size: 10px;
+    font-size: .7vw;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 1.5vw;
     margin-left: 2%;
 }
 

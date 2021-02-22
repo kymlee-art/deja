@@ -5,28 +5,23 @@ Patron Range 1******/
     width: 100vw;
     display: flex;
     justify-content: center;
-    margin: 10% 0 0 10%;
+    margin: auto;
 }
 
 .grid-range1 {
     display: grid;
-    grid-template-columns: 0.1fr .2fr 2fr 0.8fr;
-    grid-template-rows: 0.3fr 0.5fr 0.1fr;
+    grid-template-rows: repeat(auto-fit, minmax(100px, .2fr .2fr .2fr 1fr .2fr));
+    grid-template-columns: 1fr 0.2fr;
     gap: 5px 10px;
-    grid-template-areas: "title title title title" ". image image text" ". text1 text1 .";
+    grid-template-areas: "title title" "subtitle subtitle" "text text" "side side" "image image" "image image" "bottom bottom";
     align-items: center;
+    justify-content: center;
     text-align: center;
     max-height: 100vh;
-    max-width: 80%;
 }
 
 #Range1-title {
-    text-align: center;
-    color: #c0af5d;
-    font-size: 28px;
-    font-size: 4em;
-    grid-area: title;
-    font-size: 4em;
+    font-size: 4vw;
     align-self: baseline;
 }
 
@@ -34,56 +29,67 @@ Patron Range 1******/
     grid-area: title;
 }
 
+#Range1-title,
+.range1-subtitle {
+    color: #c0af5d;
+}
+
+.range1-subtitle {
+    grid-area: subtitle;
+    font-size: 1.5vw;
+}
+
 .range1-content {
     grid-area: text;
-    place-self: center;
+}
+
+.range1-text {
+    align-self: center;
+    font-size: 1.5vw;
+    color: #c0af5d;
+    width: 70%;
+    margin: auto;
+    padding-top: 3%;
+    z-index: 1;
+}
+
+.range1-side {
+    grid-area: bottom;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .range1-tag {
+    grid-area: bottom;
     display: flex;
-    flex-direction: inherit;
-    grid-area: text1;
-    justify-content: space-around;
-    padding-left: 18%;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .range1-image-main {
     grid-area: image;
 }
 
-.range1-subtitle {
-    font-size: 1.2em;
-}
-
-
-/*heading specs*/
-
-.range1-text {
-    align-self: center;
-    font-size: 14px;
-    padding-left: 24%;
-    z-index: 1;
-}
-
 .patron-set1 {
-    width: 120%;
+    width: 65%;
 }
 
 .anejo,
 .silver,
 .reposado {
-    font-size: 9px;
+    font-size: 1vw;
     color: #817f78;
     text-align: center;
-    display: flex;
-    text-align: center;
-    width: 90px;
+    /* display: flex;
+    flex-direction: row; */
+    justify-content: center;
+    width: 16%;
     z-index: 3;
 }
 
 .anejo {
-    display: flex;
-    align-self: flex-end;
+    align-self: center;
 }
 
 .silver {
@@ -110,8 +116,8 @@ Patron Range 1******/
 
 .grid-range2 {
     display: grid;
-    grid-template-columns: 0.2fr .7fr 0.2fr;
-    grid-template-rows: 0.3fr 0.2fr 0.5fr 0.1fr;
+    grid-template-columns: 0.1fr .7fr 0.2fr;
+    grid-template-rows: 0.1fr 0.1fr 0.4fr 0.1fr;
     gap: 5px 10px;
     grid-template-areas: "title title title " "subtitle subtitle subtitle" ". image side" ". text text";
     align-items: center;
@@ -126,12 +132,14 @@ Patron Range 1******/
 
 .range2-title {
     color: #c0af5d;
-    font-size: 5.5vw;
+    font-size: 4vw;
 }
 
 .range2-subtitle {
     color: #c0af5d;
-    font-size: .8vw;
+    font-size: 1vw;
+    width: 40%;
+    margin: auto;
     grid-area: subtitle;
 }
 
@@ -145,19 +153,18 @@ Patron Range 1******/
 }
 
 .gran-patron {
-    max-width: 90%;
+    width: 79%;
 }
 
 .range2-tag {
     grid-area: text;
     display: flex;
-    flex-direction: inherit;
+    flex-direction: row;
     justify-content: space-evenly;
-    margin-top: -3%;
 }
 
 .range2-sidequote {
-    font-size: 1.5vw;
+    font-size: 1vw;
     color: #c0af5d;
     font-weight: 700;
     font-style: bold;
@@ -172,9 +179,9 @@ Patron Range 1******/
 .platinum,
 .Burdeos,
 .Piedra {
-    font-size: 1vw;
+    font-size: 1.1vw;
     color: #817f78;
-    width: 120px;
+    width: 20%;
     align-self: center;
     text-align: center;
 }
@@ -198,13 +205,13 @@ Patron Range 1******/
     width: 100vw;
     display: flex;
     justify-content: center;
-    margin: 15% 0% 0% 5%;
+    margin: auto;
 }
 
 .grid-range3 {
     display: grid;
     grid-template-columns: 0.4fr 0.5fr;
-    grid-template-rows: 1.0fr 0.3fr 0.3fr 0.2fr 0.1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.3fr 0.2fr 0.1fr;
     gap: 0px 5px;
     grid-template-areas: "title image" "text image" "text2 image" "logo image";
     align-items: center;
@@ -217,7 +224,7 @@ Patron Range 1******/
 .range3-subtitle {
     color: #c0af5d;
     text-align: center;
-    font-size: 16px;
+    font-size: 1.2vw;
     font-style: bold;
 }
 
@@ -226,13 +233,13 @@ Patron Range 1******/
 }
 
 .range3-title {
-    font-size: 4vw;
+    font-size: 3.5vw;
     color: #c0af5d;
 }
 
 .range3-text {
     grid-area: text;
-    font-size: 16px;
+    font-size: .8vw;
 }
 
 .range3-text2 {
@@ -246,31 +253,29 @@ Patron Range 1******/
 }
 
 .patron-xocafe {
-    width: 154%;
-    height: 154%;
+    width: 150%;
 }
 
 .range3-image--logo {
     grid-area: logo;
-    font-size: 15px;
-    width: 98%;
+    width: 60%;
     display: contents;
     z-index: 11;
 }
 
 .xocafe {
-    font-size: 15px;
+    font-size: 1.2vw;
     width: 98%;
     z-index: 2;
 }
 
 .range3-info {
-    font-size: 14px;
+    font-size: 1vw;
     color: #817f78;
 }
 
 .hornetlogo {
-    width: 231px;
+    width: 40%;
     align-self: flex-start;
     transform: rotate( 35deg);
     z-index: 1;
@@ -283,29 +288,32 @@ Patron Range 1******/
     width: 100vw;
     display: flex;
     justify-content: center;
-    margin: 10% 0% 0% 5%;
+    margin: auto;
 }
 
 .grid-range4 {
     display: grid;
     grid-template-columns: 0.2fr .4fr 0.2fr;
-    grid-template-rows: 0.2fr 0.1fr 0.1fr 0.1fr 0.2fr 0.3fr;
+    grid-template-rows: 0.1fr 0.1fr 0.2fr 0.1fr 0.1fr 0.1fr;
     gap: 5px 10px;
-    grid-template-areas: "title title title" "subtitle subtitle subtitle" ". . . ""text image side" "text1 image sidetext";
+    grid-template-areas: "title title title" "subtitle subtitle subtitle" "text image side" "text1 image sidetext";
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin-left: 5%;
 }
 
 .range4-title {
     grid-area: title;
-    font-size: 2vw;
+    font-size: 3.5vw;
     color: #c0af5d;
     z-index: 2;
 }
 
 .range4-main--text p,
 .range4-side p {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     font-style: bold;
     color: #c0af5d;
     max-width: 70%;
@@ -327,7 +335,7 @@ Patron Range 1******/
 
 .range4-main--text1,
 .range4-side-text {
-    font-size: 14px;
+    font-size: 0.7vw;
 }
 
 .range4-subtitle {
@@ -335,7 +343,7 @@ Patron Range 1******/
 }
 
 .subtitle {
-    font-size: 2vw;
+    font-size: 1.3vw;
     font-weight: 800;
     color: #c0af5d;
 }
@@ -346,6 +354,8 @@ Patron Range 1******/
 
 .range4-main--text1 {
     grid-area: text1;
+    font-size: 1.2vw;
+    color: #817f78;
     z-index: 2;
 }
 
@@ -355,6 +365,7 @@ Patron Range 1******/
 
 .range4-side-text {
     grid-area: sidetext;
+    font-size: 1.2vw;
     color: #817f78;
     z-index: 2;
 }
@@ -365,7 +376,7 @@ Patron Range 1******/
 }
 
 .main-image {
-    width: 90%;
+    width: 80%;
 }
 
 .range4-image--logo {
@@ -374,38 +385,6 @@ Patron Range 1******/
     grid-area: text1;
     z-index: 1;
 }
-
-
-/*agave images*/
-
-
-/* 
-.range4-images--agave {
-    display: inline-flex;
-}
-
-.range4-image--image1 {
-    grid-area: text1;
-    z-index: 3;
-}
-
-.range4-image--image2 {
-    grid-area: side-text;
-    z-index: 3;
-}
-
-.range4-agave2 {
-    grid-area: agave2;
-    width: 49%;
-}
-
-*/
-
-
-/* .patron-limited {
-    grid-area: image;
-    width: 100%;
-} */
 
 .hornetlogo2 {
     display: flex;
