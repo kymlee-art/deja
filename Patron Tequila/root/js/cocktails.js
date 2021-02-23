@@ -1,4 +1,4 @@
-const aboutTl = gsap.timeline({
+const cocktailTl = gsap.timeline({
 
     scrollTrigger: {
         trigger: ".cocktails-img ",
@@ -9,5 +9,13 @@ const aboutTl = gsap.timeline({
     }
 })
 
-aboutTl.from('.cocktail-3', { x: 400, duration: 5, ease: "back.out(1.7)" })
-aboutTl.to('.cocktail-4', { x: -200, duration: 5, ease: "back.out(1.7)" }, "-=1.5")
+cocktailTl.from('.cocktail-3', { x: -200, duration: 5, ease: "back.out(1.7)" })
+cocktailTl.from('.cocktail-4', { x: -200, duration: 5, ease: "back.out(1.7)" }, "-=1.5")
+cocktailTl.from('.cocktail-5', { x: 600, duration: 5, ease: "back.out(1.7)" })
+cocktailTl.from('.cocktail-6', { x: -200, duration: 5, ease: "back.out(1.7)" }, "-=1.5")
+cocktailTl.from('.cocktail-7', { x: 600, duration: 5, ease: "back.out(1.7)" })
+cocktailTl.from('.cocktail-8', { x: -200, duration: 5, ease: "back.out(1.7)" }, "-=1.5")
+cocktailTl.from('.cocktail-9', { x: 600, duration: 5, ease: "back.out(1.7)" })
+cocktailTl.from('.cocktail-10', { x: -200, duration: 5, ease: "back.out(1.7)" }, "-=1.5")
+cocktailTl.from('.cocktail-11', { x: 600, duration: 5, ease: "back.out(1.7)" })
+cocktailTl.from('.cocktail-12', { x: -200, duration: 5, ease: "back.out(1.7)" }, "-=1.5")

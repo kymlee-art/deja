@@ -27,6 +27,7 @@
     display: flex;
     align-self: center;
     justify-content: flex-start;
+    font-size: 3.5vw;
 }
 
 .header-2 .cocktail-header,
@@ -35,23 +36,13 @@
     margin-top: -30%;
     width: 75%;
     text-align: initial;
+    font-size: 1.2vw;
+    font-style: italic;
 }
 
 .cocktail-subtitle {
     grid-area: subtitle;
-    display: flex;
-    justify-content: center;
     color: #817f78;
-    font-size: 1.4vw;
-    font-weight: 300;
-}
-
-.agave1 {
-    grid-area: agave1;
-}
-
-.agave02 {
-    width: 40%;
 }
 
 
@@ -87,9 +78,6 @@
 .txt5 {
     color: #817f78;
     display: block;
-    text-align: center;
-    justify-content: center;
-    align-self: center;
     font-size: 1.3vw;
 }
 
@@ -234,76 +222,36 @@
     grid-area: img12;
 }
 
+.hornet {
+    display: block;
+}
+
 .hornet-1 {
     grid-area: hornet;
-    width: 15%;
+    margin-top: -92%;
+    z-index: 2;
+    width: 200%;
     transform: rotate(30deg);
 }
 
-.hornet1 {
-    grid-area: hornet;
+.hornet-2 {
+    width: 115%;
+    grid-area: 2/2;
 }
 
-.hornet2 {
-    width: 25%;
-}
-
-.hornet3 {
-    width: 25%;
+.hornet-3 {
+    width: 85%;
+    grid-area: 4/1;
     transform: rotate( 31deg);
 }
 
-.hornet4 {
-    width: 40%;
+.hornet-4 {
+    grid-area: 6/3;
+    width: 50%;
 }
 
-.hornet5 {
-    /* grid-area: 6/6; */
-    /* width: 178%; */
+.hornet-5 {
+    margin: 25% 5% 0 5%;
+    width: 218%;
     transform: rotate( 31deg);
-}
-
-.hornet6 {
-    /* grid-area: 19/-4; */
-    /* width: 172%; */
-    transform: rotate( 30deg);
-}
-
-.hornet7 {
-    /* grid-area: 12/2; */
-    align-self: center;
-    transform: rotate( 31deg);
-}
-
-.hornet8 {
-    /* grid-area: 4/6; */
-    /* width: 178%; */
-    /* position: absolute; */
-    /* top: 452%; */
-    /* left: 38%; */
-    transform: rotate( 31deg);
-}
-
-.hornet9 {
-    /* grid-area: 17/6; */
-    /* width: 178%; */
-    align-self: center;
-    transform: rotate( 31deg);
-}
-
-.hornet10 {
-    /* grid-area: 22/2; */
-    /* width: 178%; */
-    align-self: center;
-    transform: rotate( 31deg);
-}
-
-.agave {
-    grid-area: agave1;
-    max-width: 100%;
-    /* align-self: center; */
-}
-
-.hornet-images {
-    display: flex;
 }

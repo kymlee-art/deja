@@ -58,7 +58,7 @@ h1 {
 
 .contact-img {
     grid-area: image;
-    /* width: 100%; */
+    width: 100%;
 }
 
 
