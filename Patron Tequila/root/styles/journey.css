@@ -26,6 +26,31 @@
     font-size: 1vw;
     grid-area: title;
     z-index: 2;
+    animation: slideInLeft 2s linear;
+}
+
+@-webkit-keyframes slideInLeft {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
 }
 
 .journey-text {
@@ -37,13 +62,13 @@
     align-self: center;
     text-align: center;
     width: 50%;
-    font-size: 1.2vw;
+    font-size: 0.8vw;
     margin: auto;
 }
 
 .journey-p {
     grid-area: text;
-    font-size: 0.9vw;
+    font-size: 0.8vw;
     z-index: 2;
 }
 
@@ -63,10 +88,6 @@
 
 .journey-img1 {
     max-width: 35%;
-}
-
-.journey-header {
-    display: hidden;
 }
 
 
@@ -101,22 +122,40 @@
 #j2-title {
     display: flex;
     justify-content: center;
-    font-size: 3vw;
+    font-size: 3.5vw;
     color: #c0af5d;
-    animation: backInOut;
-    animation-duration: 2s;
+    margin-top: -10%;
+}
+
+.animated {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
 }
 
 .journey2-main-text {
-    font-size: 1vw;
+    font-size: 0.8vw;
     color: #5a5953;
-    ;
     margin: auto;
     width: 71%;
+    margin-left: 54%;
 }
 
 .journey2-text2 {
-    font-size: 1vw;
+    font-size: 0.8vw;
     font-weight: 500;
     color: #5a5953;
     width: 80%;
@@ -129,11 +168,13 @@
 }
 
 .journey2-subtitle {
-    font-size: 1.2vw;
+    font-size: 0.8vw;
     font-style: bold;
     color: #c0af5d;
     width: 60%;
     margin: auto;
+    margin-top: -76%;
+    margin-left: 57%;
 }
 
 .journey2-title {
@@ -154,7 +195,7 @@
 .journey2-side--text {
     grid-area: side-text;
     text-align: center;
-    font-size: 1vw;
+    font-size: 0.8vw;
     font-style: bold;
     width: 80%;
     color: #c0af5d;
@@ -164,6 +205,7 @@
     display: flex;
     align-self: normal;
     grid-area: image;
+    margin-left: 20%;
 }
 
 .journey2-image--secondary {
@@ -172,7 +214,7 @@
 }
 
 .journey2-image {
-    width: 86%;
+    width: 66%;
 }
 
 .journey2-image1 {

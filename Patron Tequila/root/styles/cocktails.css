@@ -18,7 +18,6 @@
     justify-content: center;
     align-content: center;
     max-width: 84vw;
-    /* NEW; needed for Firefox */
 }
 
 .cocktail-header,
@@ -27,7 +26,7 @@
     display: flex;
     align-self: center;
     justify-content: flex-start;
-    font-size: 3.5vw;
+    font-size: 3vw;
 }
 
 .header-2 .cocktail-header,
@@ -36,7 +35,7 @@
     margin-top: -30%;
     width: 75%;
     text-align: initial;
-    font-size: 1.2vw;
+    font-size: 1vw;
     font-style: italic;
 }
 
@@ -78,13 +77,32 @@
 .txt5 {
     color: #817f78;
     display: block;
-    font-size: 1.3vw;
+    font-size: .8vw;
 }
 
 .cocktail-txt1 {
     grid-area: text1;
-    padding: 7vw;
+    padding: 9vw;
     width: 70%;
+}
+
+.animated {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
 }
 
 .cocktail-txt2 {
@@ -156,6 +174,11 @@
     display: block;
     justify-content: center;
     align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.cocktail-image:hover {
+    transform: scale(1.1) !important;
 }
 
 .cocktail-3 {

@@ -18,6 +18,8 @@
 		"Tahona",
 		"as",
 		"ejo",
+		"fullpage",
+		"greyscale",
 		"gsap",
 		"hornetlogo",
 		"jimador",
@@ -26,8 +28,10 @@
 		"pi",
 		"piñas",
 		"preconnect",
+		"scrolltrigger",
 		"sidequote",
 		"sidetext",
+		"tlsection",
 		"xocafe"
 	]
 }

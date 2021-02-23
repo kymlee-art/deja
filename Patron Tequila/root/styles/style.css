@@ -192,7 +192,7 @@ HERO
 .hero-container {
     display: grid;
     grid-template-columns: 0.5fr 3fr 0.5fr;
-    grid-template-rows: 0.3fr 0.3fr 9fr 1fr;
+    grid-template-rows: 0.3fr 0.3fr 10fr 1fr;
     gap: 5px 0px;
     grid-template-areas: ". title ." ". sub-header ." ". image ." ". footer .";
     justify-content: center;
@@ -207,7 +207,7 @@ HERO
     grid-area: title;
     text-align: center;
     align-self: center;
-    font-size: 3.5vw;
+    font-size: 5em;
 }
 
 
@@ -229,8 +229,8 @@ h2 {
     /* margin: -4% -17; */
     align-self: center;
     animation: fadeInUp;
-    animation-duration: 3s;
-    animation-delay: 1.5s;
+    animation-duration: 2s;
+    animation-delay: 1s;
     /* set a duration & delay */
 }
 
@@ -246,7 +246,7 @@ h2 {
     justify-content: center;
     align-self: center;
     margin: auto;
-    width: 65%;
+    width: 70%;
 }
 
 .hornet1 {
@@ -266,30 +266,69 @@ h2 {
     position: fixed;
     top: 40%;
     color: #817f78;
-    font-size: .7vw;
+    font-size: .6vw;
     font-weight: 400;
     line-height: 1.5vw;
     margin-left: 2%;
 }
 
+.hamburger.btn {
+    background: none;
+    border: none;
+    text-decoration: none;
+    padding: 0.8em;
+    cursor: pointer;
+    margin: 5%;
+}
+
+.hamburger.btn .fa {
+    color: #413f3c;
+    border: none;
+    background: none;
+    font-size: 3em;
+}
+
+
+/* navigation dots */
+
+#fp-nav ul li .fp-tooltip {
+    color: #413f3c;
+}
+
+.fp-slidesNav {
+    left: 7% !important;
+    bottom: 5% !important;
+}
+
+.section {
+    height: 100vh;
+}
+
+.section .fp-tableCell {
+    padding: 1.5em;
+}
+
 
 /*prompt is the user over 18 overlay to make text and buttons visible*/
 
-.modal-into {
+.modal-intro {
     display: flex;
     grid-area: main;
 }
 
+
+/* modal styling and size with box shadow */
+
 .modal-bg {
-    /*set position to relative*/
     position: fixed;
+    top: 50%;
+    left: 50%;
     padding: 25px;
-    background: rgba(80, 81, 85, 0.671);
-    width: 250px;
-    height: 100px;
-    max-width: 100%;
+    background: rgba(80, 81, 85, 0.466);
+    width: 325px;
+    height: 170px;
     text-align: center;
-    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 6px -6px rgb(0 0 0 / 50%);
     z-index: 1010;
     /*set to display over other elements*/
     transform: translate(-50%, -50%);
@@ -304,6 +343,8 @@ h2 {
 
 .modal-content h4 {
     color: #dbe4e6;
+    font-size: 26px;
+    font-style: bold;
 }
 
 .modal-content {
@@ -315,9 +356,12 @@ h2 {
 
 /*button sizing and specs*/
 
+
+/* modal content  */
+
 .modal-content button {
-    width: 60px;
-    height: 20px;
+    width: 80px;
+    height: 33px;
     border-radius: 1em;
     cursor: pointer;
     border: none;

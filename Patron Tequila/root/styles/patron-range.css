@@ -91,7 +91,7 @@ Patron Range 1******/
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 46%;
+    width: 25%;
     z-index: 3;
 }
 
@@ -137,9 +137,24 @@ Patron Range 1******/
     grid-area: title;
 }
 
-.range2-title {
+#range2-title {
     color: #c0af5d;
     font-size: 3vw;
+}
+
+.animated {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .range2-subtitle {
@@ -148,7 +163,7 @@ Patron Range 1******/
     width: 50%;
     margin: auto;
     grid-area: subtitle;
-    padding: 5%;
+    padding: 2%;
 }
 
 .range2-side {
@@ -161,7 +176,7 @@ Patron Range 1******/
 }
 
 .gran-patron {
-    width: 75%%;
+    width: 75%;
     margin-left: 3%;
 }
 
@@ -244,7 +259,7 @@ Patron Range 1******/
 }
 
 .range3-title {
-    font-size: 3.5vw;
+    font-size: 3vw;
     color: #c0af5d;
 }
 
@@ -266,7 +281,7 @@ Patron Range 1******/
 }
 
 .patron-xocafe {
-    width: 120%;
+    width: 110%;
 }
 
 .range3-image--logo {
@@ -278,12 +293,15 @@ Patron Range 1******/
 
 .xocafe {
     font-size: 1vw;
-    width: 98%;
+    width: 68%;
+    margin: auto;
     z-index: 2;
 }
 
 .range3-info {
-    font-size: 1vw;
+    font-size: 0.7vw;
+    width: 75%;
+    margin: auto;
     color: #817f78;
 }
 
@@ -306,7 +324,7 @@ Patron Range 1******/
 
 .grid-range4 {
     display: grid;
-    grid-template-columns: 0.2fr .4fr 0.2fr;
+    grid-template-columns: 0.2fr .3fr 0.2fr;
     grid-template-rows: 0.1fr 0.1fr 0.2fr 0.1fr 0.1fr 0.1fr;
     gap: 5px 10px;
     grid-template-areas: "title title title" "subtitle subtitle subtitle" "text image side" "text1 image sidetext";
@@ -320,23 +338,44 @@ Patron Range 1******/
 
 .range4-title {
     grid-area: title;
-    font-size: 3.5vw;
+    font-size: 3vw;
     color: #c0af5d;
+    margin-left: -10%;
     z-index: 2;
+}
+
+.animated {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
 }
 
 .range4-main--text p,
 .range4-side p {
-    font-size: 1vw;
-    font-style: bold;
-    color: #817f78;
-    max-width: 70%;
+    grid-area: text;
+    font-size: 0.7;
+    color: #c0af5d;
+    margin-left: 20%;
+    margin-top: 2%;
 }
 
 .range4-main--text1 P,
 .range4-side-text p {
     width: 70%;
-    margin-top: -24%;
+    margin-top: -4%;
 }
 
 .range4-text,
@@ -349,7 +388,8 @@ Patron Range 1******/
 
 .range4-subtitle {
     grid-area: subtitle;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
+    margin-left: -5%;
 }
 
 .subtitle {
@@ -360,12 +400,15 @@ Patron Range 1******/
 
 .range4-main--text {
     grid-area: text;
-    font-size: 1vw;
+    font-size: 0.7vw;
     color: #817f78;
+    margin-left: 20%;
 }
 
 .range4-side {
     grid-area: side;
+    margin-left: -25%;
+    width: 70%;
 }
 
 .range4-image--main {
@@ -374,7 +417,7 @@ Patron Range 1******/
 }
 
 .main-image {
-    width: 70%;
+    width: 75%;
 }
 
 .range4-image--logo {
