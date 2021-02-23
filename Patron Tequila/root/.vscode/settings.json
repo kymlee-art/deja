@@ -1,37 +1,3 @@
 {
-	"workbench.colorCustomizations": {
-		"activityBar.background": "#4C1D37",
-		"titleBar.activeBackground": "#6A294D",
-		"titleBar.activeForeground": "#FCF8FB"
-	},
-	"liveServer.settings.port": 5503,
-	"cSpell.words": [
-		"A",
-		"Añejo",
-		"Años",
-		"Burdeos",
-		"Jimadors",
-		"Lalique",
-		"PI",
-		"PIÑA",
-		"Reposado",
-		"Tahona",
-		"as",
-		"ejo",
-		"fullpage",
-		"greyscale",
-		"gsap",
-		"hornetlogo",
-		"jimador",
-		"minmax",
-		"os",
-		"pi",
-		"piñas",
-		"preconnect",
-		"scrolltrigger",
-		"sidequote",
-		"sidetext",
-		"tlsection",
-		"xocafe"
-	]
+	"liveServer.settings.port": 5502
 }

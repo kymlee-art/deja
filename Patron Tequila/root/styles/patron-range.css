@@ -234,10 +234,10 @@ Patron Range 1******/
 
 .grid-range3 {
     display: grid;
-    grid-template-columns: 0.4fr 0.5fr;
+    grid-template-columns: 0.4fr 0.5fr 0.2fr;
     grid-template-rows: 0.5fr 0.1fr 0.3fr 0.2fr 0.1fr;
     gap: 0px 5px;
-    grid-template-areas: "title image" "text image" "text2 image" "logo image";
+    grid-template-areas: "title title title ." "side1 image . side" "side1 image . side2" "logo image text ." ". image . .";
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -270,7 +270,7 @@ Patron Range 1******/
 }
 
 .range3-text2 {
-    grid-area: text2;
+    grid-area: side1;
     padding-top: 10%;
 }
 

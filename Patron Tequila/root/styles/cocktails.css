@@ -70,6 +70,8 @@
 
 /* Cocktail TEXT */
 
+.text {}
+
 .txt1,
 .txt2,
 .txt3,
@@ -86,6 +88,8 @@
     width: 70%;
 }
 
+
+/* 
 .animated {
     animation-duration: 3s;
     animation-fill-mode: both;
@@ -103,7 +107,7 @@
 
 .fadeIn {
     animation-name: fadeIn;
-}
+} */
 
 .cocktail-txt2 {
     grid-area: text2;
