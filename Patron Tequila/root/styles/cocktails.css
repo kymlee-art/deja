@@ -13,7 +13,7 @@
     grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
     /* grid-template-rows: repeat(auto-fit, minmax(100px, 1fr)); */
     gap: 5px 5px;
-    grid-template-areas: "image image1 title" "image image1 subtitle " "image image1 agave1" "img3 text1 text1" ". img4 ." "text2 text2 img5" ". img6 ." "img7 text3 text3" ". img8 ." "text4 text4 img9" ". img10 ." "img11 text5 text5" ". img12 ." ". . hornet";
+    grid-template-areas: "image image1 title" "image image1 subtitle " "image image1 agave1" "img3 text1 text1" "hornet1 img4 hornet2" "text2 text2 img5" ". img6 ." "img7 text3 text3" ". img8 hornet3" "text4 text4 img9" ". img10 hornet4" "img11 text5 text5" ". img12 ." ". . hornet5";
     grid-template-columns: 25% 25% 40%;
     justify-content: center;
     align-content: center;
@@ -249,34 +249,38 @@
     grid-area: img12;
 }
 
+
+/* 
 .hornet {
     display: inline-block;
-}
+} */
 
-.hornet-1 {
-    grid-area: hornet;
+.hornet1 {
+    grid-area: hornet1;
     margin-top: -92%;
     z-index: 2;
     width: 200%;
     transform: rotate(30deg);
 }
 
-.hornet-2 {
+.hornet2 {
     width: 115%;
-    /* grid-area: 2/2; */
+    grid-area: hornet2;
 }
 
-.hornet-3 {
+.hornet3 {
     width: 85%;
     transform: rotate( 31deg);
+    grid-area: hornet3;
 }
 
-.hornet-4 {
-    /* grid-area: 6/3; */
+.hornet4 {
+    grid-area: text4;
     width: 50%;
 }
 
-.hornet-5 {
+.hornet5 {
+    grid-area: hornet5;
     margin: 25% 5% 0 5%;
     width: 58%;
     transform: rotate( 31deg);

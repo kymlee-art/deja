@@ -10,7 +10,7 @@ Patron Contact Content******/
 .contact-grid1 {
     display: grid;
     grid-template-columns: 1fr 2.5fr;
-    grid-template-areas: ". title" "image form";
+    grid-template-areas: "hornet title" "image form";
     gap: 5px 10px;
     justify-content: center;
     max-height: 40vh;
@@ -20,24 +20,31 @@ Patron Contact Content******/
 
 .contact-grid2 {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 10px 10px;
+    grid-template-columns: 1.fr 2fr;
+    gap: 12px 39px;
     grid-template-areas: " name message" "email message" ". button";
     justify-content: center;
     align-content: center;
+    width: 33%;
+    margin-top: -26%;
+    margin-left: 27%;
 }
 
 #contact-area {
-    font-size: 1.3em;
+    /* font-size: 1.3em;
     width: auto;
-    margin: -18% 30% 0;
+    margin: -18% 30% 0; */
     color: #4b515d;
 }
 
 .contact-title {
-    grid-area: title;
-    font-size: 3vw;
-    margin-right: 27%;
+    rid-area: title;
+    font-size: 3.5vw;
+    margin-right: 37%;
+    display: flex;
+    align-self: center;
+    margin-inline: 28%;
+    margin-bottom: -26%;
 }
 
 .contact-image--main {
@@ -68,40 +75,19 @@ Patron Contact Content******/
 }
 
 .send-btn {
-    /* grid-column: 1/-1; */
     grid-area: button;
-    /* color: #43cec7; */
 }
-
-.contact-name,
-.contact-email,
-.message-area,
-.send-btn {
-    width: 250px;
-}
-
-
-/* #contact-area:nth-child(1) {
-    height: 200px;
-} */
 
 
 /*contact page image settings*/
 
 .contact-img {
-    width: 100%;
+    width: 110%;
 }
 
-
-/*Contact Form */
-
-
-/* 
-#contact-form {
-
-    color: #817f78;
-  
-} */
+.hornet6 {
+    grid-area: hornet;
+}
 
 
 /*contact form input areas set*/
@@ -111,16 +97,15 @@ Patron Contact Content******/
 #contact-form input[type='text'],
 #contact-form textarea,
 #contact-form button[type='send'] {
-    /* font-size: 1.5em; */
     margin: 4px;
     border-radius: 6px;
     border: none;
     background: #f7f6f39f;
-    /* height: 216px; */
+    height: 36px;
+    width: 220px;
     padding: 5px;
     transition: border-color 0.3s ease-in-out;
-    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
-    width: 134px;
+    box-shadow: inset 1px 1px 1px rgb(0 0 0 / 20%);
 }
 
 
@@ -146,8 +131,8 @@ Patron Contact Content******/
 /*text area input area on form */
 
 #contact-form textarea {
-    height: 165px;
-    width: 200px;
+    height: 107px;
+    width: 355px;
     height: 1;
     padding: 5px;
     border-radius: 10px;
@@ -160,26 +145,25 @@ Patron Contact Content******/
 
 #contact-form button[type='submit'] {
     cursor: pointer;
-    /*cursor pointer to show when hovering over button*/
-    width: 200%;
+    width: 31%;
+    height: 37px;
     border: none;
     background: #ebe9e4ad;
     border-radius: 5px;
-    /*round corners*/
     color: rgb(23, 194, 185);
     font-weight: 500;
     padding: 5px;
-    /*Box shadow setting*/
-    -webkit-box-shadow: 0 8px 6px -6px rgb(88, 81, 81);
+    -webkit-box-shadow: 0 8px 6px -6px rgb(88 81 81);
     -moz-box-shadow: 0 8px 6px -6px rgb(102, 94, 94);
-    box-shadow: 0 8px 6px -6px rgb(100, 96, 96);
+    box-shadow: 0 8px 6px -6px rgb(100 96 96);
+    margin-left: 65%;
 }
 
 
 /*submit button*/
 
 #contact-form button[type='submit']:hover {
-    background: rgb(23, 194, 185);
+    background: rgb(98, 238, 231);
     color: #4b515d;
     /*box shadow settings*/
     box-shadow: 0 8px 6px -6px black;
@@ -223,4 +207,76 @@ footer h6 {
     width: 65%;
     font-size: 1.5em;
     /* margin-left: 35%; */
+}
+
+
+/* shoelace-button for 'Submit' */
+
+sl-button::part(base) {
+    background: #ebe9e4ad;
+    border: none;
+}
+
+sl-button::part(base):hover {
+    color: rgb(23, 194, 185);
+}
+
+sl-button::part(base):active {
+    color: rgb(23, 194, 185);
+}
+
+sl-button::part(base):focus {
+    box-shadow: 0 8px 6px -6px rgb(100 96 96);
+}
+
+sl-button::part(label) {
+    color: tomato;
+}
+
+
+/* shoelace dialogue for 'Message Sent */
+
+sl-dialog::part(base) {
+    /* 	The component's base wrapper. */
+    display: flex;
+    float: right;
+    margin: -17% 0%;
+    padding: 10px;
+    justify-content: center;
+    background-color: #817f7849;
+    color: #43cec7;
+    font-weight: 600;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+    height: 50px;
+    width: 186px;
+    display: none;
+}
+
+sl-dialog::part(body) {
+    background-color: #817f7849;
+    /* The dialog body. */
+}
+
+sl-dialog::part(footer) {
+    /* The dialog footer. */
+}
+
+sl-dialog::part(header) {
+    background-color: #817f7849;
+    /*The dialog header. */
+}
+
+sl-dialog::part(overlay) {
+    background-color: #817f7849;
+    /* The overlay. */
+}
+
+sl-dialog::part(panel) {
+    /* where the dialog and its content is rendered */
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+}
+
+sl-dialog::part(title) {
+    /* The dialog title. */
+    color: #43cec7;
 }

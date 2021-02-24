@@ -90,6 +90,12 @@
     max-width: 35%;
 }
 
+.journey-image--hornet1 {
+    grid-area: image;
+    width: 65%;
+    z-index: 4;
+}
+
 
 /*****JOURNEY SECTION 2****/
 
@@ -112,7 +118,7 @@
     grid-template-columns: 0.2fr 0.3fr 0.2fr;
     grid-template-rows: 0.3fr 0.2fr 0.5fr 0.6fr;
     gap: 0px 5px;
-    grid-template-areas: "title title title" "text image side" "text image side" ". image image1";
+    grid-template-areas: "title title title" "text image side" "text image side" "hornet image image1";
     align-items: center;
     max-height: 100vh;
     width: 100vw;
@@ -131,6 +137,10 @@
     animation-duration: 3s;
     animation-fill-mode: both;
     animation-timing-function: ease-in;
+}
+
+.journey2-image--hornet {
+    grid-area: hornet;
 }
 
 @keyframes fadeIn {
@@ -214,7 +224,7 @@
 }
 
 .journey2-image {
-    width: 66%;
+    width: 75%;
 }
 
 .journey2-image1 {

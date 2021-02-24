@@ -1,4 +1,3 @@
-<!--doctype declaration and language setting-->
 <!DOCTYPE html>
 <!--doctype declaration and language setting-->
 <html lang="en">
@@ -33,461 +32,489 @@
 
 <body>
 
-    <div id="fullpage.js">
-        <!-- HERO SECTION -->
+    <!-- <div id="fullpage.js"> -->
+    <!-- HERO SECTION -->
 
-        <section class="section section-hero" id="hero-section">
+    <section class="section section-hero" id="hero-section">
 
-            <!--navigation links-->
-            <nav class="nav nav">
-                <button class="hamburger-btn"><img src="https://img.icons8.com/metro/26/000000/menu.png"/></button>
-                <ul class="nav-links">
+        <!--navigation links-->
+        <nav class="nav nav">
+            <!-- <button class="hamburger-btn"><img src="https://img.icons8.com/metro/26/000000/menu.png"/></button> -->
+            <ul class="nav-links">
 
-                    <!-- <li class="#journey">Journey</li> -->
-                    <li><a href="#journey">Journey</a></li>
-                    <li><a href="#patron range1">Patron Range</a></li>
-                    <li><a href="#cocktails">Cocktails</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <!-- <li class="#">Patrón Range</li>
+                <!-- <li class="#journey">Journey</li> -->
+                <li><a href="#journey">Journey</a></li>
+                <li><a href="#patron range1">Patron Range</a></li>
+                <li><a href="#cocktails">Cocktails</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- <li class="#">Patrón Range</li>
                 <li class="#">Cocktails</li>
                 <li class="#">Contact</li> -->
 
-                </ul>
-            </nav>
-
-            <!--hero content-->
-            <div class="hero">
-
-                <div class="hero-container">
-                    <h1 class="animate__animated animate__fadeIn" id="hero-title">BEYOND THE BOTTLE</h1>
-                    <h3>Building a legacy means so much more than Tequila.</h3>
-                    <!--hero image-->
-                    <img src="images/Patron1.png" class="hero-image" alt="2017 Patron Silver limited edition">
-                    <h2 class="animate__animated animate__fadeInUp" id="celebrate">Celebrate Life!</h2>
-                    <img src="images/hornetlogo.png" class="hornet1" alt="Patron Hornet Logo">
-                    <img src="images/hornetlogo.png" class="hornet2" alt="Patron Hornet Logo">
-                </div>
+            </ul>
+        </nav>
 
 
-                <!--overlay prompt to answer if over the age of 18-->
-                <div class="modal-intro">
-                    <div class="modal-bg">
+        <!--hero content-->
+        <div class="hero">
 
-                        <div class="modal-content">
-                            <h4>Are you over the age of 18?</h4><br>
-                            <!--buttons yes and no-->
-                            <button class="modal-yes">Yes</button>
-                            <button class="modal-no">No</button>
+            <div class="hero-container">
+                <h1 class="hero-title">BEYOND THE BOTTLE</h1>
+                <h3>Building a legacy means so much more than Tequila.</h3>
+                <!--hero image-->
+                <img src="images/Patron1.png" class="hero-image" alt="2017 Patron Silver limited edition">
+                <h2 class="animate__animated animate__fadeInUp" id="celebrate">Celebrate Life!</h2>
+                <img src="images/hornetlogo.png" class="hornet1" alt="Patron Hornet Logo">
+                <img src="images/hornetlogo.png" class="hornet2" alt="Patron Hornet Logo">
+            </div>
 
-                        </div>
+
+            <!--overlay prompt to answer if over the age of 18-->
+
+            Shoelace
+            <sl-dialog label="Dialog">
+                <h3 slot="header">Are you over 18?</h3>
+
+                <sl-button slot="footer">Yes</sl-button>
+                <sl-button slot="footer" type="primary">No</sl-button>
+            </sl-dialog>
+            <div class="modal-intro">
+                <div class="modal-bg">
+
+                    <div class="modal-content">
+                        <h4>Are you over the age of 18?</h4><br>
+                        <!--buttons yes and no-->
+                        <button class="modal-yes">Yes</button>
+                        <button class="modal-no">No</button>
+
                     </div>
-
-
                 </div>
 
 
             </div>
-
-        </section>
-        <!-- JOURNEY SECTION 1 -->
-        <section class=" section section-journey" id="journey-section">
-
-            <div class="journey">
-                <div class="grid-journey">
-
-                    <header class="journey-title">
-                        <h1 class="journey-header">Discover</h1>
-                    </header>
-                    <article class="journey-content">
-                        <h2 class="journey-text">WE DIDN'T INVENT TEQUILA, WE JUST PERFECTED IT</h2><br>
-                        <p class="journey-p">Eyes as sharp as Coa! Agave ripens slowly: Every eight or so years. So our skilled Jimadors take great care to find and uproot only those Weber Blue Agave with optimal sugar content. Using a sharp tool called a Coa, they strip
-                            away the leaves to reveal the heart of the plant, the piña. </p>
-                    </article>
-
-
-                    <figure class="journey-image--primary">
-                        <img class="journey-image" src="images/patronagave.png" alt="Patron Tequila & Agave">
-                    </figure>
-
-                    <figure class="journey-image--secondary">
-                        <img class="journey-img1" src="images/jimador.png" alt="Jimador farming agave">
-                    </figure>
-                </div>
-            </div>
-        </section>
-
-        <!-- JOURNEY SECTION 2 -->
-
-        <section class="section section-journey2" id="journey2-section">
-            <div class="journey2">
-
-                <div class="grid-journey2">
-
-                    <header class="journey2-title">
-                        <h2 class="animated fadeIn" id="j2-title">Perfection</h2>
-                    </header>
-
-                    <article class="journey2-content">
-                        <h5 class="journey2-subtitle" id="journey2-text1">TIME & TRADITION </h5><br>
-                        <p class="journey2-main-text">The resulting mixture is fermented for three days, distilled and, in some cases, aged in handmade barrels. Two months at minimum for Patrón Reposado and all the way up to ten years for Extra Añejo 10 Años, our oldest tequila.
-                        </p>
-                    </article>
-
-                    <side class="journey2-side">
-                        <h5 class="journey2-side--text">THE PIÑA: SLOW TO RIPEN, SLOW TO PREPARE</h5><br>
-                        <h5 class="journey2-text2">
-                            After being hand-chopped, our piñas are baked in small brick ovens to ensure they’re cooked evenly. Then, they’re crushed by a two-ton volcanic stone Tahona wheel and a roller mill.</h5>
-                    </side>
-
-                    <figure class="journey2-image--primary">
-                        <img class="journey2-image" src="images/granpatronagave.png" alt="gRAN Patron Tequila & Agave">
-                    </figure>
-                    <figure class="journey2-image--secondary">
-
-                        <img class="journey2-image1" src="images/jimador1.png" alt="Jimador Farmer"></figure>
-
-                </div>
-            </div>
-
-
-        </section>
-        <!-- PATRON PRODUCT RANGE SECTION 3-->
-        <section class="section-range1" id="range1-section">
-            <div class="patron-range1">
-                <div class="grid-range1">
-
-                    <!--patron-range content-->
-                    <header class="range1-title">
-                        <h2 class="animate__animated animate__fadeInRight" id="Range1-title">Tequila Patrón</h2>
-                    </header>
-
-                    <article class="range1-subtitle">
-                        <p class="range1-subtitle">PERFECTION, FROM THE INSIDE-OUT </p>
-                    </article>
-
-                    <article class="range1-content">
-                        <h5 class="range1-text">Handmade in small batches to be smooth, sweet and easily mixable.
-                        </h5>
-                    </article>
-
-                    <article class="range1-side">
-                        <p class="range1-side">The tequila itself may be the most obvious element in our craft story, but in Mexico, glass artisans measure and mold our perfectly imperfect Patrón Tequila bottles.</p>
-                    </article>
-
-                    <article class="range1-tag">
-                        <h2 class="anejo">AÑEJO Oak aged for over 12 months to produce a tequila perfect for sipping.</h2>
-                        <h2 class="silver">SILVER The perfect white spirit made from the finest Weber Blue Agave.</h2>
-                        <h2 class="reposado">REPOSADO Aged at least two months for smooth taste with a hint of oak flavor.</h2>
-
-                    </article>
-
-                    <figure class="range1-image-main">
-                        <img src="images/patron-range1.png" class="patron-set1" alt="Patron Anejo">
-                    </figure>
-
-
-
-                </div>
-            </div>
-        </section>
-        <!-- PATRON PRODUCT RANGE SECTION 2-->
-        <section class="section-range2">
-            <div class="patron-range2">
-                <div class="grid-range2">
-
-                    <header class="range2-header">
-                        <h2 class="animated fadeIn" id="range2-title">Gran Patrón </h2>
-                    </header>
-                    <article class="range2-subtitle">
-                        <h3>Our most sophisticated luxury tequilas with incredibly distinct taste.</h3>
-                    </article>
-
-                    <article class="range2-side">
-                        <h4 class="range2-sidequote">THE CROWNING MOMENT</h4><br>
-                        <aside class="sidequote-text">
-                            <p>Our small-batch spirit is then bottled, but our attention to detail doesn’t stop there. Whether we’re sustainably harvesting fine Portuguese cork or having the masters of French crystal, Lalique, design a beautiful crystal
-                                stopper, it must be perfect.</p><br><br>
-                        </aside>
-
-                    </article>
-
-                    <figure class="range2-image--main"> <img class="gran-patron" src="images/patron-range2.png" alt="Gran Patron Range ">
-
-
-
-
-                        <article class="range2-tag">
-                            <h6 class="platinum">PLATINUM Triple distilled and oak rested for a smooth and full-bodied flavor.</h6>
-                            <h6 class="Burdeos">BURDEOS A luxury añejo tequila finished in Bordeaux wine barrels.</h6>
-                            <h6 class="Piedra">PIEDRA Aged for over three years for a rich and balanced taste.</h6>
-                        </article>
-
-
-
-                </div>
-            </div>
-
-        </section>
-        <!-- PATRON PRODUCT RANGE SECTION 3-->
-        <section class="section-range3">
-
-            <div class="patron-range3">
-                <div class="grid-range3">
-
-                    <header class="range3-header">
-                        <h2 class="range3-title">Patrón XO Cafe </h2><br>
-                        <p class="range3-subtitle">A dark, dry and delicious low-proof coffee liqueur with Patrón Silver.</p>
-
-                    </header>
-
-                    <article class="range3-text">
-                        <p class="xocafe">XO CAFE Patrón Silver Tequila and the pure, natural essence of fine coffee.</p>
-                    </article>
-
-                    <aside class="range3-text2">
-                        <p class="range3-info">A DARK, DELICIOUS BLEND <br><br>Patrón Silver Tequila and the essence of fine coffee Dry, not sweet as with most low-proof coffee liqueurs Excellent for sipping, in cocktails or as a dessert ingredient </p>
-                    </aside>
-
-                    <figure class="range3-image--main">
-                        <img class="patron-xocafe" src="images/PatronXOCafe.png" alt="Gran Patron Range ">
-                    </figure>
-
-                    <figure class="range3-image--logo">
-                        <img class="hornetlogo" src="images/hornetlogo.png" alt="Patron hornet logo ">
-
-
-                </div>
-            </div>
-        </section>
-
-        <!-- PATRON PRODUCT RANGE SECTION 4-->
-
-        <section class="section-range4">
-            <div class="patron-range4">
-                <div class="grid-range4">
-                    <header class="range4-title">
-                        <h2 class="range4-header">Limited Edition</h2>
-                    </header>
-
-                    <br>
-                    <article class="animated fadeIn" id="range4-subtitle">
-                        <h3 class="subtitle">Simply Perfect tequilas for spirits connoisseurs.</h3><br><br><br><br><br>
-                    </article>
-
-                    <article class="range4-main--text">
-                        <p>THE CROWNING MOMENT </p><br>
-                        <p>Our attention to detail doesn’t stop there. Whether we’re sustainably harvesting fine Portuguese cork or having the masters of French crystal, Lalique, design a beautiful crystal stopper, it must be perfect.</p>
-                    </article>
-
-
-
-                    <aside class="range4-side">
-                        <p>HOME TO A LEGACY OF CRAFTSMANSHIP </p><br>
-                        <p>Our entire tequila-making process takes place at Hacienda Patrón, where we only make Patrón. And we take pride in everything about it. From our eco-friendly reverse osmosis irrigation system to the agave byproduct we recycle. And
-                            most importantly, in the people involved in making our tequila – 60 hands from beginning to end.</p>
-                    </aside>
-
-
-
-
-
-                    <figure class="range4-image--main">
-                        <img class="main-image" src="images/patron-range3.png" alt="Patron Limited Edition Range ">
-                    </figure>
-
-
-                    <figure class="range4-image--logo">
-                        <img class="hornetlogo2" src="images/hornetlogo.png" alt="Patron hornet logo ">
-                    </figure>
-                    <!-- <div class="range4-images--agave"> 
-                    <figure class="range4-image--image1"> 
-                        <img class="range4-agave1" src="images/agave1.png" alt="Agave plant"> 
-                    </figure> 
-                    <figure class="range4-image--image2"> 
-                        <img class="range4-agave2" src="images/agave2.png" alt="Agave plant"> 
-                    </figure> 
-				</div> -->
-                </div>
-            </div>
-        </section>
-
-
-        <!-- COCKTAIL SECTION -->
-        <section class="section-cocktails">
-
-            <div class="cocktails">
-
-                <div class="grid-cocktail">
-                    <header class="cocktail-header">
-                        <h2 class="cocktail-header-1">Lets Create</h2>
-
-                    </header>
-                    <article class="cocktail-subtitle">
-                        <h5 class="cocktail-header-2" id="cocktail-text1">Craft cocktails with help from the best as our world-renowned bartenders popular cocktails</h5>
-                    </article>
-
-                    <!-- <img class="cocktail-img1" src="images/lady.png" alt="Lady"> -->
-
-
-                    <!-- Cocktail Text -->
-
-                    <article class=" text cocktail-txt1">
-                        <p class="txt1">Create a bit of 'Fun, Luxury and Indulge! Mixing the perfect cocktail is easier than you might think. </p>
-                    </article>
-                    <article class="text cocktail-txt2">
-                        <p class="txt2">Who says cocktails need an army of ingredients to be delicious? Certainly not Patrón. Case in point: a trio of three-ingredient cocktails that promise to make entertaining easier than ever.</p>
-                    </article>
-
-                    <article class=" text cocktail-txt3">
-                        <p class="txt3">In fact, some of our favorites only have three ingredients or fewer. So, get the glassware out and mix up these easy-to-make cocktails with ingredients you already have at home. </p>
-                    </article>
-
-                    <article class=" text cocktail-txt4">
-                        <p class="txt4">Indulge in flavours that take you on a journey of discovery!</p>
-                    </article>
-
-                    <article class="text cocktail-txt5">
-                        <p class="txt5">Savour the delicious flavours, mixing the perfect cocktail is easier than you might think, subside to the luxury of Patron Tequila!.</p>
-                    </article>
-
-                    <!-- Cocktail Main Images -->
-
-                    <figure class="text cocktail-images images-main">
-                        <img class="image-main" src="images/moty2018_on_white_345x345_north_end_margarita.png" alt="Its summer patron silver cocktail">
-                    </figure>
-
-                    <figure class="text cocktail images image-1">
-                        <img class="cocktail-images image-2" src="images/patron2.png" alt="Patron pineapple and lime cocktail">
-                    </figure>
-
-                    <!-- Cocktail Images -->
-                    <figure class="cocktail-image cocktail-3"><img class="c-3" src="images/moty2018_on_white_345x345_la_margarita.png" alt="Patron Dr Funk Cocktail"></figure>
-                    <figure class="cocktail-image cocktail-4"><img class="c-4" src="images/cocktail34.png" alt="Patron Cocktails"></figure>
-                    <figure class="cocktail-image cocktail-5"><img class="c-5" src="images/zestappealonwhite.png" alt="Patron Zest appeal Cocktail"></figure>
-                    <figure class="cocktail-image cocktail-6"> <img class="c-6" src="images/cocktail39.png" alt="Patron Cocktails"></figure>
-                    <figure class="cocktail image cocktail-7"> <img class="c-7" src="images/cocktail.png" alt="Patron Cocktails"></figure>
-                    <figure class="cocktail image cocktail-8"> <img class="c-8" src="images/cocktail20.png" alt="Patron Cocktails"></figure>
-                    <figure class="cocktail image cocktail-9"> <img class="c-9" src="images/drfunkpatrononwhite.png" alt="Patron Cocktails"></figure>
-                    <figure class="cocktail image cocktail-10"> <img class="c-10" src="images/itssummer_patron_silver_cocktail_on_white.png" alt="Patron Cocktails"></figure>
-                    <figure class="cocktail image cocktail-11"> <img class="c-11" src="images/lastfrontier.png" alt="Patron Cocktails"></figure>
-                    <figure class="cocktail image cocktail-12"> <img class="c-12" src="images/goldenwavepatron.png" alt="Patron Cocktails"></figure>
-
-                    <!-- Hornet Logo images -->
-                    <figure class="hornet hornet1">
-                        <img src="images/hornetlogo.png" class="hornet-1" alt="Patron Hornet logo"></figure>
-                    <figure class="hornet hornet2"><img src="images/hornetlogo.png" class="hornet-2" alt="Patron Hornet logo"></figure>
-                    <figure class="hornet hornet3"> <img src="images/hornetlogo.png" class="hornet-3" alt="Patron Hornet logo"></figure>
-                    <figure class="hornet hornet4"> <img src="images/hornetlogo.png" class="hornet-4" alt="Patron Hornet logo"></figure>
-                    <figure class="hornet hornet5"> <img src="images/hornetlogo.png" class="hornet-5" alt="Patron Hornet logo"></figure>
-
-
-                    </figure>
-
-                </div>
-            </div>
-
-        </section>
-        <!-- CONTACT SECTION -->
-
-        <section class="section-contact">
-            <div class="contact-grid1">
-
-                <!--patron contact content-->
-                <header class="contact-title">
-                    <h2 class="animate__animated animate__fadeInRight" id="contact-heading">Contact </h2>
-                </header>
-
-                <!-- Contact main image -->
-                <Figure class="contact-image--main">
-                    <img src="images/patronagave1.png" class="contact-img" alt="Patron Agave">
-                </Figure>
-
-
-
-
-                <!--contact form-->
-                <!-- set contact form as grid  -->
-                <form id="contact-area" class="contact-grid2" action="/action_page.php" method="post">
-
-
-                    <!--sections of form input and labels-->
-
-                    <div class="contact-name">
-                        <label for="name">Name</label>
-                        <input id="name" placeholder="Name" type="text" name="name">
-                    </div>
-                    <div class="contact-email">
-
-                        <label for="email">Email</label>
-                        <input id="email" placeholder="Email" type="email">
-                    </div>
-
-
-
-                    <div class="message-area">
-                        <label for="message-text" id="message">Message</label>
-                        <textarea id="message-text" placeholder="Type your message here...." name="message" required></textarea>
-                    </div>
-
-                    <div class="send-btn">
-                        <button name="send" type="submit" id="contact-Send" onclick="click" data-submit="...Sending">Send</button>
-                    </div>
-
-                </form>
-            </div>
-            <!-- Modal for message sent -->
-
-            <div class="modal-contact">
-                <div class="modal">
-                    <h5>Message Sent</h5>
-
-                </div>
-            </div>
-
-
-
-
-
-
 
 
             <!-- </div> -->
 
+    </section>
+    <!-- JOURNEY SECTION 1 -->
+    <section class=" section section-journey" id="journey-section">
 
-        </section>
+        <div class="journey">
+            <div class="grid-journey">
 
-        <footer>
-            <div class="back-top"></div>
-
-            <h6 class="legal disclaimer">The Perfect way to enjoy Patrón is responsibly. ©2021. Patrón, its trade dress and the 'Bee' logo are Trademarks. Handcrafted in Mexico. For more information on alcohol responsibility visit Responsible Drinking.org and Responsibility.Org .
-                <br> &copy; All rights Reserved.
-            </h6>
-        </footer>
-
-
-        <!-- Shoelace  -->
-        <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.26/dist/shoelace/shoelace.esm.js"></script>
-        <!--GSAP scripts -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/TextPlugin.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
-
-        <!-- font-awesome -->
-        <script src="https://kit.fontawesome.com/6530a46e62.js" crossorigin="anonymous"></script>
-        <!-- full page.js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="7BAC9EE9-0A144E37-9512EED7-DA12731C" crossorigin="anonymous"></script>
+                <header class="journey-title">
+                    <h1 class="journey-header">Discover</h1>
+                </header>
+                <article class="journey-content">
+                    <h2 class="journey-text">WE DIDN'T INVENT TEQUILA, WE JUST PERFECTED IT</h2><br>
+                    <p class="journey-p">Eyes as sharp as Coa! Agave ripens slowly: Every eight or so years. So our skilled Jimadors take great care to find and uproot only those Weber Blue Agave with optimal sugar content. Using a sharp tool called a Coa, they strip away
+                        the leaves to reveal the heart of the plant, the piña. </p>
+                </article>
 
 
+                <figure class="journey-image--primary">
+                    <img class="journey-image" src="images/patronagave.png" alt="Patron Tequila & Agave">
+                </figure>
 
-        <!--link to main java script & js files -->
-        <script src="js/main.js"></script>
-        <script src="js/journey.js"></script>
-        <script src="js/cocktails.js"></script>
-        <script src="js/patron-range.js"></script>
-        <script src="js/contact.js"></script>
+                <figure class="journey-image--secondary">
+                    <img class="journey-img1" src="images/jimador.png" alt="Jimador farming agave">
+                </figure>
 
-        <!--FOOTER-->
+                <figure class="journey-image--hornet1">
+                    <img class="hornetlogo2" src="images/hornetlogo.png" alt="Patron hornet logo ">
+                </figure>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- JOURNEY SECTION 2 -->
+
+    <section class="section section-journey2" id="journey2-section">
+        <div class="journey2">
+
+            <div class="grid-journey2">
+
+                <header class="journey2-title">
+                    <h2 class="animated fadeIn" id="j2-title">Perfection</h2>
+                </header>
+
+                <article class="journey2-content">
+                    <h5 class="journey2-subtitle" id="journey2-text1">TIME & TRADITION </h5><br>
+                    <p class="journey2-main-text">The resulting mixture is fermented for three days, distilled and, in some cases, aged in handmade barrels. Two months at minimum for Patrón Reposado and all the way up to ten years for Extra Añejo 10 Años, our oldest tequila.
+                    </p>
+                </article>
+
+                <side class="journey2-side">
+                    <h5 class="journey2-side--text">THE PIÑA: SLOW TO RIPEN, SLOW TO PREPARE</h5><br>
+                    <h5 class="journey2-text2">
+                        After being hand-chopped, our piñas are baked in small brick ovens to ensure they’re cooked evenly. Then, they’re crushed by a two-ton volcanic stone Tahona wheel and a roller mill.</h5>
+                </side>
+
+                <figure class="journey2-image--primary">
+                    <img class="journey2-image" src="images/granpatronagave.png" alt="gRAN Patron Tequila & Agave">
+                </figure>
+                <figure class="journey2-image--secondary">
+
+                    <img class="journey2-image1" src="images/jimador1.png" alt="Jimador Farmer"></figure>
+                <figure class="journey2-image--hornet">
+                    <img class="hornetlogo2" src="images/hornetlogo.png" alt="Patron hornet logo ">
+                </figure>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- PATRON PRODUCT RANGE SECTION 3-->
+    <section class="section-range1" id="range1-section">
+        <div class="patron-range1">
+            <div class="grid-range1">
+
+                <!--patron-range content-->
+                <header class="range1-title">
+                    <h2 class="animate__animated animate__fadeInRight" id="Range1-title">Tequila Patrón</h2>
+                </header>
+
+                <article class="range1-subtitle">
+                    <p class="range1-subtitle">PERFECTION, FROM THE INSIDE-OUT </p>
+                </article>
+
+                <article class="range1-content">
+                    <h5 class="range1-text">Handmade in small batches to be smooth, sweet and easily mixable.
+                    </h5>
+                </article>
+
+                <article class="range1-side">
+                    <p class="range1-side">The tequila itself may be the most obvious element in our craft story, but in Mexico, glass artisans measure and mold our perfectly imperfect Patrón Tequila bottles.</p>
+                </article>
+
+                <article class="range1-tag">
+                    <h2 class="anejo">AÑEJO Oak aged for over 12 months to produce a tequila perfect for sipping.</h2>
+                    <h2 class="silver">SILVER The perfect white spirit made from the finest Weber Blue Agave.</h2>
+                    <h2 class="reposado">REPOSADO Aged at least two months for smooth taste with a hint of oak flavor.</h2>
+
+                </article>
+
+                <figure class="range1-image-main">
+                    <img src="images/patron-range1.png" class="animate__animated animate__fadeInLeft" id="patron-set1" alt="Patron Anejo">
+
+                </figure>
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- PATRON PRODUCT RANGE SECTION 2-->
+    <section class="section-range2">
+        <div class="patron-range2">
+            <div class="grid-range2">
+
+                <header class="range2-header">
+                    <h2 class="animated fadeIn" id="range2-title">Gran Patrón </h2>
+                </header>
+                <article class="range2-subtitle">
+                    <h3>Our most sophisticated luxury tequilas with incredibly distinct taste.</h3>
+                </article>
+
+                <article class="range2-side">
+                    <h4 class="range2-sidequote">THE CROWNING MOMENT</h4><br>
+                    <aside class="sidequote-text">
+                        <p>Our small-batch spirit is then bottled, but our attention to detail doesn’t stop there. Whether we’re sustainably harvesting fine Portuguese cork or having the masters of French crystal, Lalique, design a beautiful crystal stopper,
+                            it must be perfect.</p><br><br>
+                    </aside>
+
+                </article>
+
+                <figure class="range2-image--main"> <img class="animate__zoomInRight" id="gran-patron" src="images/patron-range2.png" alt="Gran Patron Range ">
+
+
+
+
+                    <article class="range2-tag">
+                        <h6 class="platinum">PLATINUM Triple distilled and oak rested for a smooth and full-bodied flavor.</h6>
+                        <h6 class="Burdeos">BURDEOS A luxury añejo tequila finished in Bordeaux wine barrels.</h6>
+                        <h6 class="Piedra">PIEDRA Aged for over three years for a rich and balanced taste.</h6>
+                    </article>
+
+
+
+            </div>
+        </div>
+
+    </section>
+    <!-- PATRON PRODUCT RANGE SECTION 3-->
+    <section class="section-range3">
+
+        <div class="patron-range3">
+            <div class="grid-range3">
+
+                <header class="range3-header">
+                    <h2 class="range3-title">Patrón XO Cafe </h2><br>
+                    <p class="range3-subtitle">A dark, dry and delicious low-proof coffee liqueur with Patrón Silver.</p>
+
+                </header>
+
+                <article class="range3-text">
+                    <p class="xocafe">XO CAFE Patrón Silver Tequila and the pure, natural essence of fine coffee.</p>
+                </article>
+
+                <aside class="range3-text2">
+                    <p class="range3-info">A DARK, DELICIOUS BLEND <br><br>Patrón Silver Tequila and the essence of fine coffee Dry, not sweet as with most low-proof coffee liqueurs Excellent for sipping, in cocktails or as a dessert ingredient </p>
+                </aside>
+
+                <figure class="range3-image--main">
+                    <img class=animate__slideInUp id="patron-xocafe" src="images/PatronXOCafe.png" alt="Gran Patron Range ">
+
+
+                </figure>
+
+                <figure class="range3-image--logo">
+                    <img class="hornetlogo" src="images/hornetlogo.png" alt="Patron hornet logo ">
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PATRON PRODUCT RANGE SECTION 4-->
+
+    <section class="section-range4">
+        <div class="patron-range4">
+            <div class="grid-range4">
+                <header class="range4-title">
+                    <h2 class="range4-header">Limited Edition</h2>
+                </header>
+
+                <br>
+                <article class="animated fadeIn" id="range4-subtitle">
+                    <h3 class="subtitle">Simply Perfect tequilas for spirits connoisseurs.</h3>
+                </article>
+
+                <article class="range4-main--text">
+                    <p>THE CROWNING MOMENT </p><br>
+                    <p>Our attention to detail doesn’t stop there. Whether we’re sustainably harvesting fine Portuguese cork or having the masters of French crystal, Lalique, design a beautiful crystal stopper, it must be perfect.</p>
+                </article>
+
+
+
+                <aside class="range4-side">
+                    <p>HOME TO A LEGACY OF CRAFTSMANSHIP </p><br>
+                    <p>Our entire tequila-making process takes place at Hacienda Patrón, where we only make Patrón. And we take pride in everything about it. From our eco-friendly reverse osmosis irrigation system to the agave byproduct we recycle. And most
+                        importantly, in the people involved in making our tequila – 60 hands from beginning to end.</p>
+                </aside>
+
+
+
+
+
+                <figure class="range4-image--main">
+                    <img class="animate__slideInUp" id="main-image" src="images/patron-range3.png" alt="Patron Limited Edition Range ">
+                </figure>
+
+
+                <figure class="range4-image hornet-logo">
+                    <img class="hornetlogo2" src="images/hornetlogo.png" alt="Patron hornet logo ">
+                </figure>
+
+                <figure class="range4-image1">
+                    <img class="range4-agave1" src="images/agave1.png" alt="Agave plant">
+                </figure>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- COCKTAIL SECTION -->
+    <section class="section-cocktails">
+
+        <div class="cocktails">
+
+            <div class="grid-cocktail">
+                <header class="cocktail-header">
+                    <h2 class="cocktail-header-1">Lets Create</h2>
+
+                </header>
+                <article class="cocktail-subtitle">
+                    <h5 class="cocktail-header-2" id="cocktail-text1">Craft cocktails with help from the best as our world-renowned bartenders popular cocktails</h5>
+                </article>
+
+                <!-- <img class="cocktail-img1" src="images/lady.png" alt="Lady"> -->
+
+
+                <!-- Cocktail Text -->
+
+                <article class=" text cocktail-txt1">
+                    <p class="txt1">Create a bit of 'Fun, Luxury and Indulge! Mixing the perfect cocktail is easier than you might think. </p>
+                </article>
+                <article class="text cocktail-txt2">
+                    <p class="txt2">Who says cocktails need an army of ingredients to be delicious? Certainly not Patrón. Case in point: a trio of three-ingredient cocktails that promise to make entertaining easier than ever.</p>
+                </article>
+
+                <article class=" text cocktail-txt3">
+                    <p class="txt3">In fact, some of our favorites only have three ingredients or fewer. So, get the glassware out and mix up these easy-to-make cocktails with ingredients you already have at home. </p>
+                </article>
+
+                <article class=" text cocktail-txt4">
+                    <p class="txt4">Indulge in flavours that take you on a journey of discovery!</p>
+                </article>
+
+                <article class="text cocktail-txt5">
+                    <p class="txt5">Savour the delicious flavours, mixing the perfect cocktail is easier than you might think, subside to the luxury of Patron Tequila!.</p>
+                </article>
+
+                <!-- Cocktail Main Images -->
+
+                <figure class="text cocktail-images images-main">
+                    <img class="image-main" src="images/moty2018_on_white_345x345_north_end_margarita.png" alt="Its summer patron silver cocktail">
+                </figure>
+
+                <figure class="text cocktail images image-1">
+                    <img class="cocktail-images image-2" src="images/patron2.png" alt="Patron pineapple and lime cocktail">
+                </figure>
+
+                <!-- Cocktail Images -->
+                <figure class="cocktail-image cocktail-3"><img class="c-3" src="images/moty2018_on_white_345x345_la_margarita.png" alt="Patron Dr Funk Cocktail"></figure>
+                <figure class="cocktail-image cocktail-4"><img class="c-4" src="images/cocktail34.png" alt="Patron Cocktails"></figure>
+                <figure class="cocktail-image cocktail-5"><img class="c-5" src="images/zestappealonwhite.png" alt="Patron Zest appeal Cocktail"></figure>
+                <figure class="cocktail-image cocktail-6"> <img class="c-6" src="images/cocktail39.png" alt="Patron Cocktails"></figure>
+                <figure class="cocktail image cocktail-7"> <img class="c-7" src="images/cocktail.png" alt="Patron Cocktails"></figure>
+                <figure class="cocktail image cocktail-8"> <img class="c-8" src="images/cocktail20.png" alt="Patron Cocktails"></figure>
+                <figure class="cocktail image cocktail-9"> <img class="c-9" src="images/drfunkpatrononwhite.png" alt="Patron Cocktails"></figure>
+                <figure class="cocktail image cocktail-10"> <img class="c-10" src="images/itssummer_patron_silver_cocktail_on_white.png" alt="Patron Cocktails"></figure>
+                <figure class="cocktail image cocktail-11"> <img class="c-11" src="images/lastfrontier.png" alt="Patron Cocktails"></figure>
+                <figure class="cocktail image cocktail-12"> <img class="c-12" src="images/goldenwavepatron.png" alt="Patron Cocktails"></figure>
+
+                <!-- Hornet Logo images -->
+                <figure class="hornet hornet1"><img src="images/hornetlogo.png" class="hornet-1" alt="Patron Hornet logo"></figure>
+                <figure class="hornet hornet2"><img src="images/hornetlogo.png" class="hornet-2" alt="Patron Hornet logo"></figure>
+                <figure class="hornet hornet3"> <img src="images/hornetlogo.png" class="hornet-3" alt="Patron Hornet logo"></figure>
+                <figure class="hornet hornet4"> <img src="images/hornetlogo.png" class="hornet-4" alt="Patron Hornet logo"></figure>
+                <figure class="hornet hornet5"> <img src="images/hornetlogo.png" class="hornet-5" alt="Patron Hornet logo"></figure>
+
+
+                </figure>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- CONTACT SECTION -->
+
+    <section class="section-contact">
+        <div class="contact-grid1">
+
+            <!--patron contact content-->
+            <header class="contact-title">
+                <h2 class="animate__animated animate__fadeInRight" id="contact-heading">Contact </h2>
+            </header>
+
+            <!-- Contact main image -->
+            <Figure class="contact-image--main">
+                <img src="images/patronagave1.png" class="contact-img" alt="Patron Agave">
+            </Figure>
+
+            <figure class="hornet-image hornet6">
+                <img src="images/hornetlogo.png" class="hornet-1" alt="Patron Hornet logo">
+            </figure>
+
+
+            <!--contact form-->
+            <!-- set contact form as grid  -->
+            <form id="contact-form" class="contact-grid2" action="/action_page.php" method="post">
+
+
+                <!--sections of form input and labels-->
+
+                <div class="contact-name">
+                    <label for="name">Name</label>
+                    <input id="name" placeholder="Name" type="text" name="name">
+                </div>
+                <div class="contact-email">
+
+                    <label for="email">Email</label>
+                    <input id="email" placeholder="Email" type="email">
+                </div>
+
+
+
+                <div class="message-area">
+                    <label for="message-text" id="message">Message</label>
+                    <textarea id="message-text" placeholder="Type your message here...." name="message" required></textarea>
+                </div>
+
+                <div class="send-btn">
+                    <button name="send" type="submit" id="contact-Send" onclick="click" data-submit="...Sending">Send</button>
+                </div>
+
+            </form>
+
+        </div>
+        <!-- Modal for message sent -->
+        <sl-button class="submit">Send</sl-button>
+        <sl-dialog label="Dialog" class="mess-sent"></sl-dialog>
+        <sl class="modal">
+            <h5>Message Sent</h5>
+        </sl>
+
+
+
+
+
+        <!--             
+                Message Sent
+            </sl-dialog>
+
+            <sl-dialog label="Message Sent" class="dialog2">
+                <sl-button class="submit" size="small" type="yes">YES</sl-button>
+                <sl-button type="yes">no</sl-button>
+            </sl-dialog> -->
+
+
+
+
+
+
+        <!-- </div> -->
+
+
+    </section>
+
+    <footer>
+        <div class="back-top"></div>
+
+        <h6 class="legal disclaimer">The Perfect way to enjoy Patrón is responsibly. ©2021. Patrón, its trade dress and the 'Bee' logo are Trademarks. Handcrafted in Mexico. For more information on alcohol responsibility visit Responsible Drinking.org and Responsibility.Org .
+            <br> &copy; All rights Reserved.
+        </h6>
+    </footer>
+
+
+    <!-- Shoelace  -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.26/dist/shoelace/shoelace.esm.js"></script>
+    <!--GSAP scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/6530a46e62.js" crossorigin="anonymous"></script>
+    <!-- full page.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="7BAC9EE9-0A144E37-9512EED7-DA12731C" crossorigin="anonymous"></script>
+
+
+
+    <!--link to main java script & js files -->
+    <script src="js/main.js"></script>
+    <script src="js/journey.js"></script>
+    <script src="js/cocktails.js"></script>
+    <script src="js/patron-range.js"></script>
+    <script src="js/contact.js"></script>
+
+    <!--FOOTER-->
 
 
 </body>
