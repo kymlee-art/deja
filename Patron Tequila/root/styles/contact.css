@@ -4,63 +4,104 @@ Patron Contact Content******/
 .section-contact {
     height: 50vh;
     display: flex;
-    justify-content: center;
     margin: auto;
 }
 
-.contact-grid {
+.contact-grid1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-areas: ". title" "image form";
     gap: 5px 10px;
-    /* grid-template-areas: "image title title" "image name message" "image email message" "image . button"; */
-    max-height: 100vh;
+    justify-content: center;
+    max-height: 40vh;
+    width: 100vw;
+    margin: 3% 0 5%;
+}
+
+.contact-grid2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px 10px;
+    grid-template-areas: " name message" "email message" ". button";
+    justify-content: center;
+    align-content: center;
+}
+
+#contact-area {
+    font-size: 1.3em;
+    width: auto;
+    margin: -18% 30% 0;
+    color: #4b515d;
 }
 
 .contact-title {
+    grid-area: title;
     font-size: 3vw;
+    margin-right: 27%;
 }
 
 .contact-image--main {
-    width: 100%;
+    display: flex;
+    float: left;
+    grid-area: image;
+    width: 110%;
+}
+
+.contact-grid2 {
+    grid-area: form;
 }
 
 .contact-name {
-    grid-column: 1;
+    grid-area: name;
+    /* grid-column: 1; */
 }
 
 .contact-email {
-    grid-row: 2;
+    /* grid-row: 2; */
+    grid-area: email;
 }
 
 .message-area {
-    grid-column: 2;
-    grid-row: span 2;
+    /* grid-column: 2;
+    grid-row: span 2; */
+    grid-area: message;
 }
 
 .send-btn {
-    grid-column: 1/-1;
+    /* grid-column: 1/-1; */
+    grid-area: button;
+    /* color: #43cec7; */
 }
+
+.contact-name,
+.contact-email,
+.message-area,
+.send-btn {
+    width: 250px;
+}
+
+
+/* #contact-area:nth-child(1) {
+    height: 200px;
+} */
 
 
 /*contact page image settings*/
 
 .contact-img {
-    width: 130%;
-    margin-left: -123%;
+    width: 100%;
 }
 
 
 /*Contact Form */
 
+
+/* 
 #contact-form {
-    /* align-self: end; */
-    display: flex;
-    flex-wrap: wrap;
-    height: 74px;
-    justify-content: space-evenly;
+
     color: #817f78;
-    margin-left: 9%;
-}
+  
+} */
 
 
 /*contact form input areas set*/
@@ -70,12 +111,12 @@ Patron Contact Content******/
 #contact-form input[type='text'],
 #contact-form textarea,
 #contact-form button[type='send'] {
-    font-size: 10px;
+    /* font-size: 1.5em; */
     margin: 4px;
     border-radius: 6px;
     border: none;
     background: #f7f6f39f;
-    height: 29px;
+    /* height: 216px; */
     padding: 5px;
     transition: border-color 0.3s ease-in-out;
     box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
@@ -105,7 +146,7 @@ Patron Contact Content******/
 /*text area input area on form */
 
 #contact-form textarea {
-    height: 65px;
+    height: 165px;
     width: 200px;
     height: 1;
     padding: 5px;

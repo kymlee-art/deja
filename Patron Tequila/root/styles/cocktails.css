@@ -250,7 +250,7 @@
 }
 
 .hornet {
-    display: block;
+    display: inline-block;
 }
 
 .hornet-1 {
@@ -263,22 +263,21 @@
 
 .hornet-2 {
     width: 115%;
-    grid-area: 2/2;
+    /* grid-area: 2/2; */
 }
 
 .hornet-3 {
     width: 85%;
-    grid-area: 4/1;
     transform: rotate( 31deg);
 }
 
 .hornet-4 {
-    grid-area: 6/3;
+    /* grid-area: 6/3; */
     width: 50%;
 }
 
 .hornet-5 {
     margin: 25% 5% 0 5%;
-    width: 218%;
+    width: 58%;
     transform: rotate( 31deg);
 }
