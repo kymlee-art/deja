@@ -44,6 +44,7 @@ Patron Range 1******/
 
 .range1-content {
     grid-area: text;
+    margin-left: 32%;
 }
 
 .range1-text,
@@ -132,9 +133,9 @@ Patron Range 1******/
 .grid-range2 {
     display: grid;
     grid-template-columns: 0.1fr .7fr 0.2fr;
-    grid-template-rows: 0.1fr 0.1fr 0.4fr 0.1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.3fr 0.1fr;
     gap: 5px 10px;
-    grid-template-areas: "title title title " "subtitle subtitle subtitle" ". image side" ". text text";
+    grid-template-areas: "title title title " "subtitle subtitle subtitle" "hornet image side" ". text text";
     align-items: center;
     text-align: center;
     max-height: 100vh;
@@ -147,7 +148,7 @@ Patron Range 1******/
 
 #range2-title {
     color: #c0af5d;
-    font-size: 3vw;
+    font-size: 3.2vw;
 }
 
 .animated {
@@ -228,6 +229,14 @@ Patron Range 1******/
 
 .Piedra {
     z-index: 3;
+}
+
+.hornet,
+.range1 {
+    width: 65%;
+    position: fixed;
+    transform: rotate( 35deg);
+    z-index: 4;
 }
 
 

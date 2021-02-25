@@ -53,7 +53,7 @@ patronRange4Tl.from('.range4-title', { y: 200, x: 150, duration: 3, ease: "bounc
     // main text and side text to ease in
 patronRange4Tl.from('.range4-main--text', { x: 250, duration: 3, repeat: "1", ease: "sine.out", })
 patronRange4Tl.from('.range4-side', { x: 100, duration: 2, repeat: "1", ease: "sine.out", }, "-=0.5")
-patronRange4Tl.from('.range4-image--main', { y: -450, duration: 1, repeat: "1", ease: "power.out4", }, "-=0.5")
+patronRange4Tl.from('.range4-image--main', { y: -450, duration: 1, ease: "power.out4", }, "-=0.5")
     //hornet logo move around page on repeat
 patronRange4Tl.from('.range4-hornet', { y: -250, duration: 2, rotate: "360", repeat: "1", ease: "power.out4", })
 patronRange4Tl.from('.hornetlogo2', { y: 150, duration: 2, rotate: "360", repeat: "1", ease: "power.out4", })

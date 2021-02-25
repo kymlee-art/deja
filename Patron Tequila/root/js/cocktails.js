@@ -30,8 +30,8 @@ const cocktaislTl = gsap.timeline({
 
 var hornet = gsap.utils.toArray('.hornet')
 
-const spaceBetween = 5000;
 
+// hornet patron logo, to rotate and trigger with scrolling
 
 hornet.forEach((hornet, i) => {
 
@@ -43,8 +43,8 @@ hornet.forEach((hornet, i) => {
         ease: "none",
         scrollTrigger: {
             trigger: '.parent',
-            start: 'top top-=' + spaceBetween,
-            end: "+=" + triggerDuration,
+            start: 'top top-=',
+            end: "+=",
             //toggleActions: "play none none reverse",
             scrub: 1,
         }

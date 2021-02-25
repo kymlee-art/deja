@@ -43,10 +43,8 @@ function closeModal() {
     document.querySelector(".modal-intro").style.display = "none"
 }
 // SCROLL THROUGH SECTIONS
-
-gsap.defaults({ ease: "none", duration: 2 });
-
-// create a sequence that moves to the sections of the site in from different directions 
+gsap.registerPlugin(ScrollTrigger)
+    // create a sequence that moves to the sections of the site in from different directions 
 const tl = gsap.timeline();
 // tl.from(".section-hero", { xPercent: 100, ease: 'slow' })
 tl.from(".section-journey", { xPercent: 100 })
@@ -58,27 +56,20 @@ tl.from(".section-journey", { xPercent: 100 })
     .from(".section-cocktails", { yPercent: 100 })
     .from(".section-contact", { xPercent: -100 });
 
+// get wrapper
+const sectionCount = document.querySelectorAll('#wrapper > section').length
 
+// pin the container and link the animation to the scrollbar (scrub: true). 
+ScrollTrigger.create({
+    animation: tl,
+    trigger: '#wrapper',
+    start: 'top top',
+    end: `+=${window.innerHeight * sectionCount}`,
+    scrub: true,
+    pin: true,
+    anticipatePin: 1
 
-
-
-// const scrollTl = gsap.timeline {
-//         scrolltrigger: {
-//             trigger: ".section-journey",
-//             start: "top center",
-//         }
-//         // }
-// // pin the container and link the animation to the scrollbar (scrub: true). 
-// ScrollTrigger.create({
-//     animation: tl,
-//     trigger: "#container",
-//     start: "top top",
-//     end: "+=4000",
-//     scrub: true,
-//     pin: true,
-//     anticipatePin: 1
-
-// })
+})
 
 // // Button Event//
 // // get modal & buttons

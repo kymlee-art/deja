@@ -1,3 +1,72 @@
+/*body settings*/
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*main heading specifications*/
+
+h1 {
+    font-family: 'Cormorant Upright', serif;
+    color: #c0af5d;
+    font-weight: 500;
+    font-size: 5em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cormorant Upright', serif;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: .5em;
+}
+
+P {
+    font-family: 'Cormorant Upright', serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease-out;
+}
+
+
+/*hover colour when cursor hovers*/
+
+a:hover {
+    color: #3edfd7;
+}
+
+
 /*
 HERO 
 */
@@ -6,7 +75,7 @@ HERO
     background-color: #ffffff;
     width: 100vw;
     height: 100vh;
-    margin: auto;
+    margin: 0;
     /*set view width to 100%*/
 }
 
@@ -17,13 +86,12 @@ HERO
 
 .hero-container {
     display: grid;
-    grid-template-columns: 0.5fr 3fr 0.5fr;
-    grid-template-rows: 0.3fr 0.3fr 10fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 5px 0px;
-    grid-template-areas: ". title ." ". sub-header ." ". image ." ". footer .";
+    grid-template-areas: ". title ." ". sub-header ." "hornet1 image hornet2" ". footer .";
     justify-content: center;
     align-content: center;
-    margin-top: 5%;
+    height: 100vh;
 }
 
 
@@ -31,9 +99,10 @@ HERO
 
 .hero h1 {
     grid-area: title;
+    color: #c0af5d;
     text-align: center;
     align-self: center;
-    font-size: 5em;
+    font-size: 2.3vw;
 }
 
 
@@ -43,7 +112,7 @@ HERO
     grid-area: sub-header;
     text-align: center;
     font-style: italic;
-    font-size: 1vw;
+    font-size: 1.1vw;
 }
 
 #celebrate,
@@ -52,16 +121,14 @@ h2 {
     color: #c0af5d;
     font-size: 3vw;
     text-align: center;
-    /* margin: -4% -17; */
     align-self: center;
     animation: fadeInUp;
+    /*text fades up*/
     animation-duration: 2s;
+    /*animation duration*/
     animation-delay: 1s;
     /* set a duration & delay */
 }
-
-
-/*animate hero heading*/
 
 
 /*hero image positioning*/
@@ -71,12 +138,11 @@ h2 {
     display: flex;
     justify-content: center;
     align-self: center;
-    margin: auto;
-    width: 70%;
+    width: 100%;
 }
 
 .hornet1 {
-    grid-area: 7/2;
+    grid-area: hornet1;
     width: 20%;
     z-index: 2;
     animation: rotating 2s linear;
@@ -84,7 +150,7 @@ h2 {
 }
 
 .hornet2 {
-    grid-area: 3/2;
+    grid-area: hornet2;
     width: 58%;
 }
 
@@ -112,12 +178,15 @@ h2 {
     margin: 5%;
 } */
 
+
+/* 
 .hamburger.btn .fa {
     color: #413f3c;
     border: none;
     background: none;
     font-size: 3em;
 }
+ */
 
 
 /* navigation dots
@@ -145,6 +214,7 @@ h2 {
 .modal-intro {
     display: flex;
     grid-area: main;
+    /* margin-left: -3%; */
 }
 
 
@@ -152,8 +222,7 @@ h2 {
 
 .modal-bg {
     position: fixed;
-    top: 60%;
-    left: 50%;
+    margin: auto;
     padding: 20px;
     background: rgba(80, 81, 85, 0.637);
     width: 325px;
@@ -186,6 +255,9 @@ h2 {
 }
 
 
+/*button sizing and specs*/
+
+
 /*yes button*/
 
 .modal-yes {
@@ -216,9 +288,6 @@ h2 {
     background: #817f78;
     color: #413f3c;
 }
-
-
-/*button sizing and specs*/
 
 
 /* Shoelace content  */
@@ -255,7 +324,7 @@ sl-dialog::part(base) {
 
 sl-dialog::part(body) {
     border: none;
-    ;
+    background-color: #413f3c;
 }
 
 
@@ -277,6 +346,7 @@ sl-dialog::part(title) {
 
 sl-dialog::part(overlay) {
     border: none;
+    background: #413f3c;
     /* The dialog body. */
 }
 
@@ -285,6 +355,7 @@ sl-dialog::part(overlay) {
 
 sl-dialog::part(panel) {
     border: none;
+    background-color: #413f3c;
     box-shadow: 0 8px 6px -6px rgba(80, 81, 85, 0.466);
 }
 

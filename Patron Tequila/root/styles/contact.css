@@ -2,7 +2,7 @@
 Patron Contact Content******/
 
 .section-contact {
-    height: 50vh;
+    height: 100vh;
     display: flex;
     margin: auto;
 }
@@ -15,7 +15,7 @@ Patron Contact Content******/
     justify-content: center;
     max-height: 40vh;
     width: 100vw;
-    margin: 3% 0 5%;
+    margin: 0% 0 5%;
 }
 
 .contact-grid2 {
