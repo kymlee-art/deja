@@ -38,7 +38,7 @@ Patron Contact Content******/
 }
 
 .contact-title {
-    rid-area: title;
+    grid-area: title;
     font-size: 3.5vw;
     margin-right: 37%;
     display: flex;
@@ -247,20 +247,6 @@ sl-dialog::part(base) {
 sl-dialog::part(body) {
     background-color: #817f7849;
     /* The dialog body. */
-}
-
-sl-dialog::part(footer) {
-    /* The dialog footer. */
-}
-
-sl-dialog::part(header) {
-    color: #43cec7;
-    /*The dialog header. */
-}
-
-sl-dialog::part(overlay) {
-    background-color: #817f7849;
-    /* The overlay. */
 }
 
 sl-dialog::part(title) {
