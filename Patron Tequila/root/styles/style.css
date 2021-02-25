@@ -192,7 +192,7 @@ HERO
 .hero-container {
     display: grid;
     grid-template-columns: 0.5fr 3fr 0.5fr;
-    grid-template-rows: 0.3fr 0.3fr 10fr 1fr;
+    grid-template-rows: 0.3fr 0.3fr 10.5fr 1fr;
     gap: 5px 0px;
     grid-template-areas: ". title ." ". sub-header ." ". image ." ". footer .";
     justify-content: center;
@@ -275,6 +275,8 @@ h2 {
     margin-left: 2%;
 }
 
+
+/* 
 .hamburger.btn {
     background: none;
     border: none;
@@ -282,7 +284,7 @@ h2 {
     padding: 0.8em;
     cursor: pointer;
     margin: 5%;
-}
+} */
 
 .hamburger.btn .fa {
     color: #413f3c;
@@ -292,7 +294,7 @@ h2 {
 }
 
 
-/* navigation dots */
+/* navigation dots
 
 #fp-nav ul li .fp-tooltip {
     color: #413f3c;
@@ -309,7 +311,7 @@ h2 {
 
 .section .fp-tableCell {
     padding: 1.5em;
-}
+} */
 
 
 /*prompt is the user over 18 overlay to make text and buttons visible*/
@@ -324,14 +326,15 @@ h2 {
 
 .modal-bg {
     position: fixed;
-    top: 50%;
+    top: 60%;
     left: 50%;
-    padding: 25px;
-    background: rgba(80, 81, 85, 0.466);
+    padding: 20px;
+    background: rgba(80, 81, 85, 0.637);
     width: 325px;
     height: 170px;
     text-align: center;
     box-shadow: 0 8px 6px -6px rgb(0 0 0 / 50%);
+    /* opacity: 12; */
     z-index: 1010;
     /*set to display over other elements*/
     transform: translate(-50%, -50%);
@@ -346,7 +349,7 @@ h2 {
 
 .modal-content h4 {
     color: #dbe4e6;
-    font-size: 26px;
+    font-size: 2em;
     font-style: bold;
 }
 
@@ -357,29 +360,12 @@ h2 {
 }
 
 
-/*button sizing and specs*/
-
-
-/* modal content  */
-
-sl-dialog::part(base) {
-    border: none;
-    box-shadow: 0 8px 6px -6px rgba(247, 249, 250, 0.5);
-}
-
-sl-button:: .modal-content button {
-    width: 80px;
-    height: 33px;
-    border-radius: 1em;
-    cursor: pointer;
-    border: none;
-    box-shadow: 0 8px 6px -6px rgba(247, 249, 250, 0.5);
-}
-
-
 /*yes button*/
 
 .modal-yes {
+    width: 85px;
+    height: 30px;
+    border-radius: 10%;
     margin: 0 1.0em;
     background: #3ccacf;
     transition: all .2s ease-in-out;
@@ -397,9 +383,111 @@ sl-button:: .modal-content button {
 /*no button*/
 
 .modal-no {
+    width: 85px;
+    height: 30px;
+    border-radius: 10%;
     margin: auto;
     background: #817f78;
     color: #413f3c;
+}
+
+
+/*button sizing and specs*/
+
+
+/* Shoelace content  */
+
+
+/* The component's base wrapper. */
+
+:root {}
+
+sl-dialog::part(base) {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    padding: 20px;
+    background: rgba(80, 81, 85, 0.637);
+    width: 325px;
+    height: 170px;
+    text-align: center;
+    box-shadow: 0 8px 6px -6px rgb(0 0 0 / 50%);
+    /* opacity: 12; */
+    z-index: 1010;
+    /*set to display over other elements*/
+    transform: translate(-50%, -50%);
+    /*  visibility: hidden;*/
+    transition: visibility 0s opacity 0.5s;
+}
+
+
+/* The dialog body. */
+
+sl-dialog::part(body) {
+    border: none;
+    ;
+}
+
+
+/* The dialog header. */
+
+sl-dialog::part(header) {
+    border: none;
+}
+
+
+/* The dialog title. */
+
+sl-dialog::part(title) {
+    border: none;
+}
+
+
+/* The overlay. */
+
+sl-dialog::part(overlay) {
+    border: none;
+    /* The dialog body. */
+}
+
+
+/* The dialog panel (where the dialog and its content is rendered). */
+
+sl-dialog::part(panel) {
+    border: none;
+    box-shadow: 0 8px 6px -6px rgba(80, 81, 85, 0.466);
+}
+
+
+/* The dialog footer. */
+
+sl-dialog::part(footer) {
+    border: none;
+    /* The dialog body. */
+}
+
+
+/* button yes */
+
+sl-button .yes::button {
+    width: 80px;
+    height: 33px;
+    border-radius: 1em;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 8px 6px -6px rgba(247, 249, 250, 0.5);
+}
+
+
+/* button no */
+
+sl-button .no::button {
+    width: 80px;
+    height: 33px;
+    border-radius: 1em;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 8px 6px -6px rgba(247, 249, 250, 0.5);
 }
 
 

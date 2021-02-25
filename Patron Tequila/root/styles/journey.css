@@ -90,9 +90,17 @@
     max-width: 35%;
 }
 
-.journey-image--hornet1 {
+.hornet,
+.hornet1 {
     grid-area: image;
     width: 65%;
+    z-index: 4;
+}
+
+.hornet,
+.hornet2 {
+    grid-area: image1;
+    width: 55%;
     z-index: 4;
 }
 
@@ -141,6 +149,11 @@
 
 .journey2-image--hornet {
     grid-area: hornet;
+}
+
+.journey2-image--hornet2 {
+    grid-area: image;
+    width: 70%;
 }
 
 @keyframes fadeIn {
@@ -223,11 +236,14 @@
     place-self: flex-start;
 }
 
-.journey2-image {
-    width: 75%;
+.journey2-hornet1 {
+    grid-area: image;
+    width: 80%;
+    height: 80%;
 }
 
-.journey2-image1 {
+.journey2-hornet2 {
+    grid-area: image1;
     width: 40%;
     place-self: center;
 }

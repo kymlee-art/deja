@@ -10,7 +10,7 @@ Patron Range 1******/
 
 .grid-range1 {
     display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(100px, .2fr .2fr .2fr 1fr .2fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, .2fr .2fr .2fr 1fr .1fr));
     grid-template-columns: 0.2fr .6fr 0.2fr;
     gap: 5px 10px;
     grid-template-areas: "title title title" "subtitle subtitle subtitle" "text image side" ". image ." ". image ." ". bottom .";
@@ -79,7 +79,7 @@ Patron Range 1******/
 }
 
 #patron-set1 {
-    width: 85%;
+    width: 110%;
 }
 
 .anejo,
@@ -105,6 +105,14 @@ Patron Range 1******/
 
 .reposado {
     text-align: center;
+}
+
+.hornet,
+.range1 {
+    width: 65%;
+    position: fixed;
+    transform: rotate( 35deg);
+    z-index: 4;
 }
 
 
@@ -229,7 +237,7 @@ Patron Range 1******/
     width: 100vw;
     display: flex;
     justify-content: center;
-    margin: auto;
+    margin: 0 0 0 7%;
 }
 
 .grid-range3 {
@@ -281,7 +289,7 @@ Patron Range 1******/
 }
 
 #patron-xocafe {
-    width: 110%;
+    width: 117%;
 }
 
 .range3-image--logo {
@@ -341,7 +349,6 @@ Patron Range 1******/
     font-size: 3vw;
     color: #c0af5d;
     margin-left: -10%;
-    margin-top: 2%;
     z-index: 2;
 }
 
@@ -412,23 +419,28 @@ Patron Range 1******/
     font-size: 0.9vw;
 }
 
-#range4-image--main {
+.range4-image--main {
     grid-area: image;
     z-index: 1;
+    display: flex;
 }
 
 .main-image {
+    justify-content: center;
+    margin-top: -74%;
+    margin-left: -12%;
     width: 75%;
 }
 
-.hornet-logo {
+.range4-hornet {
     display: flex;
     justify-content: center;
     grid-area: text1;
     z-index: 1;
 }
 
-.hornet-logo2 {
+.range4-hornet1 {
+    grid-area: text;
     display: flex;
     width: 54%;
     z-index: -1;

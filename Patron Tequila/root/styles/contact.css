@@ -192,23 +192,6 @@ Patron Contact Content******/
     display: none;
 }
 
-footer {
-    margin: 0;
-    height: 352px;
-    background: #77777a;
-    display: flex;
-    justify-content: center;
-}
-
-footer h6 {
-    text-align: center;
-    color: #B8B6B6;
-    padding: 68px 0px 0px 332px;
-    width: 65%;
-    font-size: 1.5em;
-    /* margin-left: 35%; */
-}
-
 
 /* shoelace-button for 'Submit' */
 
@@ -230,25 +213,34 @@ sl-button::part(base):focus {
 }
 
 sl-button::part(label) {
-    color: tomato;
+    color: #43cec7
 }
 
 
 /* shoelace dialogue for 'Message Sent */
 
+.dialog {
+    display: flex;
+    justify-content: center;
+    align-items: centre;
+    margin-right: 20%;
+    margin-top: 25%;
+}
+
+sl-dialog .mess-sent {
+    grid-area: dialog;
+}
+
 sl-dialog::part(base) {
     /* 	The component's base wrapper. */
-    display: flex;
-    float: right;
-    margin: -17% 0%;
     padding: 10px;
     justify-content: center;
     background-color: #817f7849;
     color: #43cec7;
     font-weight: 600;
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
-    height: 50px;
-    width: 186px;
+    height: 200px;
+    width: 300px;
     display: none;
 }
 
@@ -262,7 +254,7 @@ sl-dialog::part(footer) {
 }
 
 sl-dialog::part(header) {
-    background-color: #817f7849;
+    color: #43cec7;
     /*The dialog header. */
 }
 
@@ -271,12 +263,24 @@ sl-dialog::part(overlay) {
     /* The overlay. */
 }
 
-sl-dialog::part(panel) {
-    /* where the dialog and its content is rendered */
-    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
-}
-
 sl-dialog::part(title) {
     /* The dialog title. */
     color: #43cec7;
+}
+
+footer {
+    margin: 0;
+    height: 352px;
+    background: #77777a;
+    display: flex;
+    justify-content: center;
+}
+
+footer h6 {
+    text-align: center;
+    color: #B8B6B6;
+    padding: 68px 0px 0px 332px;
+    width: 65%;
+    font-size: 1.5em;
+    /* margin-left: 35%; */
 }

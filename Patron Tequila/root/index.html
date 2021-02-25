@@ -32,7 +32,7 @@
 
 <body>
 
-    <!-- <div id="fullpage.js"> -->
+
     <!-- HERO SECTION -->
 
     <section class="section section-hero" id="hero-section">
@@ -71,13 +71,14 @@
 
             <!--overlay prompt to answer if over the age of 18-->
 
-            Shoelace
-            <sl-dialog label="Dialog">
+            <!-- Shoelace -->
+            <sl-dialog label="intro">
                 <h3 slot="header">Are you over 18?</h3>
 
-                <sl-button slot="footer">Yes</sl-button>
-                <sl-button slot="footer" type="primary">No</sl-button>
+                <sl-button slot="footer" size="small" type="yes">"Yes"</sl-button>
+                <sl-button slot="footer" size="small" type="no">No</sl-button>
             </sl-dialog>
+
             <div class="modal-intro">
                 <div class="modal-bg">
 
@@ -121,10 +122,12 @@
                     <img class="journey-img1" src="images/jimador.png" alt="Jimador farming agave">
                 </figure>
 
-                <figure class="journey-image--hornet1">
+                <figure class="hornetlogo hornet1">
+                    <img class="hornetlogo" src="images/hornetlogo.png" alt="Patron hornet logo ">
+                </figure>
+                <figure class="hornetlogo hornet2">
                     <img class="hornetlogo2" src="images/hornetlogo.png" alt="Patron hornet logo ">
                 </figure>
-
             </div>
         </div>
     </section>
@@ -157,8 +160,11 @@
                 </figure>
                 <figure class="journey2-image--secondary">
 
-                    <img class="journey2-image1" src="images/jimador1.png" alt="Jimador Farmer"></figure>
+                    <img class="journey2-hornet1" src="images/jimador1.png" alt="Jimador Farmer"></figure>
                 <figure class="journey2-image--hornet">
+                    <img class="hornetlogo1" src="images/hornetlogo.png" alt="Patron hornet logo ">
+                </figure>
+                <figure class="journey2-hornet2">
                     <img class="hornetlogo2" src="images/hornetlogo.png" alt="Patron hornet logo ">
                 </figure>
             </div>
@@ -166,7 +172,7 @@
 
 
     </section>
-    <!-- PATRON PRODUCT RANGE SECTION 3-->
+    <!-- PATRON PRODUCT RANGE SECTION 1-->
     <section class="section-range1" id="range1-section">
         <div class="patron-range1">
             <div class="grid-range1">
@@ -200,7 +206,9 @@
                     <img src="images/patron-range1.png" class="animate__animated animate__fadeInLeft" id="patron-set1" alt="Patron Anejo">
 
                 </figure>
-
+                <figure class="hornet range1">
+                    <img class="hornet6" src="images/hornetlogo.png" alt="Patron hornet logo ">
+                </figure>
 
 
             </div>
@@ -310,16 +318,18 @@
 
 
                 <figure class="range4-image--main">
-                    <img class="animate__slideInUp" id="main-image" src="images/patron-range3.png" alt="Patron Limited Edition Range ">
+                    <img class="main-image" src="images/patron-range3.png" alt="Patron Limited Edition Range ">
                 </figure>
 
 
-                <figure class="range4-image hornet-logo">
+                <figure class="range4-hornet">
+                    <img class="hornetlogo1" src="images/hornetlogo.png" alt="Patron hornet logo ">
+                </figure>
+                <figure class="range4-hornet1">
                     <img class="hornetlogo2" src="images/hornetlogo.png" alt="Patron hornet logo ">
                 </figure>
-
                 <figure class="range4-image1">
-                    <img class="range4-agave1" src="images/agave1.png" alt="Agave plant">
+                    <img class="range4-agave" src="images/agave1.png" alt="Agave plant">
                 </figure>
 
 
@@ -368,11 +378,11 @@
 
                 <!-- Cocktail Main Images -->
 
-                <figure class="text cocktail-images images-main">
+                <figure class="cocktail-images images-main">
                     <img class="image-main" src="images/moty2018_on_white_345x345_north_end_margarita.png" alt="Its summer patron silver cocktail">
                 </figure>
 
-                <figure class="text cocktail images image-1">
+                <figure class="cocktail images image-1">
                     <img class="cocktail-images image-2" src="images/patron2.png" alt="Patron pineapple and lime cocktail">
                 </figure>
 
@@ -453,32 +463,33 @@
             </form>
 
         </div>
-        <!-- Modal for message sent -->
-        <sl-button class="submit">Send</sl-button>
-        <sl-dialog label="Dialog" class="mess-sent"></sl-dialog>
-        <sl class="modal">
-            <h5>Message Sent</h5>
-        </sl>
+        <sl-dialog label="Dialog" class="dialog-width" style="--width: 40vw;">
+            <!-- Modal for message sent -->
+            <sl-button class="submit">Send</sl-button>
+            <sl-dialog label="Dialog" class="mess-sent"></sl-dialog>
+            <sl class="modal">
+                <h5>Message Sent</h5>
+            </sl>
+
+            </div>
 
 
 
-
-
-        <!--             
-                Message Sent
+            <!--             
+            Message Sent
             </sl-dialog>
 
             <sl-dialog label="Message Sent" class="dialog2">
                 <sl-button class="submit" size="small" type="yes">YES</sl-button>
                 <sl-button type="yes">no</sl-button>
             </sl-dialog> -->
+            -->
 
 
 
 
 
-
-        <!-- </div> -->
+            <!-- </div> -->
 
 
     </section>

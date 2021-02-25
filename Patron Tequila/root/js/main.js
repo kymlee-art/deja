@@ -4,51 +4,81 @@ const tlHero = gsap.timeline()
 tlHero.from('#hero-text, h1', { duration: 2.5, ease: "back.out(1.6)", x: -500 })
     //Hero image make it bounce in on y axis
 tlHero.from('.hero-image', { y: -500, duration: 2, ease: "bounce" }, "-=2.5")
-    //hornet logo move around page 
-tlHero.from('.hornet1', { y: 200, x: 150, duration: infinite, rotate: "120deg", ease: "sine.out", x: -200 })
-tlHero.from('.hornet2', { x: 200, y: 150, duration: infinite, rotate: "20deg", ease: "sine.out", y: -200 })
+    //hornet logo move around page on repeat
+tlHero.from('.hornet1', { y: 200, x: 150, duration: 3, rotate: "360deg", repeat: "10", ease: "sine.out", x: -200 })
+tlHero.from('.hornet2', { x: 250, y: 250, duration: 3, repeat: "10", rotate: "360deg", ease: "sine.out", x: -300 })
     // modal intro make 
 tlHero.from('.modal-intro', {
     x: -500,
     duration: 1,
-    // ease: "back.out(1.5)",
-    //     x: max
+
 })
+
+
 
 
 // OPEN MESSAGE SENT DIALOG // 
 
-const dialog = document.querySelector('.mess-sent');
-const submitButton = document.querySelector('submit');
+const modalIntro = document.querySelector('.model-intro');
+const yesButton = document.querySelector('.modal-yes');
+const noButton = document.querySelector('.modal-no');
+// yesButton.addEventListener('click', () => modalIntro.hide());
 
-submitButton.addEventListener('click', () => dialog.show());
+document.addEventListener(
+    "click",
+    function(event) {
+        // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
+        if (
+            event.target.matches(".modal-yes") ||
+            event.target.matches(".modal-no") ||
+            !event.target.closest(".modal-intro")
+        ) {
+            closeModal()
+        }
+    },
+    false
+)
 
-
+function closeModal() {
+    document.querySelector(".modal-intro").style.display = "none"
+}
 // SCROLL THROUGH SECTIONS
 
 gsap.defaults({ ease: "none", duration: 2 });
 
 // create a sequence that moves to the sections of the site in from different directions 
 const tl = gsap.timeline();
-tl.from(".section-hero", { xPercent: -100 })
-    .from(".section-journey", { xPercent: 100 })
+// tl.from(".section-hero", { xPercent: 100, ease: 'slow' })
+tl.from(".section-journey", { xPercent: 100 })
     .from(".section-journey2", { yPercent: -100 })
-from(".section-range1", { xPercent: -100 })
-    .from(".section-range2", { xPercent: 100 })
-    .from(".section-range3", { yPercent: -100 })
-from(".section-range4", { xPercent: -100 })
+    .from(".section-range1", { xPercent: 100 })
+    .from(".section-range2", { yPercent: -100 })
+    .from(".section-range3", { xPercent: 100 })
+    .from(".section-range4", { yPercent: -100 })
     .from(".section-cocktails", { yPercent: 100 })
-    .from(".section-contact", { yPercent: -100 });
+    .from(".section-contact", { xPercent: -100 });
 
-// pin the container and link the animation to the scrollbar (scrub: true). 
-ScrollTrigger.create({
-    animation: tl,
-    trigger: "#container",
-    start: "top top",
-    end: "+=4000",
-    scrub: true
 
-})
+
+
+
+// const scrollTl = gsap.timeline {
+//         scrolltrigger: {
+//             trigger: ".section-journey",
+//             start: "top center",
+//         }
+//         // }
+// // pin the container and link the animation to the scrollbar (scrub: true). 
+// ScrollTrigger.create({
+//     animation: tl,
+//     trigger: "#container",
+//     start: "top top",
+//     end: "+=4000",
+//     scrub: true,
+//     pin: true,
+//     anticipatePin: 1
+
+// })
 
 // // Button Event//
 // // get modal & buttons

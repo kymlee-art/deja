@@ -14,8 +14,8 @@ gsap.to('.hornet-image', {
     ease: "none",
     scrollTrigger: {
         trigger: '.parent',
-        start: 'top top-=' + spaceBetween * i,
-        end: "+=" + triggerDuration,
+        start: 'top top-=',
+        end: "+=",
         //toggleActions: "play none none reverse",
         scrub: 1,
     }
