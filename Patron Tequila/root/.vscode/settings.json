@@ -1,3 +1,39 @@
 {
-	"liveServer.settings.port": 5502
+	"liveServer.settings.port": 5502,
+	"cSpell.words": [
+		"A",
+		"Artista",
+		"AÑEJO",
+		"Años",
+		"BURDEOS",
+		"EJO",
+		"GSAP",
+		"Jimadoor",
+		"Jimadors",
+		"Lalique",
+		"Lightbox",
+		"Reposado",
+		"Tahona",
+		"a",
+		"as",
+		"greyscale",
+		"hornetlogo",
+		"jimador",
+		"minmax",
+		"os",
+		"pi",
+		"piña",
+		"piñas",
+		"preconnect",
+		"sidequote",
+		"sidetext",
+		"slidein",
+		"xocafe",
+		"yoyo"
+	],
+	"workbench.colorCustomizations": {
+		"activityBar.background": "#083522",
+		"titleBar.activeBackground": "#0B4A30",
+		"titleBar.activeForeground": "#F0FDF7"
+	}
 }

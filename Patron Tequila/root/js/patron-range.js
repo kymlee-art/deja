@@ -6,14 +6,15 @@ const agaveImage = document.querySelector('.range4-image1')
 const patronRange1Tl = gsap.timeline()
 
 //Patron Range 1 title to slide in 
-patronRange1Tl.from('.patron-range1', { x: -500, duration: 2, ease: "back.out(1.6)" })
+patronRange1Tl.from('.patron-range1', { x: -400, duration: 3, ease: "back.out(1.6)" })
     //Patron Range 1 make main slidein in on x axis and scale
-patronRange1Tl.from('.range1-image-main', { x: 500, duration: 2, ease: "power.out4" }, "-=1.5")
+patronRange1Tl.from('.range1-image-main', { x: 300, duration: 3, ease: "power.out4" }, "-=1.5")
     //hornet logo move around page on repeat
 patronRange1Tl.from('.hornet', { y: 200, x: 150, duration: 3, rotate: "360deg", repeat: "10", ease: "sine.out", x: -200 })
-patronRange1Tl.from('.range1-content', { x: 250, duration: 3, repeat: "1", ease: "sine.out", })
-patronRange1Tl.to('.range1-side', { x: 100, duration: 2, repeat: "1", ease: "sine.out", }, "-=0.5")
-patronRange1Tl.to('.range1-tag', { y: -50, duration: 2, repeat: "1", ease: "power.out4", }, "-=0.5")
+patronRange1Tl.from('.hornet2', { y: -250, x: 150, y: 200, x: 300, duration: 3, rotate: "360deg", repeat: "10", ease: "sine.out", x: -200 })
+patronRange1Tl.from('.range1-content', { x: 250, duration: 3, repeat: "1", ease: "sine.out", }, "+=2.5")
+patronRange1Tl.to('.range1-side', { x: 100, duration: 3, repeat: "1", ease: "sine.out", }, "-=2")
+patronRange1Tl.to('.range1-tag', { y: -50, duration: 2, repeat: "1", ease: "power.out4", }, "-=1.5")
 
 
 // PATRON RANGE 2 //
@@ -53,87 +54,24 @@ patronRange4Tl.from('.range4-title', { y: 200, x: 150, duration: 3, ease: "bounc
     // main text and side text to ease in
 patronRange4Tl.from('.range4-main--text', { x: 250, duration: 3, repeat: "1", ease: "sine.out", })
 patronRange4Tl.from('.range4-side', { x: 100, duration: 2, repeat: "1", ease: "sine.out", }, "-=0.5")
-patronRange4Tl.from('.range4-image--main', { y: -450, duration: 1, ease: "power.out4", }, "-=0.5")
+patronRange4Tl.from('.range4-image--main', { y: 250, x: 150, duration: 1, ease: "power.out4", })
     //hornet logo move around page on repeat
 patronRange4Tl.from('.range4-hornet', { y: -250, duration: 2, rotate: "360", repeat: "1", ease: "power.out4", })
 patronRange4Tl.from('.hornetlogo2', { y: 150, duration: 2, rotate: "360", repeat: "1", ease: "power.out4", })
+patronRange4Tl.from('.hornet-logo1', { y: 150, x: -300, y: 150, x: -200, duration: 1, rotate: "360", repeat: "1", ease: "power.out4", })
     // agave plant to appear in 
 patronRange4Tl.from('.range4-agave', { x: 100, duration: 2, repeat: "1", ease: "power.out4", }, "-=0.5")
 
 
 
-// // set scroll trigger to move agave 
-// const agaveTl = gsap.timeline({
+// set scroll trigger to move agave 
+const agaveTl = gsap.timeline({
 
-//     scrollTrigger: {
-//         trigger: ".range4-image1",
-//         start: "center centre",
-//         end: "bottom bottom",
-//         scrub: "true",
-//         toggleActions: "restart pause reverse none"
-//     }
-// })
-
-// //  hornets to move around the page
-// gsap.to('.range4-image', {
-//     duration: 1,
-//     xPercent: 400,
-//     rotation: 360,
-//     autoAlpha: 0,
-//     ease: "none",
-//     scrollTrigger: {
-//         trigger: '.parent',
-//         start: 'top top-=',
-//         end: "+=",
-//         //toggleActions: "play none none reverse",
-//         scrub: 1,
-//     }
-// })
-
-
-// gsap.to('.range3-image--logo', {
-//     duration: 1,
-//     xPercent: 400,
-//     rotation: 360,
-//     autoAlpha: 0,
-//     ease: "none",
-//     scrollTrigger: {
-//         trigger: '.parent',
-//         start: 'top top-=',
-//         end: "+=",
-//         //toggleActions: "play none none reverse",
-//         scrub: 1,
-//     }
-// })
-
-
-// gsap.to('.range4-image', {
-//     duration: 1,
-//     xPercent: 400,
-//     rotation: 360,
-//     autoAlpha: 0,
-//     ease: "none",
-//     scrollTrigger: {
-//         trigger: '.parent',
-//         start: 'top top-=',
-//         end: "+=",
-//         //toggleActions: "play none none reverse",
-//         scrub: 1,
-//     }
-// })
-
-
-// gsap.to('.range4-image', {
-//     duration: 1,
-//     xPercent: 400,
-//     rotation: 360,
-//     autoAlpha: 0,
-//     ease: "none",
-//     scrollTrigger: {
-//         trigger: '.parent',
-//         start: 'top top-=',
-//         end: "+=",
-//         //toggleActions: "play none none reverse",
-//         scrub: 1,
-//     }
-// })
+    scrollTrigger: {
+        trigger: ".range4-image1",
+        start: "center centre",
+        end: "bottom bottom",
+        scrub: "true",
+        toggleActions: "restart pause reverse none"
+    }
+})

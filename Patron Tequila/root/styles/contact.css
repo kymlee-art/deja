@@ -1,272 +1,251 @@
-/******
+            /******
 Patron Contact Content******/
-
-.section-contact {
-    height: 100vh;
-    display: flex;
-    margin: auto;
-}
-
-.contact-grid1 {
-    display: grid;
-    grid-template-columns: 1fr 2.5fr;
-    grid-template-areas: "hornet title" "image form";
-    gap: 5px 10px;
-    justify-content: center;
-    max-height: 40vh;
-    width: 100vw;
-    margin: 0% 0 5%;
-}
-
-.contact-grid2 {
-    display: grid;
-    grid-template-columns: 1.fr 2fr;
-    gap: 12px 39px;
-    grid-template-areas: " name message" "email message" ". button";
-    justify-content: center;
-    align-content: center;
-    width: 33%;
-    margin-top: -26%;
-    margin-left: 27%;
-}
-
-#contact-area {
-    /* font-size: 1.3em;
-    width: auto;
-    margin: -18% 30% 0; */
-    color: #4b515d;
-}
-
-.contact-title {
-    grid-area: title;
-    font-size: 3.5vw;
-    margin-right: 37%;
-    display: flex;
-    align-self: center;
-    margin-inline: 28%;
-    margin-bottom: -26%;
-}
-
-.contact-image--main {
-    display: flex;
-    float: left;
-    grid-area: image;
-    width: 110%;
-}
-
-.contact-grid2 {
-    grid-area: form;
-}
-
-.contact-name {
-    grid-area: name;
-    /* grid-column: 1; */
-}
-
-.contact-email {
-    /* grid-row: 2; */
-    grid-area: email;
-}
-
-.message-area {
-    /* grid-column: 2;
-    grid-row: span 2; */
-    grid-area: message;
-}
-
-.send-btn {
-    grid-area: button;
-}
-
-
-/*contact page image settings*/
-
-.contact-img {
-    width: 110%;
-}
-
-.hornet6 {
-    grid-area: hornet;
-}
-
-
-/*contact form input areas set*/
-
-#contact-form input[type='text'],
-#contact-form input[type='email'],
-#contact-form input[type='text'],
-#contact-form textarea,
-#contact-form button[type='send'] {
-    margin: 4px;
-    border-radius: 6px;
-    border: none;
-    background: #f7f6f39f;
-    height: 36px;
-    width: 220px;
-    padding: 5px;
-    transition: border-color 0.3s ease-in-out;
-    box-shadow: inset 1px 1px 1px rgb(0 0 0 / 20%);
-}
-
-
-/*labels for contact input*/
-
-#contact-form label {
-    font-size: 0px;
-}
-
-
-/*contact input focus*/
-
-#contact-form input[type='text']:focus,
-#contact-form input[type='email']:focus,
-#contact-form textarea:focus {
-    outline: none;
-    color: #4b515d;
-    border: 1px solid #B8B6B6;
-    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.01), 0px 0px 4px rgba(0, 0, 0, 0.2);
-}
-
-
-/*text area input area on form */
-
-#contact-form textarea {
-    height: 107px;
-    width: 355px;
-    height: 1;
-    padding: 5px;
-    border-radius: 10px;
-    max-width: 100%;
-    background: #f7f6f385;
-}
-
-
-/*contact 'Send button and styling*/
-
-#contact-form button[type='submit'] {
-    cursor: pointer;
-    width: 31%;
-    height: 37px;
-    border: none;
-    background: #ebe9e4ad;
-    border-radius: 5px;
-    color: rgb(23, 194, 185);
-    font-weight: 500;
-    padding: 5px;
-    -webkit-box-shadow: 0 8px 6px -6px rgb(88 81 81);
-    -moz-box-shadow: 0 8px 6px -6px rgb(102, 94, 94);
-    box-shadow: 0 8px 6px -6px rgb(100 96 96);
-    margin-left: 65%;
-}
-
-
-/*submit button*/
-
-#contact-form button[type='submit']:hover {
-    background: rgb(98, 238, 231);
-    color: #4b515d;
-    /*box shadow settings*/
-    box-shadow: 0 8px 6px -6px black;
-    transition: background-color 0.3s ease-in-out;
-}
-
-
-/*contact button box shadow*/
-
-#contact-form button[type='submit']:active {
-    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
-}
-
-.modal-contact {
-    display: flex;
-    float: right;
-    margin: -17% 0%;
-    padding: 10px;
-    justify-content: center;
-    background-color: #817f7849;
-    color: #43cec7;
-    font-weight: 600;
-    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
-    height: 50px;
-    width: 186px;
-    display: none;
-}
-
-
-/* shoelace-button for 'Submit' */
-
-sl-button::part(base) {
-    background: #ebe9e4ad;
-    border: none;
-}
-
-sl-button::part(base):hover {
-    color: rgb(23, 194, 185);
-}
-
-sl-button::part(base):active {
-    color: rgb(23, 194, 185);
-}
-
-sl-button::part(base):focus {
-    box-shadow: 0 8px 6px -6px rgb(100 96 96);
-}
-
-sl-button::part(label) {
-    color: #43cec7
-}
-
-
-/* shoelace dialogue for 'Message Sent */
-
-.dialog {
-    display: flex;
-    justify-content: center;
-    align-items: centre;
-    margin-right: 20%;
-    margin-top: 25%;
-}
-
-sl-dialog .mess-sent {
-    grid-area: dialog;
-}
-
-sl-dialog::part(base) {
-    /* 	The component's base wrapper. */
-    padding: 10px;
-    justify-content: center;
-    background-color: #817f7849;
-    color: #43cec7;
-    font-weight: 600;
-    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
-    height: 200px;
-    width: 300px;
-    display: none;
-}
-
-sl-dialog::part(body) {
-    background-color: #817f7849;
-    /* The dialog body. */
-}
-
-sl-dialog::part(title) {
-    /* The dialog title. */
-    color: #43cec7;
-}
-
-footer {
-    margin: 0;
-    height: 352px;
-    background: #77777a;
-    display: flex;
-    justify-content: center;
-}
-
-footer h6 {
-    text-align: center;
-    color: #B8B6B6;
-    padding: 68px 0px 0px 332px;
-    width: 65%;
-    font-size: 1.5em;
-    /* margin-left: 35%; */
-}
+            
+            .section-contact {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+            }
+            
+            .contact-grid {
+                display: grid;
+                grid-template-columns: 1fr 2.5fr;
+                grid-template-areas: "hornet title" "image form";
+                gap: 5px 10px;
+                justify-content: center;
+                max-height: 40vh;
+                width: 100vw;
+                margin: 0% 0 5%;
+            }
+            
+            .contact-grid2 {
+                display: grid;
+                grid-template-columns: 1.fr 2fr;
+                gap: 12px 39px;
+                grid-template-areas: " name message" "email message" ". button";
+                justify-content: center;
+                align-content: center;
+                width: 33%;
+                margin-top: -20%;
+                margin-left: 27%;
+            }
+            
+            .contact-title {
+                grid-area: title;
+                font-size: 3.5vw;
+                margin-right: 34%;
+                display: flex;
+                align-self: center;
+                margin-bottom: -26%;
+            }
+            
+            .contact-image--main {
+                display: flex;
+                float: left;
+                grid-area: image;
+                width: 110%;
+            }
+            
+            .contact-grid2 {
+                grid-area: form;
+            }
+            
+            .contact-name {
+                grid-area: name;
+            }
+            
+            .contact-email {
+                grid-area: email;
+            }
+            
+            .message-area {
+                grid-area: message;
+            }
+            
+            .send-btn {
+                grid-area: button;
+            }
+            /*contact page image settings*/
+            
+            .contact-img {
+                width: 110%;
+            }
+            
+            .hornet6 {
+                grid-area: hornet;
+            }
+            /* .hornet-image, */
+            
+            .hornet-img7 {
+                display: block;
+                margin-top: -112%;
+                margin-left: 60%;
+            }
+            /*contact form input areas set*/
+            
+            #contact-form input[type='text'],
+            #contact-form input[type='email'],
+            #contact-form input[type='text'],
+            #contact-form textarea,
+            #contact-form button[type='send'] {
+                margin: 4px;
+                border-radius: 6px;
+                border: none;
+                background: #f7f6f39f;
+                height: 46px;
+                width: 270px;
+                padding: 5px;
+                transition: border-color 0.3s ease-in-out;
+                box-shadow: inset 1px 1px 1px rgb(0 0 0 / 20%);
+            }
+            /*labels for contact input*/
+            
+            #contact-form label {
+                font-size: 0px;
+            }
+            /*contact input focus*/
+            
+            #contact-form input[type='text']:focus,
+            #contact-form input[type='email']:focus,
+            #contact-form textarea:focus {
+                outline: none;
+                color: #4b515d;
+                border: 1px solid #B8B6B6;
+                box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.01), 0px 0px 4px rgba(0, 0, 0, 0.2);
+            }
+            /*text area input area on form */
+            
+            #contact-form textarea {
+                height: 13em;
+                width: 33em;
+                height: 1;
+                padding: 5px;
+                border-radius: 10px;
+                max-width: 100%;
+                background: #f7f6f385;
+            }
+            /*contact 'Send button and styling*/
+            
+            #contact-form button[type='submit'] {
+                cursor: pointer;
+                width: 31%;
+                height: 37px;
+                border: none;
+                background: #ebe9e4ad;
+                border-radius: 5px;
+                color: rgb(23, 194, 185);
+                font-weight: 500;
+                padding: 5px;
+                -webkit-box-shadow: 0 8px 6px -6px rgb(88 81 81);
+                -moz-box-shadow: 0 8px 6px -6px rgb(102, 94, 94);
+                box-shadow: 0 8px 6px -6px rgb(100 96 96);
+                margin-left: 65%;
+            }
+            /*submit button*/
+            
+            #contact-form button[type='submit']:hover {
+                background: rgb(98, 238, 231);
+                color: #4b515d;
+                /*box shadow settings*/
+                box-shadow: 0 8px 6px -6px black;
+                transition: background-color 0.3s ease-in-out;
+            }
+            /*contact button box shadow*/
+            
+            #contact-form button[type='submit']:active {
+                box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+            }
+            
+            .modal-contact {
+                display: flex;
+                float: right;
+                margin: -17% 0%;
+                padding: 10px;
+                justify-content: center;
+                background-color: #817f7849;
+                color: #43cec7;
+                font-weight: 600;
+                box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+                height: 50px;
+                width: 186px;
+                display: none;
+            }
+            /* shoelace-button for 'Submit' */
+            
+             :root {
+                /* Change the text color and background */
+                --body-color: #43cec7;
+                --body-bg-color: #817f7849;
+            }
+            
+            sl-button {
+                width: 121px;
+                position: absolute;
+                top: 50%;
+                right: 70%;
+                transition: transform 0.4s;
+            }
+            
+            sl-button:hover {
+                transform: scale(1.07);
+            }
+            
+            sl-button::part(base) {
+                background: #ebe9e4ad;
+                border: none;
+                font-size: 1em;
+                font-weight: bold;
+                color: #43cec7;
+            }
+            
+            sl-dialog {
+                --width: 250px;
+            }
+            
+            sl-dialog::part(base) {
+                border: #ebe9e4ad;
+            }
+            
+            sl-dialog::part(panel) {
+                background-color: #ebe9e4ad;
+                text-align: center;
+                height: 200px;
+            }
+            
+            sl-dialog h2 {
+                color: #43cec7;
+                font-size: 1em;
+                font-weight: bold;
+            }
+            
+            sl-dialog::part(header) {
+                height: 10px;
+            }
+            
+            sl-dialog::part(title) {
+                display: none;
+            }
+            
+            sl-dialog a {
+                text-decoration: none;
+                color: #43cec7;
+            }
+            /* FOOTER */
+            
+            footer {
+                margin: 0;
+                height: 352px;
+                background: #77777a;
+                display: flex;
+                justify-content: center;
+            }
+            
+            footer h6 {
+                text-align: center;
+                color: #B8B6B6;
+                padding: 68px 0px 0px 750px;
+                width: 61%;
+                font-size: 1.5em;
+            }

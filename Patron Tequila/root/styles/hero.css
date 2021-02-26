@@ -82,12 +82,13 @@ HERO
 .hero {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .hero-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 5px 0px;
+    gap: 0px 0px;
     grid-template-areas: ". title ." ". sub-header ." "hornet1 image hornet2" ". footer .";
     justify-content: center;
     align-content: center;
@@ -103,6 +104,7 @@ HERO
     text-align: center;
     align-self: center;
     font-size: 2.3vw;
+    margin: auto;
 }
 
 
@@ -113,6 +115,7 @@ HERO
     text-align: center;
     font-style: italic;
     font-size: 1.1vw;
+    margin: auto;
 }
 
 #celebrate,
@@ -123,6 +126,7 @@ h2 {
     text-align: center;
     align-self: center;
     animation: fadeInUp;
+    margin: auto;
     /*text fades up*/
     animation-duration: 2s;
     /*animation duration*/
@@ -139,6 +143,7 @@ h2 {
     justify-content: center;
     align-self: center;
     width: 100%;
+    margin: auto;
 }
 
 .hornet1 {
@@ -168,72 +173,32 @@ h2 {
 }
 
 
-/* 
-.hamburger.btn {
-    background: none;
-    border: none;
-    text-decoration: none;
-    padding: 0.8em;
-    cursor: pointer;
-    margin: 5%;
-} */
-
-
-/* 
-.hamburger.btn .fa {
-    color: #413f3c;
-    border: none;
-    background: none;
-    font-size: 3em;
-}
- */
-
-
-/* navigation dots
-
-#fp-nav ul li .fp-tooltip {
-    color: #413f3c;
-}
-
-.fp-slidesNav {
-    left: 7% !important;
-    bottom: 5% !important;
-}
-
-.section {
-    height: 100vh;
-}
-
-.section .fp-tableCell {
-    padding: 1.5em;
-} */
-
-
 /*prompt is the user over 18 overlay to make text and buttons visible*/
 
 .modal-intro {
-    display: flex;
-    grid-area: main;
-    /* margin-left: -3%; */
+    position: relative;
+    left: -39em;
+    top: 6em;
+    justify-content: center;
+    align-items: center;
 }
 
 
 /* modal styling and size with box shadow */
 
 .modal-bg {
-    position: fixed;
+    position: absolute;
+    left: 10%;
     margin: auto;
     padding: 20px;
     background: rgba(80, 81, 85, 0.637);
     width: 325px;
-    height: 170px;
+    height: 200px;
     text-align: center;
     box-shadow: 0 8px 6px -6px rgb(0 0 0 / 50%);
-    /* opacity: 12; */
     z-index: 1010;
     /*set to display over other elements*/
     transform: translate(-50%, -50%);
-    /*  visibility: hidden;*/
     transition: visibility 0s opacity 0.5s;
 }
 
@@ -250,7 +215,6 @@ h2 {
 
 .modal-content {
     align-items: center;
-    padding: 20px 50px 20px 20px;
     z-index: 1000;
 }
 
@@ -263,7 +227,7 @@ h2 {
 .modal-yes {
     width: 85px;
     height: 30px;
-    border-radius: 10%;
+    border-radius: 1em;
     margin: 0 1.0em;
     background: #3ccacf;
     transition: all .2s ease-in-out;
@@ -283,7 +247,7 @@ h2 {
 .modal-no {
     width: 85px;
     height: 30px;
-    border-radius: 10%;
+    border-radius: 1em;
     margin: auto;
     background: #817f78;
     color: #413f3c;

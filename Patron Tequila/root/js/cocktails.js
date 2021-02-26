@@ -1,37 +1,51 @@
 const cocktailsTl = gsap.timeline({ delay: 0.5 })
 
 cocktailsTl.from('.cocktail-image', { x: 0, opacity: 0, duration: 2.5, ease: "power4.out", stagger: 0.2 })
-cocktailsTl.from('.image-main', { x: 100, duration: 5, ease: "slow", }, "-=2.5")
-cocktailsTl.from('.image-2', { x: -50, duration: 8, repeat: "1", ease: "slow", }, "-=2.5")
-cocktailsTl.from('.cocktail-header', { y: -150, duration: 8, repeat: "1", ease: "slow", }, "-=2.5")
+cocktailsTl.from('.image-main', { x: 400, duration: 4, ease: "slow", }, "-=1.5")
+cocktailsTl.from('.image-2', { x: -150, duration: 8, repeat: "3", ease: "slow", }, "-=2")
+cocktailsTl.from('.cocktail-header', { y: -150, duration: 8, repeat: "1", ease: "slow", }, "-=2")
+
+// text slides in 
+cocktailsTl.from('.cocktail-txt1 ', { x: -400, duration: 3, repeat: "1", ease: "bounce", }, "-=2.5")
+cocktailsTl.from('.cocktail-txt2 ', { x: 400, duration: 3, repeat: "4", ease: "steps(n)", }, "-=3")
+cocktailsTl.from('.cocktail-txt3 ', { x: -450, duration: 3, repeat: "4", ease: "power4", }, "-=3")
+cocktailsTl.from('.cocktail-txt4 ', { x: 350, duration: 3, repeat: "4", ease: "elastic", }, "-=3")
+cocktailsTl.from('.cocktail-txt5 ', { x: -550, duration: 3, repeat: "4", ease: "expo", }, "-=4")
 
 
-const cocktaislTl = gsap.timeline({
 
-    scrollTrigger: {
-        trigger: ".cocktail",
-        start: "top top",
-        end: "bottom bottom",
-        scrub: "true",
-        toggleActions: "restart pause reverse none"
+const yMove = document.querySelector(".cocktail")
+
+gsap.to(".cocktail-image", {
+    delay: 0.5,
+    duration: 2,
+    stagger: 0.2,
+    x: function(i, elem, boxes) {
+        return i % 2 === 1 ? -yMove : yMove;
     }
-})
+});
 
-// cocktailsTl.from('.cocktail-3', { x: 300, duration: 5, ease: "back.out(1.7)" });
-// cocktailsTl.from('.cocktail-4', { x: 300, duration: 5, ease: "back.out(1.7)" }, "-=1.5");
-// cocktailsTl.from('.cocktail-5', { x: 600, duration: 5, ease: "back.out(1.7)" });
-// cocktailsTl.from('.cocktail-6', { x: -200, duration: 5, ease: "back.out(1.7)" }, "-=1.5");
-// cocktailsTl.from('.cocktail-7', { x: 600, duration: 5, ease: "back.out(1.7)" });
-// cocktailsTl.from('.cocktail-8', { x: -200, duration: 5, ease: "back.out(1.7)" }, "-=1.5");
-// cocktailsTl.from('.cocktail-9', { x: 600, duration: 5, ease: "back.out(1.7)" });
-// cocktailsTl.from('.cocktail-10', { x: -200, duration: 5, ease: "back.out(1.7)" }, "-=1.5");
-// cocktailsTl.from('.cocktail-11', { x: 600, duration: 5, ease: "back.out(1.7)" });
-// cocktailsTl.from('.cocktail-12', { x: -200, duration: 5, ease: "back.out(1.7)" }, "-=1.5");
+// cocktail animations
+gsap.to(".cocktail-image", {
+    y: 100,
+    stagger: { // wrap advanced options in an object
+        each: 0.1,
+        from: "edges",
+        grid: "auto",
+        ease: "power2.inOut",
+        repeat: -1 // Repeats immediately, not waiting for the other staggered animations to finish
+    }
+});
+// scrollTrigger: {
+// trigger: ".cocktail",
+// start: "top top",
+// end: "bottom bottom",
+// scrub: "true",
+// toggleActions: "restart pause reverse none"
+// }
 
 var hornet = gsap.utils.toArray('.hornet')
-
-
-// hornet patron logo, to rotate and trigger with scrolling
+    // hornet patron logo, to rotate and trigger with scrolling
 
 hornet.forEach((hornet, i) => {
 

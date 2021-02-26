@@ -1,70 +1,182 @@
-@media only screen (min-width: 400px) and (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5em;
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+    .section-hero {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-left: 10%; */
     }
-    .hero p {
-        font-size: 1.5em;
+    .hero h1 {
+        font-size: 3em;
+        width: 200%;
+    }
+    .hero-container {
+        width: 100vw;
+        margin: 7px;
+    }
+    .hero h3 {
+        font-size: 1.2em;
+        width: 200%;
+    }
+    #celebrate,
+    h2 {
+        font-size: 3.2em;
+        width: 200%;
+        /* margin-bottom: -49%; */
+    }
+    .hero-image {
+        width: 196%;
+        margin-top: 56%;
+    }
+    .hornet1 {
+        width: 20%;
+    }
+    .hornet2 {
+        width: 58%;
     }
     .nav nav {
         display: none;
     }
-}
-
-
-/* PATRON RANGE */
-
-
-/* .grid-range1 {
-        width: 55%;
+    .modal-intro {
+        width: 100%;
     }
-    ..range1-side {
-        margin-left: -10%;
+    /* journey section */
+    .journey-title {
+        font-size: 18px;
     }
-    .section-range2 {
-        margin: 10% 0px 0 -9%;
+    .journey-text {
+        font-size: 16px;
+        width: 90%;
     }
-    .range2-side {
-        margin-left: -43%;
+    .journey-p {
+        width: 70%;
+        font-size: 16px;
     }
-    .range2-tag {
-        margin-top: 10%;
+    .journey-image--primary {
+        grid-area: image;
     }
-    .range3-image--main {
-        margin-top: -11%;
-        margin-left: -14%;
-        width: 122%;
+    .journey-image {
+        width: 100%
     }
-    .range3-info {
-        margin-top: -108%;
-        margin-left: 46%;
+    /* Journey section 2 */
+    .section-journey2 {
+        width: 100vw;
+        height: 100vh;
     }
-    .range3-text {
-        margin-top: -633%;
-        margin-left: -59%;
-    } */
-
-
-/* COCKTAILS */
-
-
-/* .grid-cocktail {
-        width: 60%;
+    .grid-journey2 {
+        width: 80vw;
     }
+    #j2-title {
+        font-size: 3.5em;
+        width: 100%;
+    }
+    .journey2-main-text {
+        font-size: 0.9em;
+        width: 63%;
+        margin-left: 35%;
+    }
+    .journey2-text2 {
+        font-size: .7em;
+    }
+    .journey2-subtitle {
+        font-size: 1em;
+        width: 50%;
+        margin-left: 42%;
+    }
+    .journey2-title {
+        width: 100%;
+    }
+    .journey2-content {
+        grid-area: text;
+        text-align: center;
+        width: 106%;
+    }
+    .journey2-side {
+        font-size: 1em;
+    }
+    .journey2-side--text {
+        font-size: 1em;
+        margin: auto;
+        width: 88%;
+    }
+    /* 
+.journey2-image--primary {
+    width: 100%;
+} */
+    .journey2-image {
+        margin-left: -19%;
+        width: 138%;
+        margin-right: -22%;
+    }
+    .journey2-image--secondary {
+        width: 100%;
+    }
+    .jimador {
+        width: 25%;
+    }
+    .journey2-hornet1 {
+        width: 50%;
+    }
+    .journey2-hornet2 {
+        width: 40%;
+    }
+    /* Patron range section */
+    .patron-range1 {
+        width: 100vw;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+    .grid-range1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .range1-title {
+        font-size: 1em;
+    }
+    .grid-range1 {
+        /* margin-left: 5%; */
+    }
+    .range1-subtitle {
+        font-size: .8em;
+        width: 100%;
+        margin: auto;
+    }
+    .range1-text,
+    .range1-side {
+        width: 50%;
+    }
+    .range1-text {
+        align-self: auto;
+        font-size: 1vw;
+        width: %;
+    }
+    .range1-side {
+        font-size: 1em;
+        margin-left: %;
+        width: %;
+    }
+    .range1-tag {
+        justify-content: inherit;
+    }
+    .range1-image-main {
+        width: 385%;
+    }
+    #patron-set1 {
+        width: 165%;
+        /* margin-left: -31%; */
+    }
+    /* COCKTAILS */
     .hornet {
         width: 50%;
     }
     /*CONTACT */
-
-
-/* .section-contact {
+    .section-contact {
         width: 50%;
         height: 50%;
     }
     .contact-grid1 {
-        width: 50%;
-        height: 50%;
-    }
-    .contact-grid2 {
         width: 50%;
         height: 50%;
     }
@@ -76,11 +188,11 @@
         margin-left: 10%;
     }
     .contact-form {
-        width: 50%;
+        width: 20%;
         margin-top: -15%;
     }
     #contact-form label {
-        font-size: 7px;
+        font-size: .5em;
     }
     #contact-form input[type='text'],
     #contact-form input[type='email'],
@@ -91,13 +203,9 @@
     text area input area on form #contact-form textarea {
         height: 20%;
         width: 20%;
-    } */
-
-
-/*contact 'Send button and styling*/
-
-
-/* #contact-form button[type='submit'] {
+    }
+    /*contact 'Send button and styling*/
+    #contact-form button[type='submit'] {
         width: 50%;
     }
     .contact-name {
@@ -113,22 +221,7 @@
         width: 50%;
     }
     /*submit button*/
-
-
-/* footer h6 {
+    footer h6 {
         font-size: 16px;
     }
-}  */
-
-
-/* } */
-
-*/
-/* Desktops and laptops ----------- */
-
-@media only screen and (min-width: 1224px) {
-    /* Styles */
 }
-
-
-/* Large screens ----------- */

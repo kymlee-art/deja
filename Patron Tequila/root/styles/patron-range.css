@@ -1,463 +1,461 @@
-/****
+    /****
 Patron Range 1******/
-
-.section-range1 {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-
-.grid-range1 {
-    display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(100px, .2fr .2fr .2fr 1fr .1fr));
-    grid-template-columns: 0.2fr .6fr 0.2fr;
-    gap: 5px 10px;
-    grid-template-areas: "title title title" "subtitle subtitle subtitle" "text image side" ". image ." ". image ." ". bottom .";
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    max-height: 100vh;
-}
-
-#Range1-title {
-    font-size: 4vw;
-    align-self: baseline;
-}
-
-.range1-title {
-    grid-area: title;
-}
-
-#Range1-title,
-.range1-subtitle {
-    color: #c0af5d;
-}
-
-.range1-subtitle {
-    grid-area: subtitle;
-    font-size: 1.2vw;
-    padding: .5%;
-    width: 65%;
-    margin: auto;
-}
-
-.range1-content {
-    grid-area: text;
-    margin-left: 32%;
-}
-
-.range1-text,
-.range1-side {
-    width: 70%;
-    color: #817f78;
-}
-
-.range1-text {
-    align-self: center;
-    font-size: 0.8vw;
-    width: 50;
-    z-index: 1;
-}
-
-.range1-side {
-    grid-area: side;
-    display: flex;
-    font-size: 0.8vw;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.range1-tag {
-    grid-area: bottom;
-    display: flex;
-    flex-direction: row;
-    justify-content: inherit;
-}
-
-.range1-image-main {
-    grid-area: image;
-}
-
-#patron-set1 {
-    width: 110%;
-}
-
-.anejo,
-.silver,
-.reposado {
-    font-size: 0.7vw;
-    color: #817f78;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 25%;
-    z-index: 3;
-}
-
-.anejo {
-    align-self: center;
-}
-
-.silver {
-    text-align: center;
-}
-
-.reposado {
-    text-align: center;
-}
-
-.hornet,
-.range1 {
-    width: 65%;
-    position: fixed;
-    transform: rotate( 35deg);
-    z-index: 4;
-}
-
-
-/***** Patron Range2******/
-
-.section-range2 {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    margin: 10% 0px 0 12%;
-}
-
-.patron-range2 {
-    text-align: center;
-}
-
-.grid-range2 {
-    display: grid;
-    grid-template-columns: 0.1fr .7fr 0.2fr;
-    grid-template-rows: 0.1fr 0.1fr 0.3fr 0.1fr;
-    gap: 5px 10px;
-    grid-template-areas: "title title title " "subtitle subtitle subtitle" "hornet image side" ". text text";
-    align-items: center;
-    text-align: center;
-    max-height: 100vh;
-    max-width: 80%;
-}
-
-.range2-header {
-    grid-area: title;
-}
-
-#range2-title {
-    color: #c0af5d;
-    font-size: 3.2vw;
-}
-
-.animated {
-    animation-duration: 3s;
-    animation-fill-mode: both;
-    animation-timing-function: ease-in;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
+    
+    .section-range1 {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        margin: auto;
     }
-    100% {
-        opacity: 1;
+    
+    .grid-range1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px 10px;
+        grid-template-areas: "title title title" "subtitle subtitle subtitle" "text image side" ". bottom .";
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 80%;
+        height: 100vh;
+        margin-left: 10%;
     }
-}
-
-.range2-subtitle {
-    color: #c0af5d;
-    font-size: 0.7vw;
-    width: 50%;
-    margin: auto;
-    grid-area: subtitle;
-    padding: 2%;
-}
-
-.range2-side {
-    grid-area: side;
-    width: 63%;
-}
-
-.range2-image--main {
-    grid-area: image;
-}
-
-#gran-patron {
+    
+    .range1-title {
+        grid-area: title;
+        padding-top: 15%;
+        font-size: 3vw;
+        align-self: baseline;
+    }
+    
+    #Range1-title,
+    .range1-subtitle {
+        color: #c0af5d;
+    }
+    
+    .range1-subtitle {
+        grid-area: subtitle;
+    }
+    
+    .range1-content {
+        grid-area: text;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        color: #817f78;
+        align-self: auto;
+        font-size: 1vw;
+        margin-left: -28%;
+        z-index: 1;
+    }
+    
+    .range1-side {
+        grid-area: side;
+        color: #817f78;
+        display: flex;
+        font-size: 1vw;
+        margin-left: 39%;
+        width: 58%;
+    }
+    
+    .range1-tag {
+        grid-area: bottom;
+        display: flex;
+        flex-direction: row;
+        justify-content: inherit;
+        padding-top: 5%;
+    }
+    
+    .range1-image-main {
+        grid-area: image;
+    }
+    
+    #patron-set1 {
+        width: 180%;
+        margin-left: -31%;
+    }
+    
+    .anejo,
+    .silver,
+    .reposado {
+        font-size: 0.7vw;
+        color: #817f78;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 25%;
+        z-index: 3;
+    }
+    
+    .anejo {
+        align-self: center;
+    }
+    
+    .silver {
+        text-align: center;
+    }
+    
+    .reposado {
+        text-align: center;
+    }
+    
+    .hornet,
+    .range1 {
+        width: 65%;
+        top: 21%;
+        left: 10%;
+        transform: rotate( 35deg);
+        z-index: 4;
+    }
+    /***** Patron Range2******/
+    
+    .section-range2 {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .patron-range2 {
+        text-align: center;
+    }
+    
+    .grid-range2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px 5px;
+        grid-template-areas: "title title title " "subtitle subtitle subtitle" "side image text";
+        align-items: center;
+        text-align: center;
+        max-width: 80vw;
+    }
+    
+    .range2-header {
+        grid-area: title;
+    }
+    
+    #range2-title {
+        color: #c0af5d;
+        font-size: 3.2vw;
+    }
+    
+    .animated {
+        animation-duration: 3s;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in;
+    }
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .range2-subtitle {
+        color: #c0af5d;
+        font-size: 0.7vw;
+        width: 50%;
+        margin: auto;
+        grid-area: subtitle;
+    }
+    
+    .range2-side {
+        grid-area: side;
+        margin-left: 41%;
+        width: 57%;
+    }
+    
+    .range2-image--main {
+        grid-area: image;
+    }
+    
+    #gran-patron {
+        width: 140%;
+    }
+    
+    .range2-tag {
+        grid-area: text1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .range2-sidequote {
+        font-size: 1vw;
+        color: #817f78;
+        font-weight: 700;
+        font-style: bold;
+        z-index: 2;
+    }
+    
+    .sidequote-text {
+        font-size: 0.8vw;
+        color: #817f78
+    }
+    
+    .platinum,
+    .Burdeos,
+    .Piedra {
+        font-size: 0.8vw;
+        color: #817f78;
+        width: 32%;
+        align-self: center;
+        text-align: center;
+    }
+    
+    .platinum {
+        z-index: 3;
+    }
+    
+    .Burdeos {
+        z-index: 3;
+    }
+    
+    .Piedra {
+        z-index: 3;
+    }
+    /* 
+.hornet-range2 {
+    display: relative;
     width: 75%;
-    margin-left: 3%;
-}
-
-.range2-tag {
-    grid-area: text;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.range2-sidequote {
-    font-size: 1vw;
-    color: #c0af5d;
-    font-weight: 700;
-    font-style: bold;
-    z-index: 2;
-}
-
-.sidequote-text {
-    font-size: 0.8vw;
-    color: #c0af5d;
-}
-
-.platinum,
-.Burdeos,
-.Piedra {
-    font-size: 0.8vw;
-    color: #817f78;
-    width: 20%;
-    align-self: center;
-    text-align: center;
-}
-
-.platinum {
-    z-index: 3;
-}
-
-.Burdeos {
-    z-index: 3;
-}
-
-.Piedra {
-    z-index: 3;
-}
-
-.hornet,
-.range1 {
-    width: 65%;
-    position: fixed;
     transform: rotate( 35deg);
     z-index: 4;
 }
 
-
-/***** Patron Range3******/
-
-.section-range3 {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    margin: 0 0 0 7%;
-}
-
-.grid-range3 {
-    display: grid;
-    grid-template-columns: 0.4fr 0.5fr 0.2fr;
-    grid-template-rows: 0.5fr 0.1fr 0.3fr 0.2fr 0.1fr;
-    gap: 0px 5px;
-    grid-template-areas: "title title title ." "side1 image . side" "side1 image . side2" "logo image text ." ". image . .";
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    max-height: 100vh;
-    max-width: 100%;
-    margin-top: 10%;
-}
-
-.range3-subtitle {
-    color: #c0af5d;
-    text-align: center;
-    font-size: 1vw;
-    font-style: bold;
-    padding-bottom: 10%;
-}
-
-.range3-header {
-    grid-area: title;
-}
-
-.range3-title {
-    font-size: 3vw;
-    color: #c0af5d;
-}
-
-.range3-text {
-    grid-area: text;
-    padding-top: 20%;
-}
-
-.range3-text2 {
-    grid-area: side1;
-    padding-top: 10%;
-    font-size: .9vw;
-}
-
-.range3-image--main {
-    grid-area: image;
-    text-align: center;
-    z-index: 2;
-}
-
-#patron-xocafe {
-    width: 117%;
-}
-
-.range3-image--logo {
-    grid-area: logo;
-    width: 60%;
-    display: contents;
-    z-index: 11;
-}
-
-.xocafe {
-    font-size: 1vw;
-    width: 68%;
-    margin: auto;
-    z-index: 2;
-}
-
-.range3-info {
-    font-size: 0.9vw;
-    width: 70%;
-    margin: auto;
-    color: #817f78;
-}
-
-.hornetlogo {
-    width: 65%;
-    align-self: flex-start;
-    transform: rotate( 35deg);
-    z-index: 4;
-}
-
-
-/***** Patron Range4******/
-
-.section-range4 {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-
-.grid-range4 {
-    display: grid;
-    grid-template-columns: 0.2fr .3fr 0.2fr;
-    grid-template-rows: 0.1fr 0.1fr 0.2fr 0.1fr 0.1fr 0.1fr;
-    gap: 5px 10px;
-    grid-template-areas: "title title title" "subtitle subtitle subtitle" "text image side" "text1 image sidetext";
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    margin-left: 5%;
-    margin-top: 10%;
-}
-
-.range4-title {
-    grid-area: title;
-    font-size: 3vw;
-    color: #c0af5d;
-    margin-left: -10%;
-    z-index: 2;
-}
-
-.animated {
-    animation-duration: 3s;
-    animation-fill-mode: both;
-    animation-timing-function: ease-in;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.fadeIn {
-    animation-name: fadeIn;
-}
-
-.range4-main--text p,
-.range4-side p {
-    grid-area: text;
-    color: #817f78;
-    margin-left: 20%;
-    margin-top: 2%;
-}
-
-.range4-main--text1 P,
-.range4-side-text p {
-    width: 70%;
-    margin-top: -4%;
-}
-
-.range4-text,
-.range4-subtitle,
-.range4-main--text,
-.range4-side,
-.range4-side-text {
-    text-align: center;
-}
-
-.range4-subtitle {
-    grid-area: subtitle;
-    /* padding-bottom: 10%; */
-    margin-left: -5%;
-}
-
-.subtitle {
-    font-size: 1.3vw;
-    font-weight: 800;
-    color: #c0af5d;
-}
-
-.range4-main--text {
-    grid-area: text;
-    font-size: 0.9vw;
-    color: #817f78;
-    margin-left: 20%;
-}
-
-.range4-side {
-    grid-area: side;
-    margin-left: -25%;
-    width: 70%;
-    font-size: 0.9vw;
-}
-
-.range4-image--main {
-    grid-area: image;
-    z-index: 1;
-    display: flex;
-}
-
-.main-image {
-    justify-content: center;
-    margin-top: -74%;
-    margin-left: -12%;
+.r2-hornet {
+    display: absolute;
     width: 75%;
-}
-
-.range4-hornet {
-    display: flex;
-    justify-content: center;
-    grid-area: text1;
-    z-index: 1;
-}
-
-.range4-hornet1 {
-    grid-area: text;
-    display: flex;
-    width: 54%;
-    z-index: -1;
-}
-
-.range4-image1 {
-    grid-area: image;
-    width: 50%;
-    align-self: end;
+    transform: rotate( 35deg);
     z-index: 4;
-}
+    top: 25%;
+} */
+    /***** Patron Range3******/
+    
+    .section-range3 {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin: 0 0 0 7%;
+    }
+    
+    .grid-range3 {
+        display: grid;
+        grid-template-columns: 0.4fr 0.5fr 0.2fr;
+        grid-template-rows: 0.5fr 0.1fr 0.3fr 0.2fr 0.1fr;
+        gap: 0px 5px;
+        grid-template-areas: "title title title ." "side1 image . side" "side1 image . side2" "logo image text ." ". image . .";
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-height: 100vh;
+        max-width: 100%;
+        margin-top: 10%;
+    }
+    
+    .range3-subtitle {
+        color: #c0af5d;
+        text-align: center;
+        font-size: 1vw;
+        font-style: bold;
+        padding-bottom: 5%;
+    }
+    
+    .range3-header {
+        grid-area: title;
+    }
+    
+    .range3-title {
+        font-size: 3vw;
+        color: #c0af5d;
+    }
+    
+    .range3-text {
+        grid-area: text;
+        color: #817f78;
+    }
+    
+    .range3-text2 {
+        grid-area: side1;
+        padding-top: 10%;
+        font-size: .9vw;
+    }
+    
+    .range3-image--main {
+        grid-area: image;
+        text-align: center;
+        z-index: 2;
+    }
+    
+    #patron-xocafe {
+        width: 100%;
+    }
+    
+    .range3-image--logo {
+        grid-area: logo;
+        width: 60%;
+        display: contents;
+        z-index: 11;
+    }
+    
+    .xocafe {
+        font-size: 1vw;
+        width: 68%;
+        margin: auto;
+        z-index: 2;
+    }
+    
+    .range3-info {
+        font-size: 0.9vw;
+        width: 70%;
+        margin: auto;
+        color: #817f78;
+    }
+    
+    .hornet-logo {
+        width: 65%;
+        transform: rotate( 35deg);
+        z-index: 4;
+    }
+    
+    .hornet-logo1 {
+        width: 85%;
+        transform: rotate( 35deg);
+        z-index: 4;
+    }
+    /***** Patron Range4******/
+    
+    .section-range4 {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .grid-range4 {
+        display: grid;
+        grid-template-columns: 0.2fr .3fr 0.2fr;
+        grid-template-rows: 0.1fr 0.1fr 0.2fr 0.1fr 0.1fr 0.1fr;
+        gap: 5px 10px;
+        grid-template-areas: "title title title" "subtitle subtitle subtitle" "text image side" "text1 image sidetext";
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        margin-left: 5%;
+        margin-top: 10%;
+    }
+    
+    .range4-title {
+        grid-area: title;
+        font-size: 3vw;
+        color: #c0af5d;
+        margin-left: -10%;
+        z-index: 2;
+    }
+    
+    .animated {
+        animation-duration: 3s;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in;
+    }
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .fadeIn {
+        animation-name: fadeIn;
+    }
+    
+    .range4-main--text p,
+    .range4-side p {
+        grid-area: text;
+        color: #817f78;
+        margin-left: 20%;
+        margin-top: 2%;
+    }
+    
+    .range4-main--text1 P,
+    .range4-side-text p {
+        width: 70%;
+        margin-top: -4%;
+    }
+    
+    .range4-text,
+    .range4-subtitle,
+    .range4-main--text,
+    .range4-side,
+    .range4-side-text {
+        text-align: center;
+    }
+    
+    .range4-subtitle {
+        grid-area: subtitle;
+        /* padding-bottom: 10%; */
+        margin-left: -5%;
+    }
+    
+    .subtitle {
+        font-size: 1.3vw;
+        font-weight: 800;
+        color: #c0af5d;
+    }
+    
+    .range4-main--text {
+        grid-area: text;
+        font-size: 0.9vw;
+        color: #817f78;
+        margin-left: 20%;
+    }
+    
+    .range4-side {
+        grid-area: side;
+        margin-left: -25%;
+        width: 70%;
+        font-size: 0.9vw;
+    }
+    
+    .range4-image--main {
+        grid-area: image;
+        z-index: 1;
+        display: flex;
+    }
+    
+    .main-image {
+        justify-content: center;
+        margin-top: -74%;
+        margin-left: -12%;
+        width: 75%;
+    }
+    
+    .range4-hornet {
+        display: flex;
+        justify-content: center;
+        grid-area: text1;
+        z-index: 1;
+    }
+    
+    .range4-hornet1 {
+        grid-area: text;
+        display: flex;
+        width: 54%;
+        z-index: -1;
+    }
+    
+    .range4-image1 {
+        grid-area: image;
+        width: 50%;
+        align-self: end;
+        z-index: 4;
+    }
