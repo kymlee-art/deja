@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
+    max-width: 100vw;
     /* margin: 2% 0% 0% 10%; */
 }
 
@@ -38,6 +39,9 @@
     text-align: initial;
     font-size: 1vw;
     font-style: italic;
+}
+.cocktail-header-2{
+    margin-top: -20%;
 }
 
 .cocktail-subtitle {
@@ -81,7 +85,16 @@
     font-size: 1vw;
     width: 60%;
 }
+.txt1{
 
+    margin-top: 5%;
+}
+.txt2{
+    margin-left: 5%
+}
+.txt3{
+    margin-left: 15%;
+}
 .cocktail-txt1 {
     grid-area: text1;
     padding: 9vw;
@@ -229,7 +242,7 @@
 }
 
 
-/* 
+/*
 .hornet {
     display: inline-block;
 } */
@@ -264,3 +277,22 @@
     width: 58%;
     transform: rotate( 31deg);
 }
+
+
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .section-contact{
+        width: 100vw;
+    }
+    }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}

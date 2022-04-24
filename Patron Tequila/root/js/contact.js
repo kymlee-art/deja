@@ -1,4 +1,4 @@
-// get send button, message dialog and form 
+// get send button, message dialog and form
 const sendBtn = document.querySelector('send-btn');
 const messDialog = document.querySelector('.mess-dialog');
 const hideForm = document.querySelector('#contact-form');
@@ -47,27 +47,27 @@ const dialog = document.querySelector('.Send')
 slButton.addEventListener('click', () => dialog.show());
 
 
-// gsap motion path with svg
+// // gsap motion path with svg
 
-gsap.registerPlugin(MotionPathPlugin);
+// gsap.registerPlugin(MotionPathPlugin);
 
-gsap.to(".hornet-img7 ", {
-    duration: 5,
-    repeat: 12,
-    repeatDelay: 3,
-    yoyo: true,
-    ease: "power1.inOut",
-    motionPath: {
-        path: "#path",
-        align: "#path",
-        autoRotate: true,
-        alignOrigin: [0.5, 0.5]
-    }
-});
+// gsap.to(".hornet-img7 ", {
+//     duration: 5,
+//     repeat: 12,
+//     repeatDelay: 3,
+//     yoyo: true,
+//     ease: "power1.inOut",
+//     motionPath: {
+//         path: "#path",
+//         align: "#path",
+//         autoRotate: true,
+//         alignOrigin: [0.5, 0.5]
+//     }
+// });
 
 
-const contactTl = gsap.timeline()
+// const contactTl = gsap.timeline()
 
-contactTl.from('.contact-image--main', { y: 250, duration: 3, repeat: "1", ease: "bounce", })
-contactTl.from('.contact-heading', { x: -550, duration: 3, repeat: "1", ease: "power4", })
-contactTl.from('.contact-hornet1', { x: -550, duration: 3, rotate: "360 deg", repeat: "1", ease: "power4", })
+// contactTl.from('.contact-image--main', { y: 250, duration: 3, repeat: "1", ease: "bounce", })
+// contactTl.from('.contact-heading', { x: -550, duration: 3, repeat: "1", ease: "power4", })
+// contactTl.from('.contact-hornet1', { x: -550, duration: 3, rotate: "360 deg", repeat: "1", ease: "power4", })
