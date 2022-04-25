@@ -1,13 +1,13 @@
     /****
 Patron Range 1******/
-    
+
     .section-range1 {
         width: 100vw;
         height: 100vh;
         display: flex;
         margin: auto;
     }
-    
+
     .grid-range1 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -16,40 +16,39 @@ Patron Range 1******/
         align-items: center;
         justify-content: center;
         text-align: center;
-        width: 80%;
+        /* width: 80%; */
         height: 100vh;
         margin-left: 10%;
     }
-    
+
     .range1-title {
         grid-area: title;
         padding-top: 15%;
         font-size: 3vw;
         align-self: baseline;
     }
-    
+
     #Range1-title,
     .range1-subtitle {
         color: #c0af5d;
     }
-    
+
     .range1-subtitle {
         grid-area: subtitle;
     }
-    
+
     .range1-content {
         grid-area: text;
+        /* position: absolute;
         display: flex;
         justify-content: center;
-        align-items: center;
-        width: 50%;
-        color: #817f78;
-        align-self: auto;
+        align-items: center; */
+           color: #817f78;
         font-size: 1vw;
-        margin-left: -28%;
+        /* margin-left: 8%; */
         z-index: 1;
     }
-    
+
     .range1-side {
         grid-area: side;
         color: #817f78;
@@ -58,7 +57,7 @@ Patron Range 1******/
         margin-left: 39%;
         width: 58%;
     }
-    
+
     .range1-tag {
         grid-area: bottom;
         display: flex;
@@ -66,16 +65,15 @@ Patron Range 1******/
         justify-content: inherit;
         padding-top: 5%;
     }
-    
+
     .range1-image-main {
         grid-area: image;
     }
-    
+
     #patron-set1 {
-        width: 180%;
-        margin-left: -31%;
+        margin-left: -1%;
     }
-    
+
     .anejo,
     .silver,
     .reposado {
@@ -88,19 +86,19 @@ Patron Range 1******/
         width: 25%;
         z-index: 3;
     }
-    
+
     .anejo {
         align-self: center;
     }
-    
+
     .silver {
         text-align: center;
     }
-    
+
     .reposado {
         text-align: center;
     }
-    
+
     .hornet,
     .range1 {
         width: 65%;
@@ -110,7 +108,7 @@ Patron Range 1******/
         z-index: 4;
     }
     /***** Patron Range2******/
-    
+
     .section-range2 {
         width: 100vw;
         display: flex;
@@ -118,11 +116,11 @@ Patron Range 1******/
         align-items: center;
         height: 100vh;
     }
-    
+
     .patron-range2 {
         text-align: center;
     }
-    
+
     .grid-range2 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -130,24 +128,24 @@ Patron Range 1******/
         grid-template-areas: "title title title " "subtitle subtitle subtitle" "side image text";
         align-items: center;
         text-align: center;
-        max-width: 80vw;
+        max-width: 100vw;
     }
-    
+
     .range2-header {
         grid-area: title;
     }
-    
+
     #range2-title {
         color: #c0af5d;
         font-size: 3.2vw;
     }
-    
+
     .animated {
         animation-duration: 3s;
         animation-fill-mode: both;
         animation-timing-function: ease-in;
     }
-    
+
     @keyframes fadeIn {
         0% {
             opacity: 0;
@@ -156,7 +154,7 @@ Patron Range 1******/
             opacity: 1;
         }
     }
-    
+
     .range2-subtitle {
         color: #c0af5d;
         font-size: 0.7vw;
@@ -164,28 +162,28 @@ Patron Range 1******/
         margin: auto;
         grid-area: subtitle;
     }
-    
+
     .range2-side {
         grid-area: side;
         margin-left: 41%;
         width: 57%;
     }
-    
+
     .range2-image--main {
         grid-area: image;
     }
-    
+
     #gran-patron {
         width: 140%;
     }
-    
+
     .range2-tag {
         grid-area: text1;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
-    
+
     .range2-sidequote {
         font-size: 1vw;
         color: #817f78;
@@ -193,12 +191,12 @@ Patron Range 1******/
         font-style: bold;
         z-index: 2;
     }
-    
+
     .sidequote-text {
         font-size: 0.8vw;
         color: #817f78
     }
-    
+
     .platinum,
     .Burdeos,
     .Piedra {
@@ -208,19 +206,19 @@ Patron Range 1******/
         align-self: center;
         text-align: center;
     }
-    
+
     .platinum {
         z-index: 3;
     }
-    
+
     .Burdeos {
         z-index: 3;
     }
-    
+
     .Piedra {
         z-index: 3;
     }
-    /* 
+    /*
 .hornet-range2 {
     display: relative;
     width: 75%;
@@ -236,14 +234,14 @@ Patron Range 1******/
     top: 25%;
 } */
     /***** Patron Range3******/
-    
+
     .section-range3 {
         width: 100vw;
         display: flex;
         justify-content: center;
         margin: 0 0 0 7%;
     }
-    
+
     .grid-range3 {
         display: grid;
         grid-template-columns: 0.4fr 0.5fr 0.2fr;
@@ -257,7 +255,7 @@ Patron Range 1******/
         max-width: 100%;
         margin-top: 10%;
     }
-    
+
     .range3-subtitle {
         color: #c0af5d;
         text-align: center;
@@ -265,78 +263,78 @@ Patron Range 1******/
         font-style: bold;
         padding-bottom: 5%;
     }
-    
+
     .range3-header {
         grid-area: title;
     }
-    
+
     .range3-title {
         font-size: 3vw;
         color: #c0af5d;
     }
-    
+
     .range3-text {
         grid-area: text;
         color: #817f78;
     }
-    
+
     .range3-text2 {
         grid-area: side1;
         padding-top: 10%;
         font-size: .9vw;
     }
-    
+
     .range3-image--main {
         grid-area: image;
         text-align: center;
         z-index: 2;
     }
-    
+
     #patron-xocafe {
         width: 100%;
     }
-    
+
     .range3-image--logo {
         grid-area: logo;
         width: 60%;
         display: contents;
         z-index: 11;
     }
-    
+
     .xocafe {
         font-size: 1vw;
         width: 68%;
         margin: auto;
         z-index: 2;
     }
-    
+
     .range3-info {
         font-size: 0.9vw;
         width: 70%;
         margin: auto;
         color: #817f78;
     }
-    
+
     .hornet-logo {
         width: 65%;
         transform: rotate( 35deg);
         z-index: 4;
     }
-    
+
     .hornet-logo1 {
         width: 85%;
         transform: rotate( 35deg);
         z-index: 4;
     }
     /***** Patron Range4******/
-    
+
     .section-range4 {
         width: 100vw;
         display: flex;
         justify-content: center;
         margin: auto;
     }
-    
+
     .grid-range4 {
         display: grid;
         grid-template-columns: 0.2fr .3fr 0.2fr;
@@ -347,10 +345,10 @@ Patron Range 1******/
         align-items: center;
         height: 100vh;
         width: 100vw;
-        margin-left: 5%;
+
         margin-top: 10%;
     }
-    
+
     .range4-title {
         grid-area: title;
         font-size: 3vw;
@@ -358,13 +356,13 @@ Patron Range 1******/
         margin-left: -10%;
         z-index: 2;
     }
-    
+
     .animated {
         animation-duration: 3s;
         animation-fill-mode: both;
         animation-timing-function: ease-in;
     }
-    
+
     @keyframes fadeIn {
         0% {
             opacity: 0;
@@ -373,11 +371,11 @@ Patron Range 1******/
             opacity: 1;
         }
     }
-    
+
     .fadeIn {
         animation-name: fadeIn;
     }
-    
+
     .range4-main--text p,
     .range4-side p {
         grid-area: text;
@@ -385,13 +383,13 @@ Patron Range 1******/
         margin-left: 20%;
         margin-top: 2%;
     }
-    
+
     .range4-main--text1 P,
     .range4-side-text p {
         width: 70%;
         margin-top: -4%;
     }
-    
+
     .range4-text,
     .range4-subtitle,
     .range4-main--text,
@@ -399,63 +397,63 @@ Patron Range 1******/
     .range4-side-text {
         text-align: center;
     }
-    
+
     .range4-subtitle {
         grid-area: subtitle;
         /* padding-bottom: 10%; */
         margin-left: -5%;
     }
-    
+
     .subtitle {
         font-size: 1.3vw;
         font-weight: 800;
         color: #c0af5d;
     }
-    
+
     .range4-main--text {
         grid-area: text;
         font-size: 0.9vw;
         color: #817f78;
         margin-left: 20%;
     }
-    
+
     .range4-side {
         grid-area: side;
-        margin-left: -25%;
-        width: 70%;
+        margin-left: -35%;
+        width: 100%;
         font-size: 0.9vw;
     }
-    
+
     .range4-image--main {
         grid-area: image;
         z-index: 1;
         display: flex;
     }
-    
+
     .main-image {
         justify-content: center;
         margin-top: -74%;
         margin-left: -12%;
-        width: 75%;
+        /* width: 75%; */
     }
-    
+
     .range4-hornet {
         display: flex;
         justify-content: center;
         grid-area: text1;
         z-index: 1;
     }
-    
+
     .range4-hornet1 {
         grid-area: text;
         display: flex;
         width: 54%;
         z-index: -1;
     }
-    
+
     .range4-image1 {
         grid-area: image;
         width: 50%;
-        align-self: end;
+        /* align-self: end; */
         z-index: 4;
     }

@@ -72,6 +72,9 @@
 .journey-image--secondary {
     grid-area: image2;
     display: flex;
+    margin-left: 9em;
+    margin-top: -5em;
+    object-fit: contain;
     justify-content: center;
     align-self: baseline;
     z-index: 2;
@@ -189,6 +192,7 @@
     grid-area: text;
     text-align: center;
     width: 40%;
+    margin-left: 45%;
 }
 
 .journey2-side {
@@ -229,7 +233,9 @@
 }
 
 .jimador {
-    width: 25%;
+    margin-top: -70%;
+    width: 30%;
+    height: 30%;
 }
 
 .journey2-hornet1 {

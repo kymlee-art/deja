@@ -239,7 +239,7 @@ Patron Contact Content******/
 
             footer {
                 margin: 0;
-                height: 125px;
+                height: 150px;
                 background: #77777a;
                 display: flex;
                 justify-content: center;
@@ -254,3 +254,51 @@ Patron Contact Content******/
                 font-size: 1em;
                 overflow: hidden;
             }
+
+
+            @media only screen and (max-width: 600px) {
+                .section-contact{
+                    width: 100vw;
+                }
+                }
+
+
+            /* Small devices (portrait tablets and large phones, 600px and up) */
+            @media only screen and (min-width: 600px) {
+                .section-contact{
+                    width: 100vw;
+                }
+                }
+
+            /* Medium devices (landscape tablets, 768px and up) */
+            @media only screen and (min-width: 768px) {
+                .section-contact{
+                width: 100vw;
+            }
+            }
+
+            /* Large devices (laptops/desktops, 992px and up) */
+            @media only screen and (min-width: 992px) {
+                .section-contact{
+                    width: 100vw;
+                }
+                }
+
+
+            /* Extra large devices (large laptops and desktops, 1200px and up) */
+            @media only screen and (min-width: 1024px) {
+                .section-contact{
+                    width: 100vw;
+                }.contact-title{
+                    margin-top: 40%;
+                }
+
+                }
+            @media only screen and (min-width: 1440px) {
+                    .section-contact{
+                        width: 100vw;
+                    }
+                    .contact-title{
+                        margin-top: 35%;
+                    }
+                    }

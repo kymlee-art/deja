@@ -38,7 +38,7 @@ document.addEventListener(
 )
 
 function closeForm() {
-    document.querySelector(".contact-form").display = "none"
+    document.querySelector(".contact-form").contactForm = "none"
 }
 
 const slButton = document.querySelector('sl-button')
